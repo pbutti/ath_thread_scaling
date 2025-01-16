@@ -1,0 +1,162 @@
+
+import os,sys
+import argparse
+import subprocess
+
+
+def prepareJobScript(outfolder,nthreads,args):
+
+    nevents=args.maxevents
+    legacy=args.legacy
+    outf=outfolder+"/ActsBenchmark_"+str(nthreads)+".sh"
+    
+    with open(outf, "w") as f:
+
+        f.write("#!/usr/bin/bash\n\n\n")
+        f.write('ignore_pattern="Acts.+FindingAlg.+ERROR.+Propagation.+reached.+the.+step.+count.+limit,Acts.+FindingAlg.+ERROR.+Propagation.+failed:.+PropagatorError:3.+Propagation.+reached.+the.+configured.+maximum.+number.+of.+steps.+with.+the.+initial.+parameters,Acts.+FindingAlg.Acts.+ERROR.+CombinatorialKalmanFilter.+failed:.+CombinatorialKalmanFilterError:5.+Propagation.+reaches.+max.+steps.+before.+track.+finding.+is.+finished.+with.+the.+initial.+parameters,Acts.+FindingAlg.Acts.+ERROR.+SurfaceError:1,Acts.+FindingAlg.Acts.+ERROR.+failed.+to.+extrapolate.+track"\n\n')
+        f.write("DATADIR=\"/cvmfs/atlas-nightlies.cern.ch/repo/data/data-art/PhaseIIUpgrade/RDO\" \n\n")
+        f.write("export TRF_ECHO=1 \n")
+        f.write("export ATHENA_CORE_NUMBER="+str(nthreads)+" \n")
+        f.write('echo "ATHENA_CORE_NUMBER=" ${ATHENA_CORE_NUMBER} \n\n\n')
+
+        f.write("cd "+outfolder+"\n\n")
+
+
+        
+        preInclude = "--preInclude 'InDetConfig.ConfigurationHelpers.OnlyTrackingPreInclude' \\\n"
+        preExec    = "--preExec 'all:ConfigFlags.Tracking.doITkFastTracking=True' \\\n"
+
+        #For ACTS
+        if not legacy:
+            preInclude = "--preInclude 'InDetConfig.ConfigurationHelpers.OnlyTrackingPreInclude,ActsConfig.ActsCIFlags.actsAloneFastWorkflowFlags' \\\n"
+            preExec=""
+        
+        f.write("Reco_tf.py \\\n"
+                + "--maxEvents  "+str(nevents)+" \\\n"
+                + "--autoConfiguration 'everything' \\\n"
+                + "--conditionsTag 'all:OFLCOND-MC21-SDR-RUN4-02' \\\n"
+                + "--geometryVersion 'all:ATLAS-P2-RUN4-03-00-00' \\\n"
+                + "--postInclude 'all:PyJobTransforms.UseFrontier' \\\n"
+                + preInclude
+                + "--steering 'doRAWtoALL' \\\n"
+                + preExec
+                + "--postExec 'all:cfg.getService(\"AlgResourcePool\").CountAlgorithmInstanceMisses = True;' \\\n"
+                + "--inputRDOFile ${DATADIR}\"/ATLAS-P2-RUN4-03-00-00/mc21_14TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.recon.RDO.e8481_s4149_r14700/*\" \\\n"
+                +"--outputAODFile 'myAOD.pool.root' \\\n"
+                +"--jobNumber '1' \\\n"
+                +"--ignorePatterns \"${ignore_pattern}\" \\\n"
+                +"--multithreaded \n\n\n")
+        
+        f.write("cd -")
+
+
+def geo_progression(start, ratio=2, limit=48):
+    progression = []
+    term = start
+    while term <= limit:
+        progression.append(term)
+        term *= ratio
+    if not limit in progression:
+        progression.append(limit)
+        
+    return progression
+
+
+#Example of usage
+#python3 run_thread_scaling.py -m 24 -v
+#
+
+
+def runJob(jobfile,threads, args):
+
+    nosmt=args.nosmt
+    subprocess.run(['chmod','u+x',jobfile])
+
+    
+    if not nosmt:
+        command=[jobfile]
+        print(command)
+        #subprocess.run(command)
+        
+    else:
+        threadlim="0"
+        
+        if (threads > 1):
+            threadlim="0-"+str(threads-1)
+            
+        command=['taskset','-c',threadlim,jobfile]
+        print(command)
+        #subprocess.run(command)
+
+
+def main():
+
+    # Create the parser
+    parser = argparse.ArgumentParser(description="Run thread scaling for Athena.")
+
+    # Add arguments
+
+    parser.add_argument('-n', '--minthreads', type=int, required=False, default=1, help="The minimum number of threads")
+    parser.add_argument('-m', '--maxthreads', type=int, required=True, help="The maximum number of threads")
+
+    parser.add_argument("-s", '--nosmt', required=False, action="store_true", help="Switch off SMT / HT")
+
+    parser.add_argument("-v", '--verbose', required=False, help="Toggle verbosity",action="store_true")
+
+    parser.add_argument("-e", '--maxevents', type=int, required=False, default=100, help="Max number of events")
+
+    parser.add_argument("-o", '--outputpath', type=str, required=False, default="./thread_timing/", help="output path")
+
+    parser.add_argument("-r", "--runs",type=int, required=False, default=1,help="Number of runs for each data point")
+
+    parser.add_argument("-l", "--legacy", required=False, default=False, action="store_true", help="Run legacy tracking instead")
+    
+    # Parse the arguments
+    args = parser.parse_args()
+
+    # Create the thread list
+    threads = geo_progression(args.minthreads, 2, args.maxthreads)
+
+    path = args.outputpath
+
+    if (args.verbose):
+        print("Setting up jobs with following thread list: ",threads)
+
+    #For each thread configuration make a folder, setup the RecoTf script and run
+
+    for tc in threads:
+        
+        outfolder = path+"athena_threads_"+str(tc)
+        
+        if (args.legacy):
+            outfolder = outfolder+"_legacy"
+            
+        if (args.nosmt):
+            outfolder = outfolder+"_nosmt"
+            
+
+        if not os.path.exists(outfolder):
+            os.makedirs(outfolder)
+
+        outfile = outfolder+"/ActsBenchmark_"+str(tc)+".sh"
+        prepareJobScript(outfolder, tc, args)
+        
+        #Run the measurement for each
+            
+        for run in range(args.runs):
+            print("#########")
+            print("Running run "+str(run)+"/"+str(args.runs)+" for thread "+str(tc) + " with SMT=", not args.nosmt)
+            print("#########")
+                  
+            runJob(outfile,tc,args)
+
+
+            if (os.path.isfile(outfolder+"/log.RAWtoALL")):
+                os.rename(outfolder+"/log.RAWtoALL", outfolder+"/log.RAWtoALL_run_"+str(run))
+            else:
+                print("Log file", outfolder+"/log.RAWtoALL", "not found")
+            
+            
+
+if __name__=="__main__":
+    main()
