@@ -2,6 +2,7 @@
 import os,sys
 import argparse
 import subprocess
+import itertools
 
 
 def prepareJobScript(outfolder,nthreads,args):
@@ -62,31 +63,47 @@ def geo_progression(start, ratio=2, limit=48):
     return progression
 
 
-#Example of usage
-#python3 run_thread_scaling.py -m 24 -v
-#
+# /software/modules/sw/core/likwid/5.2/bin/likwid-topology
+def make_thread_list(n, smt=True):
 
+    thread_lists = []
+    
+    if smt:
+        thread_lists = list(itertools.chain.from_iterable([(6 * j + i) % 48, (6 * j + i + 24) % 48] for i in range(6) for j in range(4)))
+    
+    else:
+        thread_lists = [(6 * j + i) % 48 for i in range(6) for j in range(4)]
+                           
+    threads_str  = ",".join(str(x) for x in thread_lists[:n])
+    
+    
+    return(threads_str)
+    
 
 def runJob(jobfile,threads, args):
 
     nosmt=args.nosmt
     subprocess.run(['chmod','u+x',jobfile])
-
+    threads_str = make_thread_list(threads, not nosmt)
     
-    if not nosmt:
-        command=[jobfile]
-        print(command)
-        #subprocess.run(command)
+    
+    command=['taskset','-c',threads_str,jobfile]
+    print(command)
+
         
-    else:
-        threadlim="0"
+    #subprocess.run(command)
         
-        if (threads > 1):
-            threadlim="0-"+str(threads-1)
+    #else:
+    #    threadlim="0"
+    #    
+    #    if (threads > 1):
+    #        threadlim="0-"+str(threads-1)
             
-        command=['taskset','-c',threadlim,jobfile]
-        print(command)
-        #subprocess.run(command)
+    #    command=['taskset','-c',threads_str,jobfile]
+    #    print(command)
+
+    if not args.dry:
+        subprocess.run(command)
 
 
 def main():
@@ -100,6 +117,8 @@ def main():
     parser.add_argument('-m', '--maxthreads', type=int, required=True, help="The maximum number of threads")
 
     parser.add_argument("-s", '--nosmt', required=False, action="store_true", help="Switch off SMT / HT")
+    
+    parser.add_argument("-d", '--dry', required=False, action="store_true", help="Dry run. Do not execute the commands")
 
     parser.add_argument("-v", '--verbose', required=False, help="Toggle verbosity",action="store_true")
 
