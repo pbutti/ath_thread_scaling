@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+from common import io
 import numpy as np
 import argparse
 import glob,sys
@@ -57,7 +58,7 @@ def collectData(folderList,args):
             nthreads=fldsplit[-2]
         
         logfiles = glob.glob(fld+"/log.RAWtoALL_run_*")
-        print(logfiles,nthreads)
+        #print(logfiles,nthreads)
 
         logInfo=[]
         
@@ -74,7 +75,11 @@ def collectData(folderList,args):
         else: # only one logfile
             logInfo = getLogInfo(logfiles[0],nthreads)
             
-        results[nthreads]=logInfo
+        results[float(nthreads)]=logInfo
+
+
+    #order by key
+    results = dict(sorted(results.items()))
         
     return results
     
@@ -106,7 +111,7 @@ def main():
             dir_smt.append(folder)
 
     
-    print(dir_smt)
+    #print(dir_smt)
     smtResults = collectData(dir_smt,args)
 
     threads, evt_per_s = getScatterPoints(smtResults,1)
@@ -114,17 +119,45 @@ def main():
     _, cpu_usage       = getScatterPoints(smtResults,3)
     
     
-    
-    print(threads)
-    print(evt_per_s)
-    print(throughput)
-    print(cpu_usage)
+    #print(threads)
+    #print(evt_per_s)
+    #print(throughput)
+    #print(cpu_usage)    
+
+    #fig = plt.figure()
+    #ax1 = fig.add_subplot(1,1,1)
+    #ax1.plot(threads, throughput, label="throughput")
+    #ax1.set_xlabel("n threads")
+    #ax1.set_ylabel("Throughput (Evt/s)")
+    #ax1.set_ylim(0, 15)
+
+    #Add a straight line with slope = troughput for 1 thread (0.313s)
+    ideal = 0.313*threads
 
     
+    #ax2 = ax1.twinx()
+    #ax2.plot(threads, cpu_usage / 100., color='r',label="cpu_usage")
+    #ax2.set_xlabel("n threads")
+    #ax2.set_ylabel("CPU usage")
+    #ax2.set_ylim(0, 2)
+    
+    #ax1.legend(loc='upper right')
+    #ax2.legend(loc='lower right')
 
-    fig = plt.figure()
-    ax = fig.add_subplot()
-    ax.plot(threads, throughput, label="throughput")
+
+    plt_cfg = {}
+    
+    
+
+    io.mtlibPlot(threads,[ideal,throughput],
+                 titleX="n threads [ AMD EPYC 7413 24-Core / 48-threads ] ",titleY="Throughput Evt/s",
+                 xlim=[0,48],
+                 legends=["Linear Scaling","SMT ON","SMT OFF"],
+                 styles=["--","-","-"]
+                 )
+
+    
+        
     plt.savefig("my_plot.pdf", format="pdf")
     
     print ("######")
