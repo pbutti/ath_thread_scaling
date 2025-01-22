@@ -105,9 +105,9 @@ def collectProcData(folderList,args):
                 aggdata += reslog
                 #print(reslog)
 
-            aggdata[1]/=len(logs)
-            aggdata[2]/=len(logs)
-            aggdata[3]/=len(logs)
+            #aggdata[1]/=len(logs)
+            #aggdata[2]/=len(logs)
+            #aggdata[3]/=len(logs)
             
             #print(aggdata)
             results[nproc][nt]=aggdata
@@ -235,20 +235,10 @@ def analyseAthenaMT(folders,args):
 
     plt_cfg = {}
     
-    
 
-    io.mtlibPlot(threads,[ideal,throughput,throughput_nosmt,throughput_smt_legacy,throughput_nosmt_legacy],
-                 titleX="n threads [ AMD EPYC 7413 24-Core / 48-threads ] ",titleY="Throughput Evt/s",
-                 xlim=[0,24],
-                 legends=["Linear Scaling","Acts Tracking SMT ON","Acts Tracking SMT OFF","Legacy Tracking SMT ON","Legacy Tracking SMT OFF"],
-                 styles=["--","-","-","-","-"],colors=['blue','orange','green','red','indigo']
-                 )
+    allplotlines=[ideal,throughput,throughput_nosmt,throughput_smt_legacy,throughput_nosmt_legacy]
 
-    
-        
-    plt.savefig("my_plot.pdf", format="pdf")
-
-    
+    return threads,ideal,throughput,throughput_nosmt,throughput_smt_legacy,throughput_nosmt_legacy
 
 
 
@@ -284,7 +274,6 @@ def analyseAthenaMP(folders,args):
     print(procs,threads,throughputMP)
     
     
-    
 def main():
 
     print("Run thread scaling analysis")
@@ -296,15 +285,11 @@ def main():
     parser.add_argument("-a","--avg",required=False,default=False,action="store_true",help="If there are multiple logs for the same point, do the average")
 
     
-    
-
     args = parser.parse_args()
     
     folders = glob.glob(args.inputdir+"/*proc*threads*")
     
-    #analyseAthenaMP(folders,args)
-
-
+    analyseAthenaMP(folders,args)
 
     folders = glob.glob(args.inputdir+"/*threads*")
     sel_folders = []
@@ -312,17 +297,30 @@ def main():
     for fld in folders:
         if "proc" not in fld:
             sel_folders.append(fld)
-
-
-
-
-    print("######")
-    print(sel_folders)
-    print("#######")
             
-    analyseAthenaMT(sel_folders,args)
+    threads, ideal,throughput,throughput_nosmt,throughput_smt_legacy,throughput_nosmt_legacy = analyseAthenaMT(sel_folders,args)
     
 
+    MP = np.array([0.,0.,0.,2.462, 4.648, 6.457])
+    
+
+    #Combined plot    
+
+    io.mtlibPlot(threads,[ideal,throughput,throughput_nosmt,throughput_smt_legacy,throughput_nosmt_legacy,MP],
+                 titleX="n threads [ AMD EPYC 7413 24-Core / 48-threads ] ",titleY="Throughput Evt/s",
+                 xlim=[0,24],
+                 legends=["Linear Scaling","Acts Tracking SMT ON","Acts Tracking SMT OFF","Legacy Tracking SMT ON","Legacy Tracking SMT OFF","MP"],
+                 styles=["--","-","-","-","-","-"],colors=['blue','orange','green','red','indigo','black']
+                 )
+
+    
+        
+    plt.savefig("my_plot.pdf", format="pdf")
+    
+    
+
+
+    
     
 
 if __name__=="__main__":
