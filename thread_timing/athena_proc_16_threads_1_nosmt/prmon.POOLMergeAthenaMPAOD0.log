@@ -1,0 +1,1 @@
+[2025-01-22 13:08:14.980] [prmon] [warning] Wallclock time of monitored process was less than the monitoring interval, so average statistics will be unreliable
