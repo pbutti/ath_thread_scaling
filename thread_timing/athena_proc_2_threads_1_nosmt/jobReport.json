@@ -1,0 +1,262 @@
+{
+  "cmdLine": "'/cvmfs/atlas-nightlies.cern.ch/repo/sw/main_Athena_x86_64-el9-gcc13-opt/2025-01-21T2101/Athena/25.0.24/InstallArea/x86_64-el9-gcc13-opt/bin/Reco_tf.py' '--maxEvents' '2000' '--autoConfiguration' 'everything' '--conditionsTag' 'all:OFLCOND-MC21-SDR-RUN4-02' '--geometryVersion' 'all:ATLAS-P2-RUN4-03-00-00' '--postInclude' 'all:PyJobTransforms.UseFrontier' '--preInclude' 'InDetConfig.ConfigurationHelpers.OnlyTrackingPreInclude,ActsConfig.ActsCIFlags.actsAloneFastWorkflowFlags' '--steering' 'doRAWtoALL' '--postExec' 'all:cfg.getService(\"AlgResourcePool\").CountAlgorithmInstanceMisses = True;' '--inputRDOFile' '/home/pibutti/data/ttbar_PU200/mc21_14TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.recon.RDO.e8481_s4149_r14700/*' '--outputAODFile' 'myAOD.pool.root' '--jobNumber' '1' '--ignorePatterns' 'Acts.+FindingAlg.+ERROR.+Propagation.+reached.+the.+step.+count.+limit,Acts.+FindingAlg.+ERROR.+Propagation.+failed:.+PropagatorError:3.+Propagation.+reached.+the.+configured.+maximum.+number.+of.+steps.+with.+the.+initial.+parameters,Acts.+FindingAlg.Acts.+ERROR.+CombinatorialKalmanFilter.+failed:.+CombinatorialKalmanFilterError:5.+Propagation.+reaches.+max.+steps.+before.+track.+finding.+is.+finished.+with.+the.+initial.+parameters,Acts.+FindingAlg.Acts.+ERROR.+SurfaceError:1,Acts.+FindingAlg.Acts.+ERROR.+failed.+to.+extrapolate.+track' '--athenaopts=--nprocs=2' '--multithreaded'",
+  "created": "2025-01-22T18:41:54",
+  "executor": [
+    {
+      "asetup": null,
+      "errMsg": "",
+      "exeConfig": {
+        "inputs": [
+          "RDO"
+        ],
+        "outputs": [
+          "AOD"
+        ],
+        "script": "athena.py",
+        "substep": "r2a"
+      },
+      "logfileReport": {
+        "countSummary": {
+          "CATASTROPHE": 0,
+          "CRITICAL": 0,
+          "DEBUG": 0,
+          "ERROR": 0,
+          "FATAL": 0,
+          "IGNORED": 0,
+          "INFO": 3638,
+          "UNKNOWN": 1949,
+          "VERBOSE": 0,
+          "WARNING": 2005
+        },
+        "details": {}
+      },
+      "metaData": {},
+      "name": "RAWtoALL",
+      "rc": 0,
+      "statusOK": true,
+      "validation": true
+    }
+  ],
+  "exitAcronym": "TRF_EXEC_FAIL",
+  "exitCode": 65,
+  "exitMsg": "Non-zero return code from POOLMergeAthenaMPAOD0 (1)",
+  "exitMsgExtra": "",
+  "files": {
+    "input": [
+      {
+        "dataset": null,
+        "nentries": 2400,
+        "subFiles": [
+          {
+            "file_guid": "A6893187-9ABB-D94D-9D74-39BEB62A992F",
+            "name": "RDO.33629020._000002.pool.root.1"
+          },
+          {
+            "file_guid": "86A1BD81-F1B5-3A44-A55B-DD606A6B2A7D",
+            "name": "RDO.33629020._000007.pool.root.1"
+          },
+          {
+            "file_guid": "C8BB8269-4C87-8644-BFA7-0A7A49698A24",
+            "name": "RDO.33629020._000008.pool.root.1"
+          },
+          {
+            "file_guid": "C47DEA15-6FCF-4941-8494-E95B91B94411",
+            "name": "RDO.33629020._000014.pool.root.1"
+          },
+          {
+            "file_guid": "8E77EFEA-024C-7B4E-B005-7A66BB1B7C68",
+            "name": "RDO.33629020._000016.pool.root.1"
+          },
+          {
+            "file_guid": "567F16E9-274F-0F4D-8B57-585EBDDD74E8",
+            "name": "RDO.33629020._000017.pool.root.1"
+          },
+          {
+            "file_guid": "714BF459-2344-9449-B9C0-5993E70C4578",
+            "name": "RDO.33629020._000018.pool.root.1"
+          },
+          {
+            "file_guid": "FF92F13E-A016-3949-867C-40D7CD54765F",
+            "name": "RDO.33629020._000027.pool.root.1"
+          },
+          {
+            "file_guid": "72ED0D07-E6DE-DB40-877F-A11CCD43F8FF",
+            "name": "RDO.33629020._000031.pool.root.1"
+          },
+          {
+            "file_guid": "EFFEC1F8-9FC1-E84E-AE42-1F5699B897EA",
+            "name": "RDO.33629020._000036.pool.root.1"
+          },
+          {
+            "file_guid": "1E4B33D0-C0BA-E14C-8F23-C713BB8FFC28",
+            "name": "RDO.33629020._000037.pool.root.1"
+          },
+          {
+            "file_guid": "2CC00171-6DA9-3D47-9680-9D2C6D523332",
+            "name": "RDO.33629020._000038.pool.root.1"
+          }
+        ],
+        "type": "RDO"
+      }
+    ],
+    "output": [
+      {
+        "argName": "outputAODFile",
+        "dataset": null,
+        "subFiles": [
+          {
+            "file_guid": "0838257E-40C2-D34C-A2E3-4A6A39D8DD98",
+            "file_size": 472234134,
+            "name": "myAOD.pool.root_001",
+            "nentries": 980
+          },
+          {
+            "file_guid": "CDF866F0-D68A-8B4F-930D-AF89098C8C93",
+            "file_size": 481965359,
+            "name": "myAOD.pool.root_002",
+            "nentries": 1020
+          }
+        ],
+        "type": "AOD"
+      }
+    ]
+  },
+  "name": "Reco_tf",
+  "reportVersion": "2.1.2",
+  "resource": {
+    "executor": {
+      "RAWtoALL": {
+        "cpuTime": 6382.45,
+        "cpuTimePerWorker": 3191.225,
+        "memory": {
+          "Avg": {
+            "gpufbmem": 0.0,
+            "gpumempct": 0.0,
+            "gpusmpct": 0.0,
+            "ngpus": 0.0,
+            "nprocs": 3.98,
+            "nthreads": 7.923,
+            "pss": 3896231.0,
+            "rchar": 236993156.0,
+            "read_bytes": 0.0,
+            "rss": 5200518.0,
+            "rx_bytes": 150907.0,
+            "rx_packets": 314.139,
+            "swap": 0.0,
+            "tx_bytes": 31276.0,
+            "tx_packets": 233.426,
+            "vmem": 8438863.0,
+            "wchar": 29243504.0,
+            "write_bytes": 29640307.0
+          },
+          "HW": {
+            "cpu": {
+              "CPUs": 48,
+              "CoresPerSocket": 24,
+              "ModelName": "AMD EPYC 7413 24-Core Processor",
+              "Sockets": 1,
+              "ThreadsPerCore": 2
+            },
+            "gpu": {
+              "gpu_0": {
+                "name": "NVIDIA RTX A5000",
+                "sm_freq": 2100,
+                "total_mem": 25153536
+              },
+              "nGPU": 1
+            },
+            "mem": {
+              "MemTotal": 131219192
+            }
+          },
+          "Max": {
+            "gpufbmem": 0,
+            "gpumempct": 0,
+            "gpusmpct": 0,
+            "ngpus": 0,
+            "nprocs": 4,
+            "nthreads": 8,
+            "pss": 4177245,
+            "rchar": 7643029296,
+            "read_bytes": 0,
+            "rss": 5968936,
+            "rx_bytes": 4866778,
+            "rx_packets": 10131,
+            "stime": 14,
+            "swap": 0,
+            "tx_bytes": 1008664,
+            "tx_packets": 7528,
+            "utime": 6351,
+            "vmem": 8576436,
+            "wchar": 943103026,
+            "write_bytes": 955899904,
+            "wtime": 3225
+          },
+          "prmon": {
+            "Version": "3.1.1"
+          }
+        },
+        "memoryAnalysis": {
+          "chi2": 136392.91,
+          "slope": -15.86
+        },
+        "mpworkers": 2,
+        "nevents": 2000,
+        "postExe": {
+          "cpuTime": 22.79,
+          "wallTime": 6.87
+        },
+        "preExe": {
+          "cpuTime": 0.0,
+          "wallTime": 0.0
+        },
+        "total": {
+          "cpuTime": 6405.24,
+          "wallTime": 3249.96
+        },
+        "validation": {
+          "cpuTime": 0.0,
+          "wallTime": 0.25
+        },
+        "wallTime": 3242.84
+      }
+    },
+    "machine": {
+      "cpu_family": "25",
+      "linux_distribution": [
+        "Red Hat Enterprise Linux",
+        "9.3",
+        "Plow"
+      ],
+      "model": "1",
+      "model_name": "AMD EPYC 7413 24-Core Processor",
+      "node": "pcadp04",
+      "platform": "Linux-5.14.0-362.18.1.el9_3.x86_64-x86_64-with-glibc2.34"
+    },
+    "transform": {
+      "cpuEfficiency": 0.9814,
+      "cpuPWEfficiency": 0.9819,
+      "cpuTime": 3.36,
+      "cpuTimeTotal": 6405.24,
+      "externalCpuTime": 23.0,
+      "inFileValidation": {
+        "cpuTime": 0.21,
+        "wallTime": 3.42
+      },
+      "outFileValidation": {
+        "cpuTime": null,
+        "wallTime": null
+      },
+      "reportGeneration": {
+        "cpuTime": null,
+        "wallTime": null
+      },
+      "transformSetup": {
+        "cpuTime": 0.0,
+        "wallTime": 0.04
+      },
+      "trfPredata": null,
+      "wallTime": 3253.42
+    }
+  }
+}
