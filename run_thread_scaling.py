@@ -7,7 +7,7 @@ import itertools
 
 def prepareJobScript(outfolder,nthreads,args):
 
-    nevents=args.maxevents
+    nevents=args.maxevents * ntrheads
     legacy=args.legacy
     outf=outfolder+"/ActsBenchmark_"+str(nthreads)+".sh"
     
@@ -135,7 +135,7 @@ def main():
 
     parser.add_argument("-v", '--verbose', required=False, help="Toggle verbosity",action="store_true")
 
-    parser.add_argument("-e", '--maxevents', type=int, required=False, default=100, help="Max number of events")
+    parser.add_argument("-e", '--maxevents', type=int, required=False, default=100, help="Max number of events per thread")
 
     parser.add_argument("-o", '--outputpath', type=str, required=False, default="./thread_timing/", help="output path")
 
