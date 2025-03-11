@@ -4,12 +4,12 @@
 <POOLFILECATALOG>
   <File ID="A6893187-9ABB-D94D-9D74-39BEB62A992F">
     <physical>
-      <pfn filetype="ROOT_All" name="/home/pibutti/data/ttbar_PU200/mc21_14TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.recon.RDO.e8481_s4149_r14700/RDO.33629020._000002.pool.root.1"/>
+      <pfn filetype="ROOT_All" name="/mnt/ssd1/pibutti/data/ttbar_PU200/mc21_14TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.recon.RDO.e8481_s4149_r14700/RDO.33629020._000002.pool.root.1"/>
     </physical>
     <logical/>
   </File>
 
-  <File ID="62CCE06B-D5E5-1041-8A30-560EB1BD9634">
+  <File ID="16AC3B71-33B6-AF44-9D45-1485326CCE36">
     <physical>
       <pfn filetype="ROOT_All" name="myAOD.pool.root"/>
     </physical>
@@ -18,49 +18,21 @@
 
   <File ID="86A1BD81-F1B5-3A44-A55B-DD606A6B2A7D">
     <physical>
-      <pfn filetype="ROOT_All" name="/home/pibutti/data/ttbar_PU200/mc21_14TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.recon.RDO.e8481_s4149_r14700/RDO.33629020._000007.pool.root.1"/>
+      <pfn filetype="ROOT_All" name="/mnt/ssd1/pibutti/data/ttbar_PU200/mc21_14TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.recon.RDO.e8481_s4149_r14700/RDO.33629020._000007.pool.root.1"/>
     </physical>
     <logical/>
   </File>
 
   <File ID="C8BB8269-4C87-8644-BFA7-0A7A49698A24">
     <physical>
-      <pfn filetype="ROOT_All" name="/home/pibutti/data/ttbar_PU200/mc21_14TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.recon.RDO.e8481_s4149_r14700/RDO.33629020._000008.pool.root.1"/>
+      <pfn filetype="ROOT_All" name="/mnt/ssd1/pibutti/data/ttbar_PU200/mc21_14TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.recon.RDO.e8481_s4149_r14700/RDO.33629020._000008.pool.root.1"/>
     </physical>
     <logical/>
   </File>
 
   <File ID="C47DEA15-6FCF-4941-8494-E95B91B94411">
     <physical>
-      <pfn filetype="ROOT_All" name="/home/pibutti/data/ttbar_PU200/mc21_14TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.recon.RDO.e8481_s4149_r14700/RDO.33629020._000014.pool.root.1"/>
-    </physical>
-    <logical/>
-  </File>
-
-  <File ID="8E77EFEA-024C-7B4E-B005-7A66BB1B7C68">
-    <physical>
-      <pfn filetype="ROOT_All" name="/home/pibutti/data/ttbar_PU200/mc21_14TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.recon.RDO.e8481_s4149_r14700/RDO.33629020._000016.pool.root.1"/>
-    </physical>
-    <logical/>
-  </File>
-
-  <File ID="567F16E9-274F-0F4D-8B57-585EBDDD74E8">
-    <physical>
-      <pfn filetype="ROOT_All" name="/home/pibutti/data/ttbar_PU200/mc21_14TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.recon.RDO.e8481_s4149_r14700/RDO.33629020._000017.pool.root.1"/>
-    </physical>
-    <logical/>
-  </File>
-
-  <File ID="714BF459-2344-9449-B9C0-5993E70C4578">
-    <physical>
-      <pfn filetype="ROOT_All" name="/home/pibutti/data/ttbar_PU200/mc21_14TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.recon.RDO.e8481_s4149_r14700/RDO.33629020._000018.pool.root.1"/>
-    </physical>
-    <logical/>
-  </File>
-
-  <File ID="FF92F13E-A016-3949-867C-40D7CD54765F">
-    <physical>
-      <pfn filetype="ROOT_All" name="/home/pibutti/data/ttbar_PU200/mc21_14TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.recon.RDO.e8481_s4149_r14700/RDO.33629020._000027.pool.root.1"/>
+      <pfn filetype="ROOT_All" name="/mnt/ssd1/pibutti/data/ttbar_PU200/mc21_14TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.recon.RDO.e8481_s4149_r14700/RDO.33629020._000014.pool.root.1"/>
     </physical>
     <logical/>
   </File>

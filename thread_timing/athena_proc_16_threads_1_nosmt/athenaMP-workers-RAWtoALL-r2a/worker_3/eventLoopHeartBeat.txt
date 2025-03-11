@@ -1,1 +1,0 @@
-  done processing event #7435, run #242020 150 events read so far  <<<===

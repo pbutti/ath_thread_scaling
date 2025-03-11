@@ -1,6 +1,6 @@
 {
-  "cmdLine": "'/cvmfs/atlas-nightlies.cern.ch/repo/sw/main_Athena_x86_64-el9-gcc13-opt/2025-01-25T2101/Athena/25.0.25/InstallArea/x86_64-el9-gcc13-opt/bin/Reco_tf.py' '--maxEvents' '800' '--autoConfiguration' 'everything' '--conditionsTag' 'all:OFLCOND-MC21-SDR-RUN4-02' '--geometryVersion' 'all:ATLAS-P2-RUN4-03-00-00' '--postInclude' 'all:PyJobTransforms.UseFrontier' '--preInclude' 'InDetConfig.ConfigurationHelpers.OnlyTrackingPreInclude,ActsConfig.ActsCIFlags.actsAloneFastWorkflowFlags' '--steering' 'doRAWtoALL' '--postExec' 'all:cfg.getService(\"AlgResourcePool\").CountAlgorithmInstanceMisses = True;' '--inputRDOFile' '/home/pibutti/data/ttbar_PU200/mc21_14TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.recon.RDO.e8481_s4149_r14700/*' '--outputAODFile' 'myAOD.pool.root' '--jobNumber' '1' '--ignorePatterns' 'Acts.+FindingAlg.+ERROR.+Propagation.+reached.+the.+step.+count.+limit,Acts.+FindingAlg.+ERROR.+Propagation.+failed:.+PropagatorError:3.+Propagation.+reached.+the.+configured.+maximum.+number.+of.+steps.+with.+the.+initial.+parameters,Acts.+FindingAlg.Acts.+ERROR.+CombinatorialKalmanFilter.+failed:.+CombinatorialKalmanFilterError:5.+Propagation.+reaches.+max.+steps.+before.+track.+finding.+is.+finished.+with.+the.+initial.+parameters,Acts.+FindingAlg.Acts.+ERROR.+SurfaceError:1,Acts.+FindingAlg.Acts.+ERROR.+failed.+to.+extrapolate.+track' '--multithreaded'",
-  "created": "2025-01-26T22:01:25",
+  "cmdLine": "'/cvmfs/atlas-nightlies.cern.ch/repo/sw/main_Athena_x86_64-el9-gcc13-opt/2025-03-09T2101/Athena/25.0.27/InstallArea/x86_64-el9-gcc13-opt/bin/Reco_tf.py' '--maxEvents' '400' '--autoConfiguration' 'everything' '--conditionsTag' 'all:OFLCOND-MC21-SDR-RUN4-02' '--geometryVersion' 'all:ATLAS-P2-RUN4-03-00-00' '--postInclude' 'all:PyJobTransforms.UseFrontier' '--preInclude' 'InDetConfig.ConfigurationHelpers.OnlyTrackingPreInclude,ActsConfig.ActsCIFlags.actsFastWorkflowFlags' '--steering' 'doRAWtoALL' '--postExec' 'all:cfg.getService(\"AlgResourcePool\").CountAlgorithmInstanceMisses = True;' '--inputRDOFile' '/mnt/ssd1/pibutti/data/ttbar_PU200/mc21_14TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.recon.RDO.e8481_s4149_r14700/*' '--outputAODFile' 'myAOD.pool.root' '--jobNumber' '1' '--ignorePatterns' 'Acts.+FindingAlg.+ERROR.+Propagation.+reached.+the.+step.+count.+limit,Acts.+FindingAlg.+ERROR.+Propagation.+failed:.+PropagatorError:3.+Propagation.+reached.+the.+configured.+maximum.+number.+of.+steps.+with.+the.+initial.+parameters,Acts.+FindingAlg.Acts.+ERROR.+CombinatorialKalmanFilter.+failed:.+CombinatorialKalmanFilterError:5.+Propagation.+reaches.+max.+steps.+before.+track.+finding.+is.+finished.+with.+the.+initial.+parameters,Acts.+FindingAlg.Acts.+ERROR.+SurfaceError:1,Acts.+FindingAlg.Acts.+ERROR.+failed.+to.+extrapolate.+track' '--multithreaded'",
+  "created": "2025-03-10T18:40:56",
   "executor": [
     {
       "asetup": null,
@@ -23,8 +23,8 @@
           "ERROR": 0,
           "FATAL": 0,
           "IGNORED": 0,
-          "INFO": 1443,
-          "UNKNOWN": 1535,
+          "INFO": 1412,
+          "UNKNOWN": 15679,
           "VERBOSE": 0,
           "WARNING": 504
         },
@@ -105,10 +105,10 @@
         "dataset": null,
         "subFiles": [
           {
-            "file_guid": "1CD410DD-0BDC-724E-AC20-D2E095033DFF",
-            "file_size": 341423704,
+            "file_guid": "F4D15886-503D-B447-BE9A-57C0D3F6D725",
+            "file_size": 171263847,
             "name": "myAOD.pool.root",
-            "nentries": 800
+            "nentries": 400
           }
         ],
         "type": "AOD"
@@ -120,7 +120,7 @@
   "resource": {
     "executor": {
       "RAWtoALL": {
-        "cpuTime": 2859.61,
+        "cpuTime": 1321.5,
         "memory": {
           "Avg": {
             "gpufbmem": 0.0,
@@ -128,19 +128,19 @@
             "gpusmpct": 0.0,
             "ngpus": 0.0,
             "nprocs": 2.0,
-            "nthreads": 6.791,
-            "pss": 3167491.0,
-            "rchar": 400800885.0,
-            "read_bytes": 0.0,
-            "rss": 3187308.0,
-            "rx_bytes": 174214.0,
-            "rx_packets": 595.378,
+            "nthreads": 6.583,
+            "pss": 3310499.0,
+            "rchar": 487510622.0,
+            "read_bytes": 175278858.0,
+            "rss": 3527213.0,
+            "rx_bytes": 365745.0,
+            "rx_packets": 1873.0,
             "swap": 0.0,
-            "tx_bytes": 147382.0,
-            "tx_packets": 675.91,
-            "vmem": 4438567.0,
-            "wchar": 46084559.0,
-            "write_bytes": 46408138.0
+            "tx_bytes": 1027673.0,
+            "tx_packets": 5430.0,
+            "vmem": 4286445.0,
+            "wchar": 48798763.0,
+            "write_bytes": 48642994.0
           },
           "HW": {
             "cpu": {
@@ -159,7 +159,7 @@
               "nGPU": 1
             },
             "mem": {
-              "MemTotal": 131219192
+              "MemTotal": 131219212
             }
           },
           "Max": {
@@ -169,48 +169,48 @@
             "ngpus": 0,
             "nprocs": 2,
             "nthreads": 7,
-            "pss": 3388050,
-            "rchar": 2861718322,
-            "read_bytes": 0,
-            "rss": 3401104,
-            "rx_bytes": 1243893,
-            "rx_packets": 4251,
-            "stime": 10,
+            "pss": 3707311,
+            "rchar": 1667286330,
+            "read_bytes": 599453696,
+            "rss": 3931348,
+            "rx_bytes": 1250850,
+            "rx_packets": 6408,
+            "stime": 4,
             "swap": 0,
-            "tx_bytes": 1052309,
-            "tx_packets": 4826,
-            "utime": 2746,
-            "vmem": 4622156,
-            "wchar": 329043754,
-            "write_bytes": 331354112,
-            "wtime": 714
+            "tx_bytes": 3514644,
+            "tx_packets": 18571,
+            "utime": 1276,
+            "vmem": 4654692,
+            "wchar": 166891771,
+            "write_bytes": 166359040,
+            "wtime": 342
           },
           "prmon": {
             "Version": "3.1.1"
           }
         },
         "memoryAnalysis": {
-          "chi2": 2108.74,
-          "slope": 458.25
+          "chi2": 540.56,
+          "slope": 1092.62
         },
-        "nevents": 800,
+        "nevents": 400,
         "postExe": {
-          "cpuTime": 3.25,
+          "cpuTime": 1.78,
           "wallTime": 1.0
         },
         "preExe": {
           "cpuTime": 0.0,
-          "wallTime": 0.01
+          "wallTime": 0.0
         },
         "total": {
-          "cpuTime": 2862.86,
-          "wallTime": 743.97
+          "cpuTime": 1323.28,
+          "wallTime": 355.25
         },
         "validation": {
           "cpuTime": 0.0,
-          "wallTime": 0.35
+          "wallTime": 0.61
         },
-        "wallTime": 742.61
+        "wallTime": 353.64
       }
     },
     "machine": {
@@ -226,30 +226,30 @@
       "platform": "Linux-5.14.0-362.18.1.el9_3.x86_64-x86_64-with-glibc2.34"
     },
     "transform": {
-      "cpuEfficiency": 3.7304,
-      "cpuPWEfficiency": 3.7304,
-      "cpuTime": 26.5,
-      "cpuTimeTotal": 2862.86,
-      "externalCpuTime": 3.55,
+      "cpuEfficiency": 3.6537,
+      "cpuPWEfficiency": 3.6537,
+      "cpuTime": 15.89,
+      "cpuTimeTotal": 1323.28,
+      "externalCpuTime": 2.12,
       "inFileValidation": {
-        "cpuTime": 0.21,
-        "wallTime": 3.27
+        "cpuTime": 0.23,
+        "wallTime": 3.31
       },
       "outFileValidation": {
         "cpuTime": 0.0,
-        "wallTime": 23.25
+        "wallTime": 4.31
       },
-      "processedEvents": 800,
+      "processedEvents": 400,
       "reportGeneration": {
-        "cpuTime": 0.09,
+        "cpuTime": 0.11,
         "wallTime": 3.14
       },
       "transformSetup": {
         "cpuTime": 0.0,
-        "wallTime": 0.04
+        "wallTime": 0.03
       },
       "trfPredata": null,
-      "wallTime": 773.67
+      "wallTime": 366.04
     }
   }
 }

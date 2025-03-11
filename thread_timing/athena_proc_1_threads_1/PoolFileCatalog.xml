@@ -4,12 +4,12 @@
 <POOLFILECATALOG>
   <File ID="A6893187-9ABB-D94D-9D74-39BEB62A992F">
     <physical>
-      <pfn filetype="ROOT_All" name="/home/pibutti/data/ttbar_PU200/mc21_14TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.recon.RDO.e8481_s4149_r14700/RDO.33629020._000002.pool.root.1"/>
+      <pfn filetype="ROOT_All" name="/mnt/ssd1/pibutti/data/ttbar_PU200/mc21_14TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.recon.RDO.e8481_s4149_r14700/RDO.33629020._000002.pool.root.1"/>
     </physical>
     <logical/>
   </File>
 
-  <File ID="3C3FC20B-2C3F-6E44-8351-3DA76E9FA292">
+  <File ID="F03C619D-8DC8-0344-A43E-78D40DF898BA">
     <physical>
       <pfn filetype="ROOT_All" name="myAOD.pool.root"/>
     </physical>

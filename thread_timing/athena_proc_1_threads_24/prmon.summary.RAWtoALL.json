@@ -6,18 +6,18 @@
     "ngpus": 0.0,
     "nprocs": 2.0,
     "nthreads": 25.684,
-    "pss": 10398445.0,
-    "rchar": 1365266575.0,
-    "read_bytes": 0.0,
-    "rss": 10523183.0,
-    "rx_bytes": 222471.0,
-    "rx_packets": 778.533,
+    "pss": 11070156.0,
+    "rchar": 1385319917.0,
+    "read_bytes": 438513803.0,
+    "rss": 11289887.0,
+    "rx_bytes": 240915.0,
+    "rx_packets": 1339.0,
     "swap": 0.0,
-    "tx_bytes": 191910.0,
-    "tx_packets": 859.928,
-    "vmem": 11593261.0,
-    "wchar": 176106766.0,
-    "write_bytes": 177572224.0
+    "tx_bytes": 645105.0,
+    "tx_packets": 3435.0,
+    "vmem": 12136405.0,
+    "wchar": 180535330.0,
+    "write_bytes": 181869727.0
   },
   "HW": {
     "cpu": {
@@ -36,7 +36,7 @@
       "nGPU": 1
     },
     "mem": {
-      "MemTotal": 131219192
+      "MemTotal": 131219212
     }
   },
   "Max": {
@@ -46,20 +46,20 @@
     "ngpus": 0,
     "nprocs": 2,
     "nthreads": 27,
-    "pss": 11219833,
-    "rchar": 7631840158,
-    "read_bytes": 0,
-    "rss": 11450692,
-    "rx_bytes": 1243618,
-    "rx_packets": 4352,
-    "stime": 166,
+    "pss": 11881582,
+    "rchar": 7743938337,
+    "read_bytes": 2451292160,
+    "rss": 12105744,
+    "rx_bytes": 1346717,
+    "rx_packets": 7487,
+    "stime": 114,
     "swap": 0,
-    "tx_bytes": 1072777,
-    "tx_packets": 4807,
-    "utime": 10546,
-    "vmem": 12351464,
-    "wchar": 984436825,
-    "write_bytes": 992628736,
+    "tx_bytes": 3606142,
+    "tx_packets": 19206,
+    "utime": 10019,
+    "vmem": 12955984,
+    "wchar": 1009192500,
+    "write_bytes": 1016651776,
     "wtime": 559
   },
   "prmon": {

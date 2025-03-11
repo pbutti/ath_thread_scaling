@@ -7,7 +7,7 @@ import itertools
 
 def prepareJobScript(outfolder,nthreads,args):
 
-    nevents=args.maxevents * ntrheads
+    nevents=args.maxevents * nthreads
     legacy=args.legacy
     outf=outfolder+"/ActsBenchmark_"+str(nthreads)+".sh"
     
@@ -21,7 +21,7 @@ def prepareJobScript(outfolder,nthreads,args):
         #f.write("DATADIR=\"/home/pibutti/data/ttbar_PU200/mc21_14TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.recon.RDO.e8481_s4149_r14701\" \n\n")
 
         #HS PU Only, smaller file, lower IO, faster processing time, PU200
-        f.write("DATADIR=\"/home/pibutti/data/ttbar_PU200/mc21_14TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.recon.RDO.e8481_s4149_r14700\" \n\n")
+        f.write("DATADIR=\"/mnt/ssd1/pibutti/data/ttbar_PU200/mc21_14TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.recon.RDO.e8481_s4149_r14700\" \n\n")
         
         f.write("export TRF_ECHO=1 \n")
         f.write("export ATHENA_CORE_NUMBER="+str(nthreads)+" \n")
@@ -41,8 +41,13 @@ def prepareJobScript(outfolder,nthreads,args):
 
         #For ACTS
         if not legacy:
-            preInclude = "--preInclude 'InDetConfig.ConfigurationHelpers.OnlyTrackingPreInclude,ActsConfig.ActsCIFlags.actsAloneFastWorkflowFlags' \\\n"
+            preInclude = "--preInclude 'InDetConfig.ConfigurationHelpers.OnlyTrackingPreInclude,ActsConfig.ActsCIFlags.actsFastWorkflowFlags' \\\n"
             preExec=""
+
+        noOutput = False
+        outputAOD="--outputAODFile 'myAOD.pool.root' \\\n"
+        if noOutput:
+            outputAOD=""
         
         f.write("Reco_tf.py \\\n"
                 + "--maxEvents  "+str(nevents)+" \\\n"
@@ -55,11 +60,13 @@ def prepareJobScript(outfolder,nthreads,args):
                 + preExec
                 + "--postExec 'all:cfg.getService(\"AlgResourcePool\").CountAlgorithmInstanceMisses = True;' \\\n"
                 + "--inputRDOFile ${DATADIR}\"/*\" \\\n"
-                +"--outputAODFile 'myAOD.pool.root' \\\n"
+                + outputAOD
                 +"--jobNumber '1' \\\n"
                 +"--ignorePatterns \"${ignore_pattern}\" \\\n"
                 + multiproc
                 +"--multithreaded \n\n\n")
+
+        
         
         f.write("cd -")
 
@@ -112,11 +119,12 @@ def runJob(jobfile,threads, args):
     threads_str = make_thread_list(args.nproc, threads, not nosmt)
     
     
-    command=['taskset','-c',threads_str,jobfile]
-    print(command)
+    #command=['taskset','-c',threads_str,jobfile]
+    #print(command)
     
     if not args.dry:
-        subprocess.run(command)
+        print(["sh",jobfile])
+        subprocess.run(["sh",jobfile])
 
 
 def main():
