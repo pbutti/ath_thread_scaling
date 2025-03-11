@@ -1,0 +1,68 @@
+{
+  "Avg": {
+    "gpufbmem": 0.0,
+    "gpumempct": 0.0,
+    "gpusmpct": 0.0,
+    "ngpus": 0.0,
+    "nprocs": 5.0,
+    "nthreads": 14.0,
+    "pss": 5999535.0,
+    "rchar": 1735043093.0,
+    "read_bytes": 0.0,
+    "rss": 8573526.0,
+    "rx_bytes": 1995225.0,
+    "rx_packets": 3384.0,
+    "swap": 0.0,
+    "tx_bytes": 1085223.0,
+    "tx_packets": 4060.0,
+    "vmem": 12024616.0,
+    "wchar": 88605276.0,
+    "write_bytes": 88682757.0
+  },
+  "HW": {
+    "cpu": {
+      "CPUs": 48,
+      "CoresPerSocket": 24,
+      "ModelName": "AMD EPYC 7413 24-Core Processor",
+      "Sockets": 1,
+      "ThreadsPerCore": 2
+    },
+    "gpu": {
+      "gpu_0": {
+        "name": "NVIDIA RTX A5000",
+        "sm_freq": 2100,
+        "total_mem": 25153536
+      },
+      "nGPU": 1
+    },
+    "mem": {
+      "MemTotal": 131219192
+    }
+  },
+  "Max": {
+    "gpufbmem": 0,
+    "gpumempct": 0,
+    "gpusmpct": 0,
+    "ngpus": 0,
+    "nprocs": 6,
+    "nthreads": 18,
+    "pss": 8059836,
+    "rchar": 1630940508,
+    "read_bytes": 0,
+    "rss": 11482644,
+    "rx_bytes": 1875512,
+    "rx_packets": 3181,
+    "stime": 5,
+    "swap": 0,
+    "tx_bytes": 1020110,
+    "tx_packets": 3817,
+    "utime": 640,
+    "vmem": 15899832,
+    "wchar": 83288960,
+    "write_bytes": 83361792,
+    "wtime": 94
+  },
+  "prmon": {
+    "Version": "3.1.1"
+  }
+}

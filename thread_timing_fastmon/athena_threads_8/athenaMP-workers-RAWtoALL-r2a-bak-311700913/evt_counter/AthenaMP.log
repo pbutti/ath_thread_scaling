@@ -1,0 +1,326 @@
+2025-01-17 18:17:24,609 AthMpEvtLoopMgr.SharedEvtQueueProvider                 0     0    INFO Logs redirected in the AthenaMP event event counter PID=785757
+2025-01-17 18:17:24,609 AthMpEvtLoopMgr.SharedEvtQueueProvider                 0     0    INFO Io registry updated in the AthenaMP event event counter PID=785757
+2025-01-17 18:17:24,609 AthMpEvtLoopMgr.SharedEvtQueueProvider                 0     0    INFO File descriptors re-opened in the AthenaMP event event counter PID=785757
+2025-01-17 18:17:24,609 PoolSvc                                                0     0    INFO I/O reinitialization...
+2025-01-17 18:17:24,609 PoolSvc                                                0     0    INFO Setting up APR FileCatalog and Streams
+2025-01-17 18:17:24,617 PoolSvc                                                0     0    INFO Resolved path (via ATLAS_POOLCOND_PATH) is /cvmfs/atlas-condb.cern.ch/repo/conditions/poolcond/PoolFileCatalog.xml
+2025-01-17 18:17:24,617 PoolSvc                                                0     0    INFO Unable find catalog apcfile:poolcond/PoolCat_oflcond.xml in $ATLAS_POOLCOND_PATH and $DATAPATH
+2025-01-17 18:17:24,617 PoolSvc                                                0     0    INFO POOL WriteCatalog is xmlcatalog_file:/home/pibutti/FastTracking/TimingTests/threadScaling/ath_thread_scaling/thread_timing_fastmon/athena_threads_8/athenaMP-workers-RAWtoALL-r2a/evt_counter/PoolFileCatalog.xml
+2025-01-17 18:17:24,814 DbSession                                              0     0    INFO     Open     DbSession    
+2025-01-17 18:17:24,814 Domain[ROOT_All]                                       0     0    INFO >   Access   DbDomain     READ      [ROOT_All] 
+2025-01-17 18:17:24,814 MetaDataSvc                                            0     0    INFO I/O reinitialization...
+2025-01-17 18:17:24,814 MetaDataSvc                                            0     0    INFO Attached MetaDataTool: ToolSvc.IOVDbMetaDataTool
+2025-01-17 18:17:24,814 MetaDataSvc                                            0     0    INFO Attached MetaDataTool: ToolSvc.StreamAOD_CopyEventStreamInfo
+2025-01-17 18:17:24,814 MetaDataSvc                                            0     0    INFO Attached MetaDataTool: ToolSvc.TruthMetaDataTool
+2025-01-17 18:17:24,814 MetaDataSvc                                            0     0    INFO Attached MetaDataTool: ToolSvc.xAODMaker::FileMetaDataTool
+2025-01-17 18:17:24,814 MetaDataSvc                                            0     0    INFO Attached MetaDataTool: ToolSvc.xAODMaker::EventFormatMetaDataTool
+2025-01-17 18:17:24,814 EventSelector                                          0     0    INFO I/O reinitialization...
+2025-01-17 18:17:24,814 EventSelector                                          0     0    INFO EventSelection with query 
+2025-01-17 18:17:24,817 StreamAOD                                              0     0    INFO I/O reinitialization...
+2025-01-17 18:17:24,818 AthMpEvtLoopMgr.SharedEvtQueueProvider                 0     0    INFO Exec function in the AthenaMP Event Counter PID=785757
+2025-01-17 18:17:24,819 Domain[ROOT_All]                                       0     0    INFO ->  Access   DbDatabase   READ      [ROOT_All] 00E0B104-85B8-704A-BB96-12924F6ADC2D
+2025-01-17 18:17:24,819 Domain[ROOT_All]                                       0     0    INFO                           /cvmfs/atlas-nightlies.cern.ch/repo/data/data-art/PhaseIIUpgrade/RDO/ATLAS-P2-RUN4-03-00-00/mc21_14TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.recon.RDO.e8481_s4149_r14700/RDO.33629020._000047.pool.root.1
+2025-01-17 18:17:24,819 RootDatabase.open                                      0     0    INFO /cvmfs/atlas-nightlies.cern.ch/repo/data/data-art/PhaseIIUpgrade/RDO/ATLAS-P2-RUN4-03-00-00/mc21_14TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.recon.RDO.e8481_s4149_r14700/RDO.33629020._000047.pool.root.1 File version:62608
+2025-01-17 18:17:24,830 AthMpEvtLoopMgr.SharedEvtQueueProvider                 0     0    INFO Sent to the queue 0xa00000000 which corresponds to Chunks start 0 and chunk size 10
+2025-01-17 18:17:24,831 AthMpEvtLoopMgr.SharedEvtQueueProvider                 0     0    INFO Sent to the queue 0xa0000000a which corresponds to Chunks start 10 and chunk size 10
+2025-01-17 18:17:24,831 AthMpEvtLoopMgr.SharedEvtQueueProvider                 0     0    INFO Sent to the queue 0xa00000014 which corresponds to Chunks start 20 and chunk size 10
+2025-01-17 18:17:24,831 AthMpEvtLoopMgr.SharedEvtQueueProvider                 0     0    INFO Sent to the queue 0xa0000001e which corresponds to Chunks start 30 and chunk size 10
+2025-01-17 18:17:24,832 AthMpEvtLoopMgr.SharedEvtQueueProvider                 0     0    INFO Sent to the queue 0xa00000028 which corresponds to Chunks start 40 and chunk size 10
+2025-01-17 18:17:24,832 AthMpEvtLoopMgr.SharedEvtQueueProvider                 0     0    INFO Sent to the queue 0xa00000032 which corresponds to Chunks start 50 and chunk size 10
+2025-01-17 18:17:24,832 AthMpEvtLoopMgr.SharedEvtQueueProvider                 0     0    INFO Sent to the queue 0xa0000003c which corresponds to Chunks start 60 and chunk size 10
+2025-01-17 18:17:24,833 AthMpEvtLoopMgr.SharedEvtQueueProvider                 0     0    INFO Sent to the queue 0xa00000046 which corresponds to Chunks start 70 and chunk size 10
+2025-01-17 18:17:24,833 AthMpEvtLoopMgr.SharedEvtQueueProvider                 0     0    INFO Sent to the queue 0xa00000050 which corresponds to Chunks start 80 and chunk size 10
+2025-01-17 18:17:24,833 AthMpEvtLoopMgr.SharedEvtQueueProvider                 0     0    INFO Sent to the queue 0xa0000005a which corresponds to Chunks start 90 and chunk size 10
+2025-01-17 18:17:24,834 AthMpEvtLoopMgr.SharedEvtQueueProvider                 0     0    INFO Sent to the queue 0xa00000064 which corresponds to Chunks start 100 and chunk size 10
+2025-01-17 18:17:24,834 AthMpEvtLoopMgr.SharedEvtQueueProvider                 0     0    INFO Sent to the queue 0xa0000006e which corresponds to Chunks start 110 and chunk size 10
+2025-01-17 18:17:24,834 AthMpEvtLoopMgr.SharedEvtQueueProvider                 0     0    INFO Sent to the queue 0xa00000078 which corresponds to Chunks start 120 and chunk size 10
+2025-01-17 18:17:24,835 AthMpEvtLoopMgr.SharedEvtQueueProvider                 0     0    INFO Sent to the queue 0xa00000082 which corresponds to Chunks start 130 and chunk size 10
+2025-01-17 18:17:24,835 AthMpEvtLoopMgr.SharedEvtQueueProvider                 0     0    INFO Sent to the queue 0xa0000008c which corresponds to Chunks start 140 and chunk size 10
+2025-01-17 18:17:24,835 AthMpEvtLoopMgr.SharedEvtQueueProvider                 0     0    INFO Sent to the queue 0xa00000096 which corresponds to Chunks start 150 and chunk size 10
+2025-01-17 18:17:24,836 AthMpEvtLoopMgr.SharedEvtQueueProvider                 0     0    INFO Sent to the queue 0xa000000a0 which corresponds to Chunks start 160 and chunk size 10
+2025-01-17 18:17:24,836 AthMpEvtLoopMgr.SharedEvtQueueProvider                 0     0    INFO Sent to the queue 0xa000000aa which corresponds to Chunks start 170 and chunk size 10
+2025-01-17 18:17:24,836 AthMpEvtLoopMgr.SharedEvtQueueProvider                 0     0    INFO Sent to the queue 0xa000000b4 which corresponds to Chunks start 180 and chunk size 10
+2025-01-17 18:17:24,837 AthMpEvtLoopMgr.SharedEvtQueueProvider                 0     0    INFO Sent to the queue 0xa000000be which corresponds to Chunks start 190 and chunk size 10
+2025-01-17 18:17:24,837 AthMpEvtLoopMgr.SharedEvtQueueProvider                 0     0    INFO Done counting events and populating shared queue. Total number of events to be processed: 200, Event Chunk size in the queue is 10
+2025-01-17 18:17:24,837 DbSession                                              0     0    INFO     Open     DbSession    
+2025-01-17 18:17:24,837 Domain[ROOT_All]                                       0     0    INFO >   Access   DbDomain     UPDATE    [ROOT_All] 
+2025-01-17 18:17:24,837 Domain[ROOT_All]                                       0     0    INFO ->  Access   DbDatabase   CREATE    [ROOT_All] 32E9A71C-F7FF-2E4B-93F3-C0847C8A1CB2
+2025-01-17 18:17:24,837 Domain[ROOT_All]                                       0     0    INFO                           myAOD.pool.root_000
+2025-01-17 18:17:24,852 RootDatabase.open                                      0     0    INFO myAOD.pool.root_000 File version:63208
+2025-01-17 18:17:24,852 StorageSvc                                             0     0    INFO Building shape according to reflection information using shape ID for:
+2025-01-17 18:17:24,852 StorageSvc                                             0     0    INFO xAOD::TruthMetaDataAuxContainer_v1 [E2EF5F89-DFFA-4225-823E-29E40130A7B2]
+2025-01-17 18:17:24,853 StorageSvc                                             0     0    INFO Building shape according to reflection information using shape ID for:
+2025-01-17 18:17:24,853 StorageSvc                                             0     0    INFO DataVector<xAOD::TruthMetaData_v1> [754BDA89-C0D9-43BF-B468-32E10C1690FE]
+2025-01-17 18:17:24,854 StreamAOD                                              0     0    INFO Metadata records written: 2
+2025-01-17 18:17:24,854 /cvmfs/atlas-nightlies.cern.ch/repo/data/data-...1     0     0    INFO Database being retired...
+2025-01-17 18:17:24,854 Domain[ROOT_All]                                       0     0    INFO ->  Deaccess DbDatabase   READ      [ROOT_All] 00E0B104-85B8-704A-BB96-12924F6ADC2D
+2025-01-17 18:17:24,854 Domain[ROOT_All]                                       0     0    INFO >   Deaccess DbDomain     READ      [ROOT_All] 
+2025-01-17 18:17:24,862 myAOD.pool.root_000                                    0     0    INFO Database being retired...
+2025-01-17 18:17:24,875 Domain[ROOT_All]                                       0     0    INFO ->  Deaccess DbDatabase   CREATE    [ROOT_All] 32E9A71C-F7FF-2E4B-93F3-C0847C8A1CB2
+2025-01-17 18:17:24,875 Domain[ROOT_All]                                       0     0    INFO >   Deaccess DbDomain     UPDATE    [ROOT_All] 
+2025-01-17 18:17:24,876 ApplicationMgr                                         0     0    INFO Application Manager Stopped successfully
+2025-01-17 18:17:24,916 SGInputLoader                                          0     0    INFO Finalizing SGInputLoader...
+2025-01-17 18:17:24,916 ActsFastPixelClusterizationAlg                         0     0    INFO Clusterization statistics
+|----------|------------|
+| RDOs     |          0 |
+| Clusters |          0 |
+|----------|------------|
+
+2025-01-17 18:17:24,916 ActsFastStripClusterizationAlg                         0     0    INFO Clusterization statistics
+|----------|------------|
+| RDOs     |          0 |
+| Clusters |          0 |
+|----------|------------|
+
+2025-01-17 18:17:24,916 ActsFastPixelSpacePointFormationAlg                    0     0    INFO Space Point Formation statistics
+|--------------|------------|
+| Clusters     |          0 |
+| Space Points |          0 |
+|--------------|------------|
+
+2025-01-17 18:17:24,916 ActsPixelClusterToTruthAssociationAlg                  0     0    INFO RDO truth stat Measurements without SimData               0
+2025-01-17 18:17:24,916 ActsPixelClusterToTruthAssociationAlg                  0     0    INFO RDO truth stat Measurements with SimData                  0
+2025-01-17 18:17:24,916 ActsPixelClusterToTruthAssociationAlg                  0     0    INFO RDO truth stat Deposits without xAOD TruthParticle        0
+2025-01-17 18:17:24,916 ActsPixelClusterToTruthAssociationAlg                  0     0    INFO RDO truth stat SimData without deposits above threshold   0
+2025-01-17 18:17:24,916 ActsPixelClusterToTruthAssociationAlg                  0     0    INFO RDO truth stat Associated truth exceeds small vector size 0
+2025-01-17 18:17:24,916 ActsPixelClusterToTruthAssociationAlg                  0     0    INFO Deposits HS: 0 PU: 0 ; without truth particle HS:  0 PU: 0
+2025-01-17 18:17:24,916 ActsStripClusterToTruthAssociationAlg                  0     0    INFO RDO truth stat Measurements without SimData               0
+2025-01-17 18:17:24,916 ActsStripClusterToTruthAssociationAlg                  0     0    INFO RDO truth stat Measurements with SimData                  0
+2025-01-17 18:17:24,916 ActsStripClusterToTruthAssociationAlg                  0     0    INFO RDO truth stat Deposits without xAOD TruthParticle        0
+2025-01-17 18:17:24,916 ActsStripClusterToTruthAssociationAlg                  0     0    INFO RDO truth stat SimData without deposits above threshold   0
+2025-01-17 18:17:24,916 ActsStripClusterToTruthAssociationAlg                  0     0    INFO RDO truth stat Associated truth exceeds small vector size 0
+2025-01-17 18:17:24,916 ActsStripClusterToTruthAssociationAlg                  0     0    INFO Deposits HS: 0 PU: 0 ; without truth particle HS:  0 PU: 0
+2025-01-17 18:17:24,916 ActsTruthParticleHitCountAlg                           0     0    INFO Number of truth particles with hits : 0
+2025-01-17 18:17:24,916 ActsTruthParticleHitCountAlg                           0     0    INFO 
+2025-01-17 18:17:24,916 ActsFastPixelSeedingAlg                                0     0    INFO Seed statistics
+|---------------------|------------|
+| Spacepoints         |          0 |
+| Seeds               |          0 |
+| No track parameters |          0 |
+|---------------------|------------|
+
+2025-01-17 18:17:24,917 ActsFastTrackFindingAlg                                0     0    INFO statistics:
+|-----------------------------------|------------|------------|
+|                           All eta | PPP        | ALL        |
+|-----------------------------------|------------|------------|
+| Input seeds                       |          0 |          0 |
+| No track parameters               |          0 |          0 |
+| Used   seeds                      |          0 |          0 |
+| Cannot find track                 |          0 |          0 |
+| Duplicate seeds                   |          0 |          0 |
+| CKF tracks                        |          0 |          0 |
+| Rejected refined parameters       |          0 |          0 |
+| selected tracks                   |          0 |          0 |
+| Stopped tracks reaching max holes |          0 |          0 |
+| Seeds with more than one branch   |          0 |          0 |
+| Tracks failing second CKF         |          0 |          0 |
+| Stopped tracks below pT cut       |          0 |          0 |
+| Stopped tracks above max eta      |          0 |          0 |
+|-----------------------------------|------------|------------|
+2025-01-17 18:17:24,917 ActsFastTrackFindingAlg                                0     0    INFO Ratios:
+|------------------------------------------|------------|------------|
+|                                          | PPP        | ALL        |
+|------------------------------------------|------------|------------|
+| failed / seeds                           |          0 |          0 |
+| duplication / seeds                      |          0 |          0 |
+| Rejected refined params / seeds          |          0 |          0 |
+| selected / CKF tracks                    |          0 |          0 |
+| selected tracks / used seeds             |          0 |          0 |
+| branched tracks / used seeds             |          0 |          0 |
+| no 2nd CKF / CKF tracks                  |          0 |          0 |
+|------------------------------------------|------------|------------|
+| selected / CKF tracks           0.0- 0.5 |          0 |          0 |
+|                                 0.5- 1.0 |          0 |          0 |
+|                                 1.0- 1.5 |          0 |          0 |
+|                                 1.5- 2.0 |          0 |          0 |
+|                                 2.0- 2.5 |          0 |          0 |
+|                                 2.5- 3.0 |          0 |          0 |
+|                                 3.0- 3.5 |          0 |          0 |
+|                                 3.5-+inf |          0 |          0 |
+|------------------------------------------|------------|------------|
+2025-01-17 18:17:24,917 ActsFastPrdAssociationAlg                              0     0    INFO Prd Map statistics
+|-----------------------|------------|
+| N. Tracks             |          0 |
+| N. Pixel Measurements |          0 |
+| N. Strip Measurements |          0 |
+| N. Hgtd Measurements  |          0 |
+|-----------------------|------------|
+
+2025-01-17 18:17:24,917 ActsFastResolvedTracksTrackToTruthAssociationAlg       0     0    INFO -- Statistics:
+                   0  tracks without associated truth particles.
+                   0  tracks with 1 associated truth particle(s).
+                   0  tracks with 2 associated truth particle(s).
+                   0  tracks with more than 3 associated truth particles.
+2025-01-17 18:17:24,917 ActsFastResolvedTracksTrackFindingValidationAlg        0     0    INFO Truth selection cuts: 
+                       0 total
+  1                    0 eta
+  2                    0 min_pt
+  3                    0 decay_before_300.000000
+  4                    0 OnlyPrimary
+  5                    0 charged
+  6                    0 stable
+
+2025-01-17 18:17:24,917 ActsFastResolvedTracksTrackFindingValidationAlg        0     0    INFO 
+Hit efficiency : contributing hits over all hits of best matching truth particle
+|-----------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|
+| eta  \ pt |    0-1000    | 1000-2500    | 2500-5000    | 5000-10000   | 10000-100000 | 100000-+inf  |  All pt      |
+|-----------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|
+|  0.0- 0.5 |            0 |            0 |            0 |            0 |            0 |            0 |            0 |
+|  0.5- 1.0 |            0 |            0 |            0 |            0 |            0 |            0 |            0 |
+|  1.0- 1.5 |            0 |            0 |            0 |            0 |            0 |            0 |            0 |
+|  1.5- 2.0 |            0 |            0 |            0 |            0 |            0 |            0 |            0 |
+|  2.0- 2.5 |            0 |            0 |            0 |            0 |            0 |            0 |            0 |
+|  2.5- 3.0 |            0 |            0 |            0 |            0 |            0 |            0 |            0 |
+|  3.0- 3.5 |            0 |            0 |            0 |            0 |            0 |            0 |            0 |
+|  3.5-+inf |            0 |            0 |            0 |            0 |            0 |            0 |            0 |
+|  All eta  |            0 |            0 |            0 |            0 |            0 |            0 |            0 |
+|-----------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|
+Hit purity : contributing hits of best matching truth particle over all hits on track
+|-----------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|
+| eta  \ pt |    0-1000    | 1000-2500    | 2500-5000    | 5000-10000   | 10000-100000 | 100000-+inf  |  All pt      |
+|-----------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|
+|  0.0- 0.5 |            0 |            0 |            0 |            0 |            0 |            0 |            0 |
+|  0.5- 1.0 |            0 |            0 |            0 |            0 |            0 |            0 |            0 |
+|  1.0- 1.5 |            0 |            0 |            0 |            0 |            0 |            0 |            0 |
+|  1.5- 2.0 |            0 |            0 |            0 |            0 |            0 |            0 |            0 |
+|  2.0- 2.5 |            0 |            0 |            0 |            0 |            0 |            0 |            0 |
+|  2.5- 3.0 |            0 |            0 |            0 |            0 |            0 |            0 |            0 |
+|  3.0- 3.5 |            0 |            0 |            0 |            0 |            0 |            0 |            0 |
+|  3.5-+inf |            0 |            0 |            0 |            0 |            0 |            0 |            0 |
+|  All eta  |            0 |            0 |            0 |            0 |            0 |            0 |            0 |
+|-----------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|
+Match probability : weighted common hit sum of best matching truth particle over total track weighted hit sum
+|-----------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|
+| eta  \ pt |    0-1000    | 1000-2500    | 2500-5000    | 5000-10000   | 10000-100000 | 100000-+inf  |  All pt      |
+|-----------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|
+|  0.0- 0.5 |            0 |            0 |            0 |            0 |            0 |            0 |            0 |
+|  0.5- 1.0 |            0 |            0 |            0 |            0 |            0 |            0 |            0 |
+|  1.0- 1.5 |            0 |            0 |            0 |            0 |            0 |            0 |            0 |
+|  1.5- 2.0 |            0 |            0 |            0 |            0 |            0 |            0 |            0 |
+|  2.0- 2.5 |            0 |            0 |            0 |            0 |            0 |            0 |            0 |
+|  2.5- 3.0 |            0 |            0 |            0 |            0 |            0 |            0 |            0 |
+|  3.0- 3.5 |            0 |            0 |            0 |            0 |            0 |            0 |            0 |
+|  3.5-+inf |            0 |            0 |            0 |            0 |            0 |            0 |            0 |
+|  All eta  |            0 |            0 |            0 |            0 |            0 |            0 |            0 |
+|-----------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|
+Reco efficiency : tracks with assoc. truth particle over all selected truth particles with assoc. measurements.
+|-----------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|
+| eta  \ pt |    0-1000    | 1000-2500    | 2500-5000    | 5000-10000   | 10000-100000 | 100000-+inf  |  All pt      |
+|-----------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|
+|  0.0- 0.5 |            0 |            0 |            0 |            0 |            0 |            0 |            0 |
+|  0.5- 1.0 |            0 |            0 |            0 |            0 |            0 |            0 |            0 |
+|  1.0- 1.5 |            0 |            0 |            0 |            0 |            0 |            0 |            0 |
+|  1.5- 2.0 |            0 |            0 |            0 |            0 |            0 |            0 |            0 |
+|  2.0- 2.5 |            0 |            0 |            0 |            0 |            0 |            0 |            0 |
+|  2.5- 3.0 |            0 |            0 |            0 |            0 |            0 |            0 |            0 |
+|  3.0- 3.5 |            0 |            0 |            0 |            0 |            0 |            0 |            0 |
+|  3.5-+inf |            0 |            0 |            0 |            0 |            0 |            0 |            0 |
+|  All eta  |            0 |            0 |            0 |            0 |            0 |            0 |            0 |
+|-----------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|
+|-------------------------------------------------------|--------------|
+| Number of tracks                                      |            0 |
+| Number of truth particles with hit counts             |            0 |
+| Associated truth particles without hit counts         |            0 |
+| Tracks without associated truth particle              |            0 |
+| Tracks without selected, associated truth particle    |            0 |
+| Best truth particle without noise correction mismatch |            0 |
+|-------------------------------------------------------|--------------|
+
+
+2025-01-17 18:17:24,917 ThinGeantTruthAlg                                      0     0    INFO Processed 0 events containing 0 truth particles and 0 truth vertices 
+2025-01-17 18:17:24,917 ThinGeantTruthAlg                                      0     0    INFO Removed 0 Geant truth particles and 0 corresponding truth vertices 
+2025-01-17 18:17:24,919 CondInputLoader                                        0     0    INFO Finalizing CondInputLoader...
+2025-01-17 18:17:24,921 DecisionSvc                                            0     0    INFO Finalized successfully.
+2025-01-17 18:17:24,921 AthDictLoaderSvc                                       0     0    INFO in finalize...
+2025-01-17 18:17:25,011 EventDataSvc                                           0     0    INFO Finalizing EventDataSvc
+2025-01-17 18:17:25,011 AthenaPoolCnvSvc                                       0     0    INFO PerfStats ----------------------------------------
+2025-01-17 18:17:25,011 AthenaPoolCnvSvc                                       0     0    INFO PerfStats Timing Measurements for AthenaPoolCnvSvc
+2025-01-17 18:17:25,011 AthenaPoolCnvSvc                                       0     0    INFO PerfStats ----------------------------------------
+2025-01-17 18:17:25,011 AthenaPoolCnvSvc                                       0     0    INFO PerfStats | cObjR_ALL       |               9 ms |
+2025-01-17 18:17:25,011 AthenaPoolCnvSvc                                       0     0    INFO PerfStats | commitOutput    |               1 ms |
+2025-01-17 18:17:25,011 AthenaPoolCnvSvc                                       0     0    INFO PerfStats | fRep_ALL        |               5 ms |
+2025-01-17 18:17:25,011 AthenaPoolCnvSvc                                       0     0    INFO PerfStats | cObj_ALL        |              19 ms |
+2025-01-17 18:17:25,011 AthenaPoolCnvSvc                                       0     0    INFO PerfStats | cRepR_ALL       |               4 ms |
+2025-01-17 18:17:25,011 AthenaPoolCnvSvc                                       0     0    INFO PerfStats | cRep_ALL        |              22 ms |
+2025-01-17 18:17:25,011 AthenaPoolCnvSvc                                       0     0    INFO PerfStats ----------------------------------------
+2025-01-17 18:17:25,017 IOVDbFolder                                            0     0    INFO Folder /EXT/DCS/MAGNETS/SENSORDATA (AttrListColl) db-read 0/0 objs/chan/bytes 0/4/0 ((     0.00 ))s
+2025-01-17 18:17:25,017 IOVDbFolder                                            0     0    INFO Folder /GLOBAL/BField/Maps (AttrListColl) db-read 0/0 objs/chan/bytes 0/3/0 ((     0.00 ))s
+2025-01-17 18:17:25,017 IOVDbFolder                                            0     0    INFO Folder /GLOBAL/TrackingGeo/LayerMaterialITK (PoolRef) db-read 0/0 objs/chan/bytes 0/1/0 ((     0.00 ))s
+2025-01-17 18:17:25,017 IOVDbFolder                                            0     0    INFO Folder /ITk/PixelChargeCalib (AttrListColl) db-read 0/0 objs/chan/bytes 0/1/0 ((     0.00 ))s
+2025-01-17 18:17:25,017 IOVDbFolder                                            0     0    INFO Folder /Indet/Align (PoolRefColl) db-read 0/0 objs/chan/bytes 0/43/0 ((     0.00 ))s
+2025-01-17 18:17:25,017 IOVDbFolder                                            0     0    INFO Folder /Indet/Beampos (AttrList) db-read 0/0 objs/chan/bytes 0/1/0 ((     0.00 ))s
+2025-01-17 18:17:25,017 IOVDbFolder                                            0     0    INFO Folder /PIXEL/ITkClusterError (AttrListColl) db-read 0/0 objs/chan/bytes 0/1/0 ((     0.00 ))s
+2025-01-17 18:17:25,017 IOVDbFolder                                            0     0    INFO Folder /TagInfo (AttrListColl) db-read 0/1 objs/chan/bytes 1/0/0 ((     0.00 ))s
+2025-01-17 18:17:25,017 IOVDbSvc                                               0     0    INFO  bytes in ((      0.00 ))s
+2025-01-17 18:17:25,017 IOVDbSvc                                               0     0    INFO Connection sqlite://;schema=mycool.db;dbname=OFLP200 : nConnect: 0 nFolders: 0 ReadTime: ((     0.00 ))s
+2025-01-17 18:17:25,017 IOVDbSvc                                               0     0    INFO Connection COOLOFL_INDET/OFLP200 : nConnect: 1 nFolders: 3 ReadTime: ((     0.00 ))s
+2025-01-17 18:17:25,017 IOVDbSvc                                               0     0    INFO Connection COOLOFL_PIXEL/OFLP200 : nConnect: 1 nFolders: 1 ReadTime: ((     0.00 ))s
+2025-01-17 18:17:25,017 IOVDbSvc                                               0     0    INFO Connection COOLOFL_GLOBAL/OFLP200 : nConnect: 1 nFolders: 2 ReadTime: ((     0.00 ))s
+2025-01-17 18:17:25,017 IOVDbSvc                                               0     0    INFO Connection COOLOFL_DCS/OFLP200 : nConnect: 1 nFolders: 1 ReadTime: ((     0.00 ))s
+2025-01-17 18:17:25,017 ToolSvc                                                0     0    INFO Removing all tools created by ToolSvc
+2025-01-17 18:17:25,017 AtlasTrackingGe...HGTD_TrackingGeometryBuilderCond     0     0    INFO finalize() successful
+2025-01-17 18:17:25,017 AtlasTrackingGeom...ITkTrackingGeometryBuilderCond     0     0    INFO finalize() successful
+2025-01-17 18:17:25,033 PerfMonMTSvc                                           0     0    INFO Finalizing PerfMonMTSvc
+2025-01-17 18:17:25,033 IdDictDetDescrCnv                                      0     0    INFO in finalize
+2025-01-17 18:17:25,036 *****Chrono*****                                       0     0    INFO ****************************************************************************************************
+2025-01-17 18:17:25,036 *****Chrono*****                                       0     0    INFO  The Final CPU consumption ( Chrono ) Table (ordered)
+2025-01-17 18:17:25,036 *****Chrono*****                                       0     0    INFO ****************************************************************************************************
+2025-01-17 18:17:25,036 ChronoStatSvc                                          0     0    INFO Time User   : Tot=-9.31e+06 [us]  #=  1
+2025-01-17 18:17:25,036 *****Chrono*****                                       0     0    INFO ****************************************************************************************************
+2025-01-17 18:17:25,036 ChronoStatSvc.finalize()                               0     0    INFO  Service finalized successfully 
+2025-01-17 18:17:25,036 FPEAuditor                                             0     0    INFO FPE summary for this job
+2025-01-17 18:17:25,036 FPEAuditor                                             0     0    INFO  FPE OVERFLOWs  : 0
+2025-01-17 18:17:25,036 FPEAuditor                                             0     0    INFO  FPE INVALIDs   : 0
+2025-01-17 18:17:25,036 FPEAuditor                                             0     0    INFO  FPE DIVBYZEROs : 0
+2025-01-17 18:17:25,077 PerfMonMTSvc                                           0     0    INFO =======================================================================================
+2025-01-17 18:17:25,077 PerfMonMTSvc                                           0     0    INFO                                  PerfMonMTSvc Report                                   
+2025-01-17 18:17:25,077 PerfMonMTSvc                                           0     0    INFO =======================================================================================
+2025-01-17 18:17:25,077 PerfMonMTSvc                                           0     0    INFO *** Full set of information can also be found in: perfmonmt_RAWtoALL.json
+2025-01-17 18:17:25,077 PerfMonMTSvc                                           0     0    INFO *** In order to make plots using the results run the following commands:
+2025-01-17 18:17:25,077 PerfMonMTSvc                                           0     0    INFO *** $ perfmonmt-plotter.py -i perfmonmt_RAWtoALL.json
+2025-01-17 18:17:25,077 PerfMonMTSvc                                           0     0    INFO *** In order to print tables using the results run the following commands:
+2025-01-17 18:17:25,077 PerfMonMTSvc                                           0     0    INFO *** $ perfmonmt-printer.py -i perfmonmt_RAWtoALL.json
+2025-01-17 18:17:25,077 PerfMonMTSvc                                           0     0    INFO =======================================================================================
+2025-01-17 18:17:25,077 PerfMonMTSvc                                           0     0    INFO                                 Event Level Monitoring                                 
+2025-01-17 18:17:25,077 PerfMonMTSvc                                           0     0    INFO         (Only the first 10 and the last measurements are explicitly printed)
+2025-01-17 18:17:25,077 PerfMonMTSvc                                           0     0    INFO =======================================================================================
+2025-01-17 18:17:25,077 PerfMonMTSvc                                           0     0    INFO Event            CPU [s]      Wall [s]     Vmem [kB]    Rss [kB]     Pss [kB]     Swap [kB]   
+2025-01-17 18:17:25,077 PerfMonMTSvc                                           0     0    INFO ---------------------------------------------------------------------------------------
+2025-01-17 18:17:25,077 PerfMonMTSvc                                           0     0    INFO =======================================================================================
+2025-01-17 18:17:25,077 PerfMonMTSvc                                           0     0    INFO                                 Snapshots Summary                                      
+2025-01-17 18:17:25,077 PerfMonMTSvc                                           0     0    INFO =======================================================================================
+2025-01-17 18:17:25,077 PerfMonMTSvc                                           0     0    INFO Step          dCPU [s]     dWall [s]    <CPU>   dVmem [kB]  dRss [kB]   dPss [kB]   dSwap [kB] 
+2025-01-17 18:17:25,077 PerfMonMTSvc                                           0     0    INFO ---------------------------------------------------------------------------------------
+2025-01-17 18:17:25,077 PerfMonMTSvc                                           0     0    INFO Configure     4.19         6.41         0.65    1196516     802416      573134      0          
+2025-01-17 18:17:25,077 PerfMonMTSvc                                           0     0    INFO Initialize    6.47         7.00         0.92    930528      792536      792466      0          
+2025-01-17 18:17:25,077 PerfMonMTSvc                                           0     0    INFO FirstEvent    0.00         0.00         -nan    0           0           0           0          
+2025-01-17 18:17:25,077 PerfMonMTSvc                                           0     0    INFO Execute       0.00         0.00         -nan    0           0           0           0          
+2025-01-17 18:17:25,077 PerfMonMTSvc                                           0     0    INFO Finalize      0.16         0.16         1.00    -64         38956       153268      0          
+2025-01-17 18:17:25,077 PerfMonMTSvc                                           0     0    INFO ***************************************************************************************
+2025-01-17 18:17:25,077 PerfMonMTSvc                                           0     0    INFO Number of events processed:         0
+2025-01-17 18:17:25,077 PerfMonMTSvc                                           0     0    INFO CPU usage per event [ms]:           0
+2025-01-17 18:17:25,077 PerfMonMTSvc                                           0     0    INFO Events per second:                  0.000
+2025-01-17 18:17:25,077 PerfMonMTSvc                                           0     0    INFO CPU utilization efficiency [%]:     79
+2025-01-17 18:17:25,077 PerfMonMTSvc                                           0     0    INFO ***************************************************************************************
+2025-01-17 18:17:25,077 PerfMonMTSvc                                           0     0    INFO Max Vmem:                           0.00 KB
+2025-01-17 18:17:25,077 PerfMonMTSvc                                           0     0    INFO Max Rss:                            0.00 KB
+2025-01-17 18:17:25,077 PerfMonMTSvc                                           0     0    INFO Max Pss:                            0.00 KB
+2025-01-17 18:17:25,077 PerfMonMTSvc                                           0     0    INFO Max Swap:                           0.00 KB
+2025-01-17 18:17:25,077 PerfMonMTSvc                                           0     0    INFO ***************************************************************************************
+2025-01-17 18:17:25,077 PerfMonMTSvc                                           0     0    INFO Leak estimate per event Vmem:       0.00 KB
+2025-01-17 18:17:25,077 PerfMonMTSvc                                           0     0    INFO Leak estimate per event Pss:        0.00 KB
+2025-01-17 18:17:25,077 PerfMonMTSvc                                           0     0    INFO   >> Estimated using the last 0 measurements from the Event Level Monitoring
+2025-01-17 18:17:25,077 PerfMonMTSvc                                           0     0    INFO   >> Events prior to the first 25 are omitted...
+2025-01-17 18:17:25,077 PerfMonMTSvc                                           0     0    INFO =======================================================================================
+2025-01-17 18:17:25,077 PerfMonMTSvc                                           0     0    INFO                                   System Information                                   
+2025-01-17 18:17:25,077 PerfMonMTSvc                                           0     0    INFO =======================================================================================
+2025-01-17 18:17:25,091 PerfMonMTSvc                                           0     0    INFO CPU Model:                          AMD EPYC 7413 24-Core Processor 512 KB
+2025-01-17 18:17:25,092 PerfMonMTSvc                                           0     0    INFO Number of Available Cores:          48
+2025-01-17 18:17:25,092 PerfMonMTSvc                                           0     0    INFO Total Memory:                       125.14 GB
+2025-01-17 18:17:25,092 PerfMonMTSvc                                           0     0    INFO =======================================================================================
+2025-01-17 18:17:25,092 PerfMonMTSvc                                           0     0    INFO                                Environment Information                                 
+2025-01-17 18:17:25,092 PerfMonMTSvc                                           0     0    INFO =======================================================================================
+2025-01-17 18:17:25,092 PerfMonMTSvc                                           0     0    INFO Malloc Library:                     libtcmalloc_minimal.so
+2025-01-17 18:17:25,092 PerfMonMTSvc                                           0     0    INFO Math Library:                       libimf.so
+2025-01-17 18:17:25,092 PerfMonMTSvc                                           0     0    INFO =======================================================================================
+2025-01-17 18:17:25,219 ApplicationMgr                                         0     0    INFO Application Manager Finalized successfully

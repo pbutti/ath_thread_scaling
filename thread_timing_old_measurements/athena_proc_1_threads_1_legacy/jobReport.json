@@ -1,0 +1,255 @@
+{
+  "cmdLine": "'/cvmfs/atlas-nightlies.cern.ch/repo/sw/main_Athena_x86_64-el9-gcc13-opt/2025-02-12T2101/Athena/25.0.26/InstallArea/x86_64-el9-gcc13-opt/bin/Reco_tf.py' '--maxEvents' '1000' '--autoConfiguration' 'everything' '--conditionsTag' 'all:OFLCOND-MC21-SDR-RUN4-02' '--geometryVersion' 'all:ATLAS-P2-RUN4-03-00-00' '--postInclude' 'all:PyJobTransforms.UseFrontier' '--preInclude' 'InDetConfig.ConfigurationHelpers.OnlyTrackingPreInclude' '--steering' 'doRAWtoALL' '--preExec' 'all:ConfigFlags.Tracking.doITkFastTracking=True' '--postExec' 'all:cfg.getService(\"AlgResourcePool\").CountAlgorithmInstanceMisses = True;' '--inputRDOFile' '/mnt/hdd1/pibutti/data/ttbar_PU200/mc21_14TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.recon.RDO.e8481_s4149_r14700/*' '--outputAODFile' 'myAOD.pool.root' '--jobNumber' '1' '--ignorePatterns' 'Acts.+FindingAlg.+ERROR.+Propagation.+reached.+the.+step.+count.+limit,Acts.+FindingAlg.+ERROR.+Propagation.+failed:.+PropagatorError:3.+Propagation.+reached.+the.+configured.+maximum.+number.+of.+steps.+with.+the.+initial.+parameters,Acts.+FindingAlg.Acts.+ERROR.+CombinatorialKalmanFilter.+failed:.+CombinatorialKalmanFilterError:5.+Propagation.+reaches.+max.+steps.+before.+track.+finding.+is.+finished.+with.+the.+initial.+parameters,Acts.+FindingAlg.Acts.+ERROR.+SurfaceError:1,Acts.+FindingAlg.Acts.+ERROR.+failed.+to.+extrapolate.+track' '--multithreaded'",
+  "created": "2025-02-13T13:41:30",
+  "executor": [
+    {
+      "asetup": null,
+      "errMsg": "",
+      "exeConfig": {
+        "inputs": [
+          "RDO"
+        ],
+        "outputs": [
+          "AOD"
+        ],
+        "script": "athena.py",
+        "substep": "r2a"
+      },
+      "logfileReport": {
+        "countSummary": {
+          "CATASTROPHE": 0,
+          "CRITICAL": 0,
+          "DEBUG": 0,
+          "ERROR": 0,
+          "FATAL": 0,
+          "IGNORED": 0,
+          "INFO": 1475,
+          "UNKNOWN": 1339,
+          "VERBOSE": 0,
+          "WARNING": 6
+        },
+        "details": {}
+      },
+      "metaData": {},
+      "name": "RAWtoALL",
+      "rc": 0,
+      "statusOK": true,
+      "validation": true
+    }
+  ],
+  "exitAcronym": "OK",
+  "exitCode": 0,
+  "exitMsg": "OK",
+  "exitMsgExtra": "",
+  "files": {
+    "input": [
+      {
+        "dataset": null,
+        "nentries": 2400,
+        "subFiles": [
+          {
+            "file_guid": "A6893187-9ABB-D94D-9D74-39BEB62A992F",
+            "name": "RDO.33629020._000002.pool.root.1"
+          },
+          {
+            "file_guid": "86A1BD81-F1B5-3A44-A55B-DD606A6B2A7D",
+            "name": "RDO.33629020._000007.pool.root.1"
+          },
+          {
+            "file_guid": "C8BB8269-4C87-8644-BFA7-0A7A49698A24",
+            "name": "RDO.33629020._000008.pool.root.1"
+          },
+          {
+            "file_guid": "C47DEA15-6FCF-4941-8494-E95B91B94411",
+            "name": "RDO.33629020._000014.pool.root.1"
+          },
+          {
+            "file_guid": "8E77EFEA-024C-7B4E-B005-7A66BB1B7C68",
+            "name": "RDO.33629020._000016.pool.root.1"
+          },
+          {
+            "file_guid": "567F16E9-274F-0F4D-8B57-585EBDDD74E8",
+            "name": "RDO.33629020._000017.pool.root.1"
+          },
+          {
+            "file_guid": "714BF459-2344-9449-B9C0-5993E70C4578",
+            "name": "RDO.33629020._000018.pool.root.1"
+          },
+          {
+            "file_guid": "FF92F13E-A016-3949-867C-40D7CD54765F",
+            "name": "RDO.33629020._000027.pool.root.1"
+          },
+          {
+            "file_guid": "72ED0D07-E6DE-DB40-877F-A11CCD43F8FF",
+            "name": "RDO.33629020._000031.pool.root.1"
+          },
+          {
+            "file_guid": "EFFEC1F8-9FC1-E84E-AE42-1F5699B897EA",
+            "name": "RDO.33629020._000036.pool.root.1"
+          },
+          {
+            "file_guid": "1E4B33D0-C0BA-E14C-8F23-C713BB8FFC28",
+            "name": "RDO.33629020._000037.pool.root.1"
+          },
+          {
+            "file_guid": "2CC00171-6DA9-3D47-9680-9D2C6D523332",
+            "name": "RDO.33629020._000038.pool.root.1"
+          }
+        ],
+        "type": "RDO"
+      }
+    ],
+    "output": [
+      {
+        "argName": "outputAODFile",
+        "dataset": null,
+        "subFiles": [
+          {
+            "file_guid": "29B31930-ED58-6D43-9A75-7562C62BC73C",
+            "file_size": 504732345,
+            "name": "myAOD.pool.root",
+            "nentries": 1000
+          }
+        ],
+        "type": "AOD"
+      }
+    ]
+  },
+  "name": "Reco_tf",
+  "reportVersion": "2.1.2",
+  "resource": {
+    "executor": {
+      "RAWtoALL": {
+        "cpuTime": 3715.04,
+        "memory": {
+          "Avg": {
+            "gpufbmem": 0.0,
+            "gpumempct": 0.0,
+            "gpusmpct": 0.0,
+            "ngpus": 0.0,
+            "nprocs": 2.0,
+            "nthreads": 3.984,
+            "pss": 2247563.0,
+            "rchar": 108232934.0,
+            "read_bytes": 91076187.0,
+            "rss": 2445936.0,
+            "rx_bytes": 126204647.0,
+            "rx_packets": 88157.0,
+            "swap": 0.0,
+            "tx_bytes": 989977.0,
+            "tx_packets": 9931.0,
+            "vmem": 3257295.0,
+            "wchar": 13025393.0,
+            "write_bytes": 13123579.0
+          },
+          "HW": {
+            "cpu": {
+              "CPUs": 48,
+              "CoresPerSocket": 24,
+              "ModelName": "AMD EPYC 7413 24-Core Processor",
+              "Sockets": 1,
+              "ThreadsPerCore": 2
+            },
+            "gpu": {
+              "gpu_0": {
+                "name": "NVIDIA RTX A5000",
+                "sm_freq": 2100,
+                "total_mem": 25153536
+              },
+              "nGPU": 1
+            },
+            "mem": {
+              "MemTotal": 131219212
+            }
+          },
+          "Max": {
+            "gpufbmem": 0,
+            "gpumempct": 0,
+            "gpusmpct": 0,
+            "ngpus": 0,
+            "nprocs": 2,
+            "nthreads": 4,
+            "pss": 2315049,
+            "rchar": 4195108547,
+            "read_bytes": 3530113024,
+            "rss": 2536240,
+            "rx_bytes": 4891692136,
+            "rx_packets": 3417003,
+            "stime": 12,
+            "swap": 0,
+            "tx_bytes": 38371509,
+            "tx_packets": 384964,
+            "utime": 3699,
+            "vmem": 3288004,
+            "wchar": 504864254,
+            "write_bytes": 508669952,
+            "wtime": 3876
+          },
+          "prmon": {
+            "Version": "3.1.1"
+          }
+        },
+        "memoryAnalysis": {
+          "chi2": 43.59,
+          "slope": 4.09
+        },
+        "nevents": 1000,
+        "postExe": {
+          "cpuTime": 18.28,
+          "wallTime": 1.0
+        },
+        "preExe": {
+          "cpuTime": 0.0,
+          "wallTime": 0.01
+        },
+        "total": {
+          "cpuTime": 3733.32,
+          "wallTime": 3880.2
+        },
+        "validation": {
+          "cpuTime": 0.0,
+          "wallTime": 0.26
+        },
+        "wallTime": 3878.93
+      }
+    },
+    "machine": {
+      "cpu_family": "25",
+      "linux_distribution": [
+        "Red Hat Enterprise Linux",
+        "9.3",
+        "Plow"
+      ],
+      "model": "1",
+      "model_name": "AMD EPYC 7413 24-Core Processor",
+      "node": "pcadp04",
+      "platform": "Linux-5.14.0-362.18.1.el9_3.x86_64-x86_64-with-glibc2.34"
+    },
+    "transform": {
+      "cpuEfficiency": 0.9567,
+      "cpuPWEfficiency": 0.9567,
+      "cpuTime": 37.95,
+      "cpuTimeTotal": 3733.32,
+      "externalCpuTime": 18.62,
+      "inFileValidation": {
+        "cpuTime": 0.23,
+        "wallTime": 4.47
+      },
+      "outFileValidation": {
+        "cpuTime": 0.0,
+        "wallTime": 35.0
+      },
+      "processedEvents": 1000,
+      "reportGeneration": {
+        "cpuTime": 0.11,
+        "wallTime": 3.15
+      },
+      "transformSetup": {
+        "cpuTime": 0.0,
+        "wallTime": 0.04
+      },
+      "trfPredata": null,
+      "wallTime": 3922.86
+    }
+  }
+}

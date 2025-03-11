@@ -1,0 +1,69 @@
+19:14:45 Wed Jan 22 19:14:45 CET 2025
+19:14:45 Preloading tcmalloc_minimal.so
+19:14:45 Preloading libexcabort.so
+19:14:45 Preloading /cvmfs/atlas-nightlies.cern.ch/repo/sw/main_Athena_x86_64-el9-gcc13-opt/2025-01-21T2101/AthenaExternals/25.0.24/InstallArea/x86_64-el9-gcc13-opt/lib/libintlc.so.5:/cvmfs/atlas-nightlies.cern.ch/repo/sw/main_Athena_x86_64-el9-gcc13-opt/2025-01-21T2101/AthenaExternals/25.0.24/InstallArea/x86_64-el9-gcc13-opt/lib/libimf.so
+19:14:46 Py:MergePool_Skeleton    INFO ****************** STARTING MergePool MERGING *****************
+19:14:46 Py:MergePool_Skeleton    INFO **** Transformation run arguments
+19:14:46 Py:MergePool_Skeleton    INFO RunArguments:
+19:14:46    POOL_MRG_INPUTFileIO = 'input'
+19:14:46    autoConfiguration = ['everything']
+19:14:46    concurrentEvents = 0
+19:14:46    conditionsTag = 'OFLCOND-MC21-SDR-RUN4-02'
+19:14:46    geometryVersion = 'ATLAS-P2-RUN4-03-00-00'
+19:14:46    inputPOOL_MRG_INPUTFile = ['myAOD.pool.root_001', 'myAOD.pool.root_002', 'myAOD.pool.root_003', 'myAOD.pool.root_004']
+19:14:46    inputPOOL_MRG_INPUTFileNentries = 2400
+19:14:46    inputPOOL_MRG_INPUTFileType = 'AOD'
+19:14:46    jobNumber = 1
+19:14:46    maxEvents = -1
+19:14:46    multithreaded = True
+19:14:46    nprocs = 0
+19:14:46    outputPOOL_MRG_OUTPUTFile = 'myAOD.pool.root'
+19:14:46    outputPOOL_MRG_OUTPUTFileType = 'AOD'
+19:14:46    perfmon = 'fastmonmt'
+19:14:46    postExec = ['cfg.getService("AlgResourcePool").CountAlgorithmInstanceMisses = True;']
+19:14:46    postInclude = ['PyJobTransforms.UseFrontier']
+19:14:46    preInclude = ['InDetConfig.ConfigurationHelpers.OnlyTrackingPreInclude', 'ActsConfig.ActsCIFlags.actsAloneFastWorkflowFlags']
+19:14:46    threads = 0
+19:14:46    totalExecutorSteps = 0
+19:14:46    trfSubstepName = 'POOLMergeAthenaMPAOD0'
+19:14:46 Py:MergePool_Skeleton    INFO **** Setting up configuration flags
+19:14:47 Py:AutoConfigFlags    INFO Obtaining metadata of auto-configuration by peeking into 'myAOD.pool.root_001'
+19:14:47 Py:MetaReader        INFO Current mode used: lite
+19:14:47 Py:MetaReader        INFO Current filenames: ['myAOD.pool.root_001']
+19:14:49 Py:MetaReader        INFO MetaReader is called with the parameter "unique_tag_info_values" set to True. This is a workaround to remove all duplicate values from "/TagInfo" key
+19:14:49 Py:MergePool_Skeleton    INFO **** Processing preInclude
+19:14:49 Py:MergePool_Skeleton    INFO **** Processing preExec
+19:14:49 Py:MergePool_Skeleton    INFO **** Processing athenaopts
+19:14:49 Py:MergePool_Skeleton    INFO **** Locking configuration flags
+19:14:49 Py:MergePool_Skeleton    INFO **** Setting up job components
+19:14:49 Py:PerfMonMTSvcCfg    INFO Configuring PerfMonMTSvc with flags:
+19:14:49 Py:PerfMonMTSvcCfg    INFO   >> doFastMonMT True
+19:14:49 Py:PerfMonMTSvcCfg    INFO   >> doFullMonMT False
+19:14:49 Py:AODFixCfg         INFO No AOD fix scheduled
+19:14:49 Py:MergePool_Skeleton    INFO **** Configured AOD writing
+19:14:49 Py:PerfMonMTSvcCfg    INFO Configuring PerfMonMTSvc with flags:
+19:14:49 Py:PerfMonMTSvcCfg    INFO   >> doFastMonMT True
+19:14:49 Py:PerfMonMTSvcCfg    INFO   >> doFullMonMT False
+19:14:49 Py:MergePool_Skeleton    INFO **** Processing postInclude
+19:14:49 FullArgSpec(args=['flags'], varargs=None, varkw=None, defaults=None, kwonlyargs=[], kwonlydefaults=None, annotations={})
+19:14:49 PyJobTransforms.TransformUtils.UseFrontier 2025-01-22 19:14:49,259 INFO Enabling FRONTIER DB access
+19:14:49 Py:MergePool_Skeleton    INFO **** Processing postExec
+19:14:49 Traceback (most recent call last):
+19:14:49   File "/cvmfs/atlas-nightlies.cern.ch/repo/sw/main_Athena_x86_64-el9-gcc13-opt/2025-01-21T2101/Athena/25.0.24/InstallArea/x86_64-el9-gcc13-opt/bin/athena.py", line 166, in <module>
+19:14:49     runpy.run_path( opts.scripts[0], run_name='__main__' )
+19:14:49   File "<frozen runpy>", line 291, in run_path
+19:14:49   File "<frozen runpy>", line 98, in _run_module_code
+19:14:49   File "<frozen runpy>", line 88, in _run_code
+19:14:49   File "./runargs.POOLMergeAthenaMPAOD0.py", line 49, in <module>
+19:14:49     fromRunArgs(runArgs)
+19:14:49   File "/cvmfs/atlas-nightlies.cern.ch/repo/sw/main_Athena_x86_64-el9-gcc13-opt/2025-01-21T2101/Athena/25.0.24/InstallArea/x86_64-el9-gcc13-opt/python/RecJobTransforms/MergePool_Skeleton.py", line 142, in fromRunArgs
+19:14:49     processPostExec(runArgs, flags, cfg)
+19:14:49   File "/cvmfs/atlas-nightlies.cern.ch/repo/sw/main_Athena_x86_64-el9-gcc13-opt/2025-01-21T2101/Athena/25.0.24/InstallArea/x86_64-el9-gcc13-opt/python/PyJobTransforms/TransformUtils.py", line 59, in processPostExec
+19:14:49     exec(cmd)
+19:14:49   File "<string>", line 1, in <module>
+19:14:49   File "/cvmfs/atlas-nightlies.cern.ch/repo/sw/main_Athena_x86_64-el9-gcc13-opt/2025-01-21T2101/Athena/25.0.24/InstallArea/x86_64-el9-gcc13-opt/python/AthenaConfiguration/ComponentAccumulator.py", line 695, in getService
+19:14:49     return self.__getOne( self._services, name, "Services")
+19:14:49            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+19:14:49   File "/cvmfs/atlas-nightlies.cern.ch/repo/sw/main_Athena_x86_64-el9-gcc13-opt/2025-01-21T2101/Athena/25.0.24/InstallArea/x86_64-el9-gcc13-opt/python/AthenaConfiguration/ComponentAccumulator.py", line 673, in __getOne
+19:14:49     raise ConfigurationError(f"Requested component of name {name} but is missing" )
+19:14:49 AthenaConfiguration.ComponentAccumulator.ConfigurationError: Requested component of name AlgResourcePool but is missing

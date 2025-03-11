@@ -1,0 +1,101 @@
+{
+    "eventLevel": {
+        "1": {
+            "cpuTime": 243.821,
+            "pss": 259184,
+            "rss": 1048448,
+            "swap": 0,
+            "vmem": 2149648,
+            "wallTime": 14771.0
+        },
+        "20": {
+            "cpuTime": 60274.607,
+            "pss": 1762552,
+            "rss": 2417600,
+            "swap": 0,
+            "vmem": 3339384,
+            "wallTime": 45505.0
+        },
+        "40": {
+            "cpuTime": 123093.787,
+            "pss": 1763069,
+            "rss": 2417596,
+            "swap": 0,
+            "vmem": 3339384,
+            "wallTime": 77076.0
+        }
+    },
+    "summary": {
+        "envInfo": {
+            "mallocLib": "libtcmalloc_minimal.so",
+            "mathLib": "libimf.so"
+        },
+        "leakEstimates": {
+            "nPoints": 1,
+            "pssLeak": 0,
+            "vmemLeak": 0
+        },
+        "misc": {
+            "cpuUtilEff": 0
+        },
+        "nEvents": 50,
+        "peaks": {
+            "pssPeak": 1763069,
+            "rssPeak": 2417600,
+            "swapPeak": 0,
+            "vmemPeak": 3339384
+        },
+        "snapshotLevel": {
+            "Configure": {
+                "cpuUtil": 0.6487316997034493,
+                "dCPU": 4156.424,
+                "dPss": 571748,
+                "dRss": 800892,
+                "dSwap": 0,
+                "dVmem": 1196520,
+                "dWall": 6407.0
+            },
+            "Execute": {
+                "cpuUtil": 9.164920352383062e-08,
+                "dCPU": 159206.942,
+                "dPss": 1815317,
+                "dRss": 2430144,
+                "dSwap": 0,
+                "dVmem": 3353824,
+                "dWall": 1737133939834.0
+            },
+            "Finalize": {
+                "cpuUtil": 0.8339999999999044,
+                "dCPU": 200.99399999997695,
+                "dPss": 97280,
+                "dRss": 8856,
+                "dSwap": 0,
+                "dVmem": -68,
+                "dWall": 241.0
+            },
+            "FirstEvent": {
+                "cpuUtil": null,
+                "dCPU": 0.0,
+                "dPss": 0,
+                "dRss": 0,
+                "dSwap": 0,
+                "dVmem": 0,
+                "dWall": 0.0
+            },
+            "Initialize": {
+                "cpuUtil": 0.9480572395526781,
+                "dCPU": 6442.997,
+                "dPss": 792004,
+                "dRss": 792128,
+                "dSwap": 0,
+                "dVmem": 930528,
+                "dWall": 6796.0
+            }
+        },
+        "sysInfo": {
+            "coreNum": 48,
+            "cpuModel": " AMD EPYC 7413 24-Core Processor 512 KB",
+            "totMem": 131219192
+        }
+    }
+}

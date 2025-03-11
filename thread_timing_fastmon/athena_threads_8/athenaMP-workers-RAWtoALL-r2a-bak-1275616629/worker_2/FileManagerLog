@@ -1,0 +1,5 @@
+/cvmfs/atlas-condb.cern.ch/repo/conditions/cmccond/cmccond.000001.conditions.simul.pool.v0000/oflcond.000002.conditions.simul.pool.v0000._0028.pool.root__DQ2-1250194490  ROOT  POOL  READ
+/cvmfs/atlas-condb.cern.ch/repo/conditions/cond09/cond09_mc.000199.gen.COND/cond09_mc.000199.gen.COND._0001.pool.root  ROOT  POOL  READ
+/cvmfs/atlas-condb.cern.ch/repo/conditions/cond12/cond12_data.000029.gen.COND/cond12_data.000029.gen.COND._0001.pool.root  ROOT  POOL  READ
+/cvmfs/atlas-nightlies.cern.ch/repo/data/data-art/PhaseIIUpgrade/RDO/ATLAS-P2-RUN4-03-00-00/mc21_14TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.recon.RDO.e8481_s4149_r14700/RDO.33629020._000047.pool.root.1  ROOT  TAG  READ
+myAOD.pool.root_000  ROOT  POOL  WRITE|CREATE  SHARED

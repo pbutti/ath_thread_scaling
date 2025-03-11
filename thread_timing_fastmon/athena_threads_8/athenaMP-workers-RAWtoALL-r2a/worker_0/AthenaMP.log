@@ -1,0 +1,1044 @@
+2025-01-17 18:21:19,085 AthMpEvtLoopMgr.SharedHiveEvtQueueConsumer             0     0    INFO Logs redirected in the AthenaMP event worker PID=786143
+2025-01-17 18:21:19,085 AthMpEvtLoopMgr.SharedHiveEvtQueueConsumer             0     0    INFO Io registry updated in the AthenaMP event worker PID=786143
+2025-01-17 18:21:19,086 AthMpEvtLoopMgr.SharedHiveEvtQueueConsumer             0     0    INFO File descriptors re-opened in the AthenaMP event worker PID=786143
+2025-01-17 18:21:19,086 PoolSvc                                                0     0    INFO I/O reinitialization...
+2025-01-17 18:21:19,086 PoolSvc                                                0     0    INFO Setting up APR FileCatalog and Streams
+2025-01-17 18:21:19,094 PoolSvc                                                0     0    INFO Resolved path (via ATLAS_POOLCOND_PATH) is /cvmfs/atlas-condb.cern.ch/repo/conditions/poolcond/PoolFileCatalog.xml
+2025-01-17 18:21:19,094 PoolSvc                                                0     0    INFO Unable find catalog apcfile:poolcond/PoolCat_oflcond.xml in $ATLAS_POOLCOND_PATH and $DATAPATH
+2025-01-17 18:21:19,094 PoolSvc                                                0     0    INFO POOL WriteCatalog is xmlcatalog_file:/home/pibutti/FastTracking/TimingTests/threadScaling/ath_thread_scaling/thread_timing_fastmon/athena_threads_8/athenaMP-workers-RAWtoALL-r2a/worker_0/PoolFileCatalog.xml
+2025-01-17 18:21:19,294 DbSession                                              0     0    INFO     Open     DbSession    
+2025-01-17 18:21:19,294 Domain[ROOT_All]                                       0     0    INFO >   Access   DbDomain     READ      [ROOT_All] 
+2025-01-17 18:21:19,294 MetaDataSvc                                            0     0    INFO I/O reinitialization...
+2025-01-17 18:21:19,294 MetaDataSvc                                            0     0    INFO Attached MetaDataTool: ToolSvc.IOVDbMetaDataTool
+2025-01-17 18:21:19,294 MetaDataSvc                                            0     0    INFO Attached MetaDataTool: ToolSvc.StreamAOD_CopyEventStreamInfo
+2025-01-17 18:21:19,295 MetaDataSvc                                            0     0    INFO Attached MetaDataTool: ToolSvc.TruthMetaDataTool
+2025-01-17 18:21:19,295 MetaDataSvc                                            0     0    INFO Attached MetaDataTool: ToolSvc.xAODMaker::FileMetaDataTool
+2025-01-17 18:21:19,295 MetaDataSvc                                            0     0    INFO Attached MetaDataTool: ToolSvc.xAODMaker::EventFormatMetaDataTool
+2025-01-17 18:21:19,295 EventSelector                                          0     0    INFO I/O reinitialization...
+2025-01-17 18:21:19,295 EventSelector                                          0     0    INFO EventSelection with query 
+2025-01-17 18:21:19,297 StreamAOD                                              0     0    INFO I/O reinitialization...
+2025-01-17 18:21:19,298 AthMpEvtLoopMgr.SharedHiveEvtQueueConsumer             0     0    INFO Exec function in the AthenaMP worker PID=786143
+2025-01-17 18:21:19,299 AthenaMtesEventLoopMgr                                 0     0    INFO Initializing AthenaMtesEventLoopMgr
+2025-01-17 18:21:19,299 ThreadPoolSvc                                          0     0    INFO no thread init tools attached
+2025-01-17 18:21:19,299 AvalancheSchedulerSvc                                  0     0    INFO Activating scheduler in a separate thread
+2025-01-17 18:21:20,301 AvalancheSchedulerSvc                                  0     0    INFO Found 61 algorithms
+2025-01-17 18:21:20,302 AvalancheSchedulerSvc                                  0     0    INFO Will attribute the following unmet INPUT dependencies to "SGInputLoader/SGInputLoader" Algorithm
+2025-01-17 18:21:20,302 AvalancheSchedulerSvc                                  0     0    INFO    o  ( 'InDetSimDataCollection' , 'StoreGateSvc+ITkPixelSDO_Map' )     required by Algorithm: 
+2025-01-17 18:21:20,302 AvalancheSchedulerSvc                                  0     0    INFO        * ActsPixelClusterToTruthAssociationAlg
+2025-01-17 18:21:20,302 AvalancheSchedulerSvc                                  0     0    INFO    o  ( 'InDetSimDataCollection' , 'StoreGateSvc+ITkStripSDO_Map' )     required by Algorithm: 
+2025-01-17 18:21:20,302 AvalancheSchedulerSvc                                  0     0    INFO        * ActsStripClusterToTruthAssociationAlg
+2025-01-17 18:21:20,302 AvalancheSchedulerSvc                                  0     0    INFO    o  ( 'McEventCollection' , 'StoreGateSvc+TruthEvent' )     required by Algorithm: 
+2025-01-17 18:21:20,302 AvalancheSchedulerSvc                                  0     0    INFO        * GEN_AOD2xAOD
+2025-01-17 18:21:20,302 AvalancheSchedulerSvc                                  0     0    INFO    o  ( 'PixelRDO_Container' , 'StoreGateSvc+ITkPixelRDOs' )     required by Algorithm: 
+2025-01-17 18:21:20,302 AvalancheSchedulerSvc                                  0     0    INFO        * ActsFastPixelClusterizationAlg
+2025-01-17 18:21:20,302 AvalancheSchedulerSvc                                  0     0    INFO    o  ( 'SCT_RDO_Container' , 'StoreGateSvc+ITkStripRDOs' )     required by Algorithm: 
+2025-01-17 18:21:20,302 AvalancheSchedulerSvc                                  0     0    INFO        * ActsFastStripClusterizationAlg
+2025-01-17 18:21:20,302 AvalancheSchedulerSvc                                  0     0    INFO    o  ( 'xAOD::EventInfo' , 'StoreGateSvc+EventInfo' )     required by Algorithm: 
+2025-01-17 18:21:20,302 AvalancheSchedulerSvc                                  0     0    INFO        * EventInfoTagBuilder
+2025-01-17 18:21:20,302 AvalancheSchedulerSvc                                  0     0    INFO        * GEN_AOD2xAOD
+2025-01-17 18:21:20,302 PrecedenceSvc                                          0     0    INFO Assembling CF and DF task precedence rules
+2025-01-17 18:21:20,302 PrecedenceRulesGraph                                   0     0    INFO CondSvc found. DF precedence rules will be augmented with 'Conditions'
+2025-01-17 18:21:20,303 PrecedenceSvc                                          0     0    INFO PrecedenceSvc initialized successfully
+2025-01-17 18:21:20,303 AvalancheSchedulerSvc                                  0     0    INFO Concurrency level information:
+2025-01-17 18:21:20,303 AvalancheSchedulerSvc                                  0     0    INFO  o Number of events in flight: 2
+2025-01-17 18:21:20,303 AvalancheSchedulerSvc                                  0     0    INFO  o TBB thread pool size:  'ThreadPoolSize':2
+2025-01-17 18:21:20,303 AvalancheSchedulerSvc                                  0     0    INFO  o Fiber thread pool size:  'NumOffloadThreads':0
+2025-01-17 18:21:20,303 AvalancheSchedulerSvc                                  0     0    INFO Task scheduling settings:
+2025-01-17 18:21:20,303 AvalancheSchedulerSvc                                  0     0    INFO  o Avalanche generation mode: disabled
+2025-01-17 18:21:20,303 AvalancheSchedulerSvc                                  0     0    INFO  o Preemptive scheduling of CPU-blocking tasks: disabled
+2025-01-17 18:21:20,303 AvalancheSchedulerSvc                                  0     0    INFO  o Scheduling of condition tasks: disabled
+2025-01-17 18:21:20,303 AthenaMtesEventLoopMgr                                 0     0    INFO Setup EventSelector service EventSelector
+2025-01-17 18:21:20,303 AthMpEvtLoopMgr.SharedHiveEvtQueueConsumer             0     0    INFO Starting loop on events
+2025-01-17 18:21:20,303 AthMpEvtLoopMgr.SharedHiveEvtQueueConsumer             0     0    INFO Received from the queue: event num=10 chunk size=10
+2025-01-17 18:21:20,305 Domain[ROOT_All]                                       0     0    INFO ->  Access   DbDatabase   READ      [ROOT_All] 00E0B104-85B8-704A-BB96-12924F6ADC2D
+2025-01-17 18:21:20,305 Domain[ROOT_All]                                       0     0    INFO                           /cvmfs/atlas-nightlies.cern.ch/repo/data/data-art/PhaseIIUpgrade/RDO/ATLAS-P2-RUN4-03-00-00/mc21_14TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.recon.RDO.e8481_s4149_r14700/RDO.33629020._000047.pool.root.1
+2025-01-17 18:21:20,305 RootDatabase.open                                      0     0    INFO /cvmfs/atlas-nightlies.cern.ch/repo/data/data-art/PhaseIIUpgrade/RDO/ATLAS-P2-RUN4-03-00-00/mc21_14TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.recon.RDO.e8481_s4149_r14700/RDO.33629020._000047.pool.root.1 File version:62608
+2025-01-17 18:21:20,317 AthenaMtesEventLoopMgr                                 0     0    INFO   ===>>>  start of run 242020    <<<===
+2025-01-17 18:21:20,317 AthenaMtesEventLoopMgr                                 0     0    INFO   ===>>>  start processing event #9231, run #242020 on slot 0,  0 events processed so far  <<<===
+2025-01-17 18:21:20,319 AthenaMtesEventLoopMgr                                 1     1    INFO   ===>>>  start processing event #9297, run #242020 on slot 1,  0 events processed so far  <<<===
+2025-01-17 18:21:20,360 PerfMonMTSvc                                           0     0    INFO Event [    1] CPU Time: 00h00m00s, Wall Time: 00h00m14s, Vmem: 2.05 GB, Rss: 1.00 GB, Pss: 254.03 MB, Swap: 0.00 KB
+2025-01-17 18:21:20,361 IOVDbSvc                                               0     0    INFO Opening COOL connection for COOLOFL_INDET/OFLP200
+2025-01-17 18:21:20,362 ITkPixelModuleConfigCondAlg                            0     0    INFO recorded new CDO ITkPixelModuleData with range {[t:0,b:4294967295] - [t:4294967294.4294967294,b:4294967295]} into Conditions Store
+2025-01-17 18:21:20,406 IOVDbFolder                                            0     0    INFO HVS tag OFLCOND-MC21-SDR-RUN4-02 resolved to InDetAlign_MC15c for folder /Indet/Align
+2025-01-17 18:21:20,412 ClassIDSvc                                             0     0    INFO getRegistryEntries: read 228 CLIDRegistry entries for module ALL
+2025-01-17 18:21:20,412 HepMCWeightSvc                                         0     0    INFO   AlgTool: ToolSvc.IOVDbMetaDataTool
+2025-01-17 18:21:20,420 IOVDbFolder                                            0     0    INFO HVS tag OFLCOND-MC21-SDR-RUN4-02 resolved to IndetBeampos-RunDep-MC-Run4-BestKnowledge-001 for folder /Indet/Beampos
+2025-01-17 18:21:20,424 IOVDbSvc                                               0     0    INFO Disconnecting from COOLOFL_INDET/OFLP200
+2025-01-17 18:21:20,425 IOVDbSvc                                               0     0    INFO Opened read transaction for POOL PersistencySvc
+2025-01-17 18:21:20,427 ClassIDSvc                                             0     0    INFO getRegistryEntries: read 75 CLIDRegistry entries for module ALL
+2025-01-17 18:21:20,434 DbSession                                              0     0    INFO     Open     DbSession    
+2025-01-17 18:21:20,434 Domain[ROOT_All]                                       0     0    INFO >   Access   DbDomain     READ      [ROOT_All] 
+2025-01-17 18:21:20,434 Domain[ROOT_All]                                       0     0    INFO ->  Access   DbDatabase   READ      [ROOT_All] 8E91164C-1E3C-DB11-8CAB-00132046AB63
+2025-01-17 18:21:20,434 Domain[ROOT_All]                                       0     0    INFO                           /cvmfs/atlas-condb.cern.ch/repo/conditions/cmccond/cmccond.000001.conditions.simul.pool.v0000/oflcond.000002.conditions.simul.pool.v0000._0028.pool.root__DQ2-1250194490
+2025-01-17 18:21:20,436 TClass::Init                                           0     0 WARNING no dictionary for class DataHeader_p1 is available
+2025-01-17 18:21:20,436 TClass::Init                                           0     0 WARNING no dictionary for class DataHeaderElement_p1 is available
+2025-01-17 18:21:20,441 ClassIDSvc                                             1     1    INFO getRegistryEntries: read 135 CLIDRegistry entries for module ALL
+2025-01-17 18:21:20,441 ITkPixelDCSCondHVAlg                                   0     0    INFO Range of input PixelModule data is {[t:0,b:4294967295] - [t:4294967294.4294967294,b:4294967295]}
+2025-01-17 18:21:20,441 ITkPixelDCSCondHVAlg                                   0     0    INFO recorded new CDO ITkPixelDCSHVCondData with range {[t:0,b:4294967295] - [t:4294967294.4294967294,b:4294967295]} into Conditions Store
+2025-01-17 18:21:20,443 RootDatabase.open                                      0     0    INFO /cvmfs/atlas-condb.cern.ch/repo/conditions/cmccond/cmccond.000001.conditions.simul.pool.v0000/oflcond.000002.conditions.simul.pool.v0000._0028.pool.root__DQ2-1250194490 File version:51000
+2025-01-17 18:21:20,459 Domain[ROOT_All]                                       0     0    INFO ->  Access   DbDatabase   READ      [ROOT_All] C634B46D-ECB2-A045-91CC-00A82369D887
+2025-01-17 18:21:20,459 Domain[ROOT_All]                                       0     0    INFO                           /cvmfs/atlas-condb.cern.ch/repo/conditions/cond12/cond12_data.000029.gen.COND/cond12_data.000029.gen.COND._0001.pool.root
+2025-01-17 18:21:20,465 ITkPixelDCSCondTempAlg                                 0     0    INFO recorded new CDO ITkPixelDCSTempCondData with range {[t:0,b:4294967295] - [t:4294967294.4294967294,b:4294967295]} into Conditions Store
+2025-01-17 18:21:20,471 RootDatabase.open                                      0     0    INFO /cvmfs/atlas-condb.cern.ch/repo/conditions/cond12/cond12_data.000029.gen.COND/cond12_data.000029.gen.COND._0001.pool.root File version:53005
+2025-01-17 18:21:20,473 IOVDbSvc                                               0     0    INFO Opening COOL connection for COOLOFL_DCS/OFLP200
+2025-01-17 18:21:20,493 IOVDbFolder                                            0     0    INFO HVS tag OFLCOND-MC21-SDR-RUN4-02 resolved to ExtDCSMagnetsSensorData-001 for folder /EXT/DCS/MAGNETS/SENSORDATA
+2025-01-17 18:21:20,497 IOVDbSvc                                               0     0    INFO Disconnecting from COOLOFL_DCS/OFLP200
+2025-01-17 18:21:20,497 IOVDbSvc                                               0     0    INFO Opening COOL connection for COOLOFL_GLOBAL/OFLP200
+2025-01-17 18:21:20,525 IOVDbFolder                                            0     0    INFO HVS tag OFLCOND-MC21-SDR-RUN4-02 resolved to BFieldMap-Run1-14m-v01 for folder /GLOBAL/BField/Maps
+2025-01-17 18:21:20,535 IOVDbSvc                                               0     0    INFO Disconnecting from COOLOFL_GLOBAL/OFLP200
+2025-01-17 18:21:20,535 IOVDbSvc                                               0     0    INFO Opening COOL connection for COOLOFL_PIXEL/OFLP200
+2025-01-17 18:21:20,549 IOVDbSvc                                               0     0    INFO Disconnecting from COOLOFL_PIXEL/OFLP200
+2025-01-17 18:21:20,557 ElementTableCnv                                        0     0    INFO LayerMaterialMapCnv::initialize()
+2025-01-17 18:21:20,557 Domain[ROOT_All]                                       0     0    INFO ->  Access   DbDatabase   READ      [ROOT_All] A5CF2B06-0F7A-AC48-BDE9-1E702A3021C4
+2025-01-17 18:21:20,557 Domain[ROOT_All]                                       0     0    INFO                           /cvmfs/atlas-condb.cern.ch/repo/conditions/cond09/cond09_mc.000199.gen.COND/cond09_mc.000199.gen.COND._0001.pool.root
+2025-01-17 18:21:20,559 RootDatabase.open                                      0     0    INFO /cvmfs/atlas-condb.cern.ch/repo/conditions/cond09/cond09_mc.000199.gen.COND/cond09_mc.000199.gen.COND._0001.pool.root File version:62608
+2025-01-17 18:21:20,878 ITkPixelAlignCondAlg                                   0     0    INFO recorded new CDO ITkPixelAlignmentStore with range {[240000,l:0] - [250000,l:0]} into Conditions Store
+2025-01-17 18:21:20,890 ITkPixelDetectorElementCondAlg                         0     0    INFO recorded new CDO ITkPixelDetectorElementCollection with range {[240000,t:0,l:0] - [250000,t:4294967294.4294967294,l:0]} with size of 9164 into Conditions Store
+2025-01-17 18:21:20,949 RegSelCondAlg_ITkPixel                                 0     0    INFO RegSelCondAlg LUT recorded: 'ConditionStore+RegSelLUTCondData_ITkPixel'
+2025-01-17 18:21:20,949 ITkPixelSiPropertiesCondAlg                            0     0    INFO Input is  ( 'PixelDCSTempData' , 'ConditionStore+ITkPixelDCSTempCondData' )  with the range of {[t:0,b:4294967295] - [t:4294967294.4294967294,b:4294967295]}, intersection {[0,t:0,l:0] - [4294967294,t:4294967294.4294967294,l:4294967294]}
+2025-01-17 18:21:20,949 ITkPixelSiPropertiesCondAlg                            0     0    INFO Input is  ( 'PixelDCSHVData' , 'ConditionStore+ITkPixelDCSHVCondData' )  with the range of {[t:0,b:4294967295] - [t:4294967294.4294967294,b:4294967295]}, intersection {[0,t:0,l:0] - [4294967294,t:4294967294.4294967294,l:4294967294]}
+2025-01-17 18:21:20,952 ITkPixelSiPropertiesCondAlg                            0     0    INFO recorded new CDO ITkPixelSiliconPropertiesVector with range {[0,t:0,l:0] - [4294967294,t:4294967294.4294967294,l:4294967294]} into Conditions Store
+2025-01-17 18:21:20,953 ITkPixelDCSCondStateAlg                                0     0    INFO recorded new CDO ITkPixelDCSStateCondData with range {[t:0,b:4294967295] - [t:4294967294.4294967294,b:4294967295]} into Conditions Store
+2025-01-17 18:21:20,953 AtlasFieldMapCondAlg                                   0     0    INFO updateFieldMap: Update map from conditions
+2025-01-17 18:21:20,953 AtlasFieldMapCondAlg                                   0     0    INFO updateFieldMap: Update map from conditions: Range of input/output is {[0,l:0] - [INVALID]}
+2025-01-17 18:21:20,953 AtlasFieldMapCondAlg                                   0     0    INFO updateFieldMap: reading magnetic field map filenames from COOL
+2025-01-17 18:21:20,953 AtlasFieldMapCondAlg                                   0     0    INFO updateFieldMap: found map of type GlobalMap with soleCur=7730 toroCur=20400 (path file:MagneticFieldMaps/bfieldmap_7730_20400_14m.root)
+2025-01-17 18:21:20,953 AtlasFieldMapCondAlg                                   0     0    INFO updateFieldMap: found map of type SolenoidMap with soleCur=7730 toroCur=0 (path file:MagneticFieldMaps/bfieldmap_7730_0_14m.root)
+2025-01-17 18:21:20,953 AtlasFieldMapCondAlg                                   0     0    INFO updateFieldMap: found map of type ToroidMap with soleCur=0 toroCur=20400 (path file:MagneticFieldMaps/bfieldmap_0_20400_14m.root)
+2025-01-17 18:21:20,953 AtlasFieldMapCondAlg                                   0     0    INFO checkCurrentFromConditions: Range of input currents is {[t:0] - [t:4294967294.854775807]}
+2025-01-17 18:21:20,953 AtlasFieldMapCondAlg                                   0     0    INFO checkCurrentFromConditions: Attempt 1 at reading currents from DCS (using channel name)
+2025-01-17 18:21:20,953 AtlasFieldMapCondAlg                                   0     0    INFO checkCurrentFromConditions: Trying to read from DCS: [channel name, index, value] CentralSol_Current , 1 , 7730
+2025-01-17 18:21:20,953 AtlasFieldMapCondAlg                                   0     0    INFO checkCurrentFromConditions: Trying to read from DCS: [channel name, index, value] CentralSol_SCurrent , 2 , 7730
+2025-01-17 18:21:20,953 AtlasFieldMapCondAlg                                   0     0    INFO checkCurrentFromConditions: Trying to read from DCS: [channel name, index, value] Toroids_Current , 3 , 20400
+2025-01-17 18:21:20,953 AtlasFieldMapCondAlg                                   0     0    INFO checkCurrentFromConditions: Trying to read from DCS: [channel name, index, value] Toroids_SCurrent , 4 , 20400
+2025-01-17 18:21:20,953 AtlasFieldMapCondAlg                                   0     0    INFO checkCurrentFromConditions: Currents read from DCS - solenoid 7730 toroid 20400
+2025-01-17 18:21:20,953 AtlasFieldMapCondAlg                                   0     0    INFO updateFieldMap: currents are OK, will use nominal maps
+2025-01-17 18:21:20,953 AtlasFieldMapCondAlg                                   0     0    INFO updateFieldMap: found TagInfoMgr 
+2025-01-17 18:21:20,953 AtlasFieldMapCondAlg                                   0     0    INFO updateFieldMap: DID NOT reset currents from TagInfo
+2025-01-17 18:21:20,953 AtlasFieldMapCondAlg                                   0     0    INFO updateFieldMap: Set map currents from FieldSvc: solenoid/toroid 7730,20400
+2025-01-17 18:21:20,953 AtlasFieldMapCondAlg                                   0     0    INFO updateFieldMap: Use map file MagneticFieldMaps/bfieldmap_7730_20400_14m.root
+2025-01-17 18:21:20,988 ITkStripAlignCondAlg                                   0     0    INFO recorded new CDO ITkStripAlignmentStore with range {[240000,l:0] - [250000,l:0]} into Conditions Store
+2025-01-17 18:21:20,988 ITkPixelDCSCondStatusAlg                               0     0    INFO recorded new CDO ITkPixelDCSStatusCondData with range {[t:0,b:4294967295] - [t:4294967294.4294967294,b:4294967295]} into Conditions Store
+2025-01-17 18:21:21,062 ITkStripDetectorElementCondAlg                         0     0    INFO recorded new CDO ITkStripDetectorElementCollection with range {[240000,t:0,l:0] - [250000,t:4294967294.4294967294,l:0]} with size of 49536 into Conditions Store
+2025-01-17 18:21:21,209 RegSelCondAlg_ITkStrip                                 0     0    INFO RegSelCondAlg LUT recorded: 'ConditionStore+RegSelLUTCondData_ITkStrip'
+2025-01-17 18:21:21,210 ITkPixelDeadMapCondAlg                                 0     0    INFO recorded new CDO ITkPixelDeadMapCondData with range {[t:0,b:4294967295] - [t:4294967294.4294967294,b:4294967295]} into Conditions Store
+2025-01-17 18:21:21,918 AtlasFieldMapCondAlg                                   0     0    INFO updateFieldMap: Initialized the field map from /cvmfs/atlas.cern.ch/repo/sw/database/GroupData/MagneticFieldMaps/bfieldmap_7730_20400_14m.root
+2025-01-17 18:21:21,918 AtlasFieldMapCondAlg                                   0     0    INFO execute: solenoid zone id  7000
+2025-01-17 18:21:21,918 AtlasFieldMapCondAlg                                   0     0    INFO execute: recorded AtlasFieldMapCondObj with EventRange {[0,l:0] - [INVALID]}
+2025-01-17 18:21:21,918 AtlasFieldCacheCondAlg                                 0     0    INFO UpdateCurrentFromConditions: Range of input/output is {[t:0] - [t:4294967294.854775807]}
+2025-01-17 18:21:21,918 AtlasFieldCacheCondAlg                                 0     0    INFO UpdateCurrentFromConditions: Attempt 1 at reading currents from DCS (using channel name)
+2025-01-17 18:21:21,918 AtlasFieldCacheCondAlg                                 0     0    INFO UpdateCurrentFromConditions: Trying to read from DCS: [channel name, index, value] CentralSol_Current , 1 , 7730
+2025-01-17 18:21:21,918 AtlasFieldCacheCondAlg                                 0     0    INFO UpdateCurrentFromConditions: Trying to read from DCS: [channel name, index, value] CentralSol_SCurrent , 2 , 7730
+2025-01-17 18:21:21,918 AtlasFieldCacheCondAlg                                 0     0    INFO UpdateCurrentFromConditions: Trying to read from DCS: [channel name, index, value] Toroids_Current , 3 , 20400
+2025-01-17 18:21:21,918 AtlasFieldCacheCondAlg                                 0     0    INFO UpdateCurrentFromConditions: Trying to read from DCS: [channel name, index, value] Toroids_SCurrent , 4 , 20400
+2025-01-17 18:21:21,918 AtlasFieldCacheCondAlg                                 0     0    INFO UpdateCurrentFromConditions: Currents read from DCS - solenoid 7730 toroid 20400
+2025-01-17 18:21:21,918 AtlasFieldCacheCondAlg                                 0     0    INFO scaleField: Solenoid field scale factor 1. Desired current and map current: 7730,7730
+2025-01-17 18:21:21,918 AtlasFieldCacheCondAlg                                 0     0    INFO scaleField: Toroid field scale factor 1. Desired current and map current: 20400,20400
+2025-01-17 18:21:21,918 AtlasFieldCacheCondAlg                                 0     0    INFO execute: initialized AtlasFieldCacheCondObj and cache with SFs - sol/tor 1/1, EventRange {[t:0] - [t:4294967294.854775807]}
+2025-01-17 18:21:21,918 AtlasFieldCacheCondAlg                                 0     0    INFO execute: solenoid zone id  7000
+2025-01-17 18:21:21,921 BeamSpotCondAlg                                        0     0    INFO Read from condDB status 0 pos (0,0,0) sigma (0.012,0.012,50) tilt (0,0) sigmaXY 0
+2025-01-17 18:21:21,921 BeamSpotCondAlg                                        0     0    INFO Recorded new InDet::BeamSpotData to BeamSpotData with range {[240000,l:0] - [250000,l:0]} into conditions store.
+2025-01-17 18:21:21,921 ITkPixelChargeCalibCondAlg                             0     0    INFO Size of CondAttrListCollection  ( 'CondAttrListCollection' , 'ConditionStore+/ITk/PixelChargeCalib' )  readCdo->size()= 1
+2025-01-17 18:21:21,921 ITkPixelChargeCalibCondAlg                             0     0    INFO Range of input is {[0,l:0] - [INVALID]}
+2025-01-17 18:21:21,940 ITkStripSiLorentzAngleCondAlg                          0     0    INFO recorded new CDO SCTSiLorentzAngleCondData with range {[240000,t:0,l:0] - [250000,t:4294967294.854775807,l:0]} into Conditions Store
+2025-01-17 18:21:21,951 HGTD_DetectorElementCondAlg                            0     0    INFO recorded new CDO HGTD_DetectorElementCollection with range {[0,t:0,l:0] - [4294967294,t:4294967294.4294967294,l:4294967294]} with size of 8032 into Conditions Store
+2025-01-17 18:21:21,951 ClassIDSvc                                             0     0    INFO getRegistryEntries: read 220 CLIDRegistry entries for module ALL
+2025-01-17 18:21:21,996 ITkPixelChargeCalibCondAlg                             0     0    INFO recorded new CDO ITkPixelChargeCalibCondData with range {[0,l:0] - [INVALID]} into Conditions Store
+2025-01-17 18:21:21,996 AtlasTrackingGeom...ITkTrackingGeometryBuilderCond     0     0    INFO        -> retrieved 1 central layers.
+2025-01-17 18:21:21,996 AtlasTrackingGeom...ITkTrackingGeometryBuilderCond     0     0    INFO        -> retrieved 0 layers on negative side.
+2025-01-17 18:21:21,996 AtlasTrackingGeom...ITkTrackingGeometryBuilderCond     0     0    INFO        -> retrieved 0 layers on positive side.
+2025-01-17 18:21:21,999 AtlasTrackingGeom...ITkTrackingGeometryBuilderCond     0     0    INFO        -> retrieved 2 central layers.
+2025-01-17 18:21:21,999 AtlasTrackingGeom...ITkTrackingGeometryBuilderCond     0     0    INFO        -> retrieved 45 layers on negative side.
+2025-01-17 18:21:21,999 AtlasTrackingGeom...ITkTrackingGeometryBuilderCond     0     0    INFO        -> retrieved 45 layers on positive side.
+2025-01-17 18:21:22,002 AtlasTrackingGeom...ITkTrackingGeometryBuilderCond     0     0    INFO        -> retrieved 3 central layers.
+2025-01-17 18:21:22,002 AtlasTrackingGeom...ITkTrackingGeometryBuilderCond     0     0    INFO        -> retrieved 51 layers on negative side.
+2025-01-17 18:21:22,002 AtlasTrackingGeom...ITkTrackingGeometryBuilderCond     0     0    INFO        -> retrieved 51 layers on positive side.
+2025-01-17 18:21:22,016 AtlasTrackingGeom...ITkTrackingGeometryBuilderCond     0     0    INFO        -> retrieved 4 central layers.
+2025-01-17 18:21:22,016 AtlasTrackingGeom...ITkTrackingGeometryBuilderCond     0     0    INFO        -> retrieved 6 layers on negative side.
+2025-01-17 18:21:22,016 AtlasTrackingGeom...ITkTrackingGeometryBuilderCond     0     0    INFO        -> retrieved 6 layers on positive side.
+2025-01-17 18:21:22,016 AtlasTrackingGeom...ITkTrackingGeometryBuilderCond     0     0    INFO Ring layout is present for volume 'InDet::Detectors::ITkPixelInner::NegativeEndcap' dealing with it.
+2025-01-17 18:21:22,017 AtlasTrackingGeom...ITkTrackingGeometryBuilderCond     0     0    INFO       -> adjusting the outer radius to the last ring at 135.362
+2025-01-17 18:21:22,017 AtlasTrackingGeom...ITkTrackingGeometryBuilderCond     0     0    INFO       -> created 1 ring volumes for Volume 'InDet::Detectors::ITkPixelInner::NegativeEndcap'.
+2025-01-17 18:21:22,017 AtlasTrackingGeom...ITkTrackingGeometryBuilderCond     0     0    INFO Ring layout is present for volume 'InDet::Detectors::ITkPixelInner::PositiveEndcap' dealing with it.
+2025-01-17 18:21:22,018 AtlasTrackingGeom...ITkTrackingGeometryBuilderCond     0     0    INFO       -> adjusting the outer radius to the last ring at 135.362
+2025-01-17 18:21:22,018 AtlasTrackingGeom...ITkTrackingGeometryBuilderCond     0     0    INFO       -> created 1 ring volumes for Volume 'InDet::Detectors::ITkPixelInner::PositiveEndcap'.
+2025-01-17 18:21:22,018 AtlasTrackingGeom...ITkTrackingGeometryBuilderCond     0     0    INFO Ring layout is present for volume 'InDet::Detectors::ITkPixelOuter::NegativeEndcap' dealing with it.
+2025-01-17 18:21:22,018 AtlasTrackingGeom...ITkTrackingGeometryBuilderCond     0     0    INFO       -> adjusting the outer radius to the last ring at 351.143
+2025-01-17 18:21:22,018 AtlasTrackingGeom...ITkTrackingGeometryBuilderCond     0     0    INFO       -> created 3 ring volumes for Volume 'InDet::Detectors::ITkPixelOuter::NegativeEndcap'.
+2025-01-17 18:21:22,018 AtlasTrackingGeom...ITkTrackingGeometryBuilderCond     0     0    INFO Ring layout is present for volume 'InDet::Detectors::ITkPixelOuter::PositiveEndcap' dealing with it.
+2025-01-17 18:21:22,018 AtlasTrackingGeom...ITkTrackingGeometryBuilderCond     0     0    INFO       -> adjusting the outer radius to the last ring at 351.143
+2025-01-17 18:21:22,018 AtlasTrackingGeom...ITkTrackingGeometryBuilderCond     0     0    INFO       -> created 3 ring volumes for Volume 'InDet::Detectors::ITkPixelOuter::PositiveEndcap'.
+2025-01-17 18:21:22,035 ClassIDSvc                                             1     1    INFO getRegistryEntries: read 2056 CLIDRegistry entries for module ALL
+2025-01-17 18:21:22,365 PixelRDO_ContainerCnv                                  0     0    INFO PixelRDO_ContainerCnv::initialize()
+2025-01-17 18:21:22,489 ITkPixelOfflineCalibCondAlg                            0     0    INFO Last component="9163":[0.0,0.0,0.0,0.014357,0.00113,0.143887,0.010622,0.002756]}
+2025-01-17 18:21:23,675 ActsDetectorElementToActsGeometryIdMappingAlg          0     0    INFO Surfaces without associated detector elements 0 (with 66732)
+2025-01-17 18:21:24,854 ClassIDSvc                                             0     0    INFO getRegistryEntries: read 169 CLIDRegistry entries for module ALL
+2025-01-17 18:21:24,878 ClassIDSvc                                             0     0    INFO getRegistryEntries: read 269 CLIDRegistry entries for module ALL
+2025-01-17 18:21:24,879 DbSession                                              0     0    INFO     Open     DbSession    
+2025-01-17 18:21:24,879 Domain[ROOT_All]                                       0     0    INFO >   Access   DbDomain     UPDATE    [ROOT_All] 
+2025-01-17 18:21:24,879 Domain[ROOT_All]                                       0     0    INFO ->  Access   DbDatabase   CREATE    [ROOT_All] 32E9A71C-F7FF-2E4B-93F3-C0847C8A1CB2
+2025-01-17 18:21:24,879 Domain[ROOT_All]                                       0     0    INFO                           myAOD.pool.root_000
+2025-01-17 18:21:24,885 RootDatabase.open                                      0     0    INFO myAOD.pool.root_000 File version:63208
+2025-01-17 18:21:24,930 ToolSvc.xAODTrackParticleCompressorTool                0     0    INFO Initialising
+2025-01-17 18:21:24,930 ToolSvc.xAODTrackParticleCompressorTool                0     0    INFO   OffDiagCovMatrixBits = 23
+2025-01-17 18:21:24,930 ToolSvc.xAODTrackParticleCompressorTool                0     0    INFO   DiagCovMatrixBits    = 23
+2025-01-17 18:21:24,930 ToolSvc.xAODTrackParticleCompressorTool                0     0    INFO   UseOffDiagCompr = 0
+2025-01-17 18:21:24,931 TBranchAuxDynReader                                    0     0    INFO RootAuxDynIO/src/TBranchAuxDynReader.cxx:308 (TBranchAuxDynReader::BranchInfo& TBranchAuxDynReader::getBranchInfo(const unsigned long&, const SG::AuxStoreInternal&)): attribute 'mcEventNumber' (id=1 typename=unsigned long) has different type than the branch: ULong64_t  Marking for schema evolution.
+2025-01-17 18:21:24,931 TBranchAuxDynReader                                    0     0    INFO RootAuxDynIO/src/TBranchAuxDynReader.cxx:308 (TBranchAuxDynReader::BranchInfo& TBranchAuxDynReader::getBranchInfo(const unsigned long&, const SG::AuxStoreInternal&)): attribute 'pileUpMixtureIDLowBits' (id=2 typename=unsigned long) has different type than the branch: ULong64_t  Marking for schema evolution.
+2025-01-17 18:21:24,931 TBranchAuxDynReader                                    0     0    INFO RootAuxDynIO/src/TBranchAuxDynReader.cxx:308 (TBranchAuxDynReader::BranchInfo& TBranchAuxDynReader::getBranchInfo(const unsigned long&, const SG::AuxStoreInternal&)): attribute 'pileUpMixtureIDHighBits' (id=3 typename=unsigned long) has different type than the branch: ULong64_t  Marking for schema evolution.
+2025-01-17 18:21:24,952 StorageSvc                                             0     0    INFO Building shape according to reflection information using shape ID for:
+2025-01-17 18:21:24,952 StorageSvc                                             0     0    INFO xAOD::TrackParticleAuxContainer_v5 [3CE194F2-99D1-42D5-A3EB-D193E0AFA9FF]
+2025-01-17 18:21:24,956 StorageSvc                                             0     0    INFO Building shape according to reflection information using shape ID for:
+2025-01-17 18:21:24,956 StorageSvc                                             0     0    INFO xAOD::TruthVertexAuxContainer_v1 [B6BD3B02-C411-4EB9-903F-5B099D3B1A3E]
+2025-01-17 18:21:24,957 StorageSvc                                             0     0    INFO Building shape according to reflection information using shape ID for:
+2025-01-17 18:21:24,957 StorageSvc                                             0     0    INFO xAOD::TruthEventAuxContainer_v1 [1B945EFD-4F7D-4BDD-9FB1-6FB975315961]
+2025-01-17 18:21:24,958 StorageSvc                                             0     0    INFO Building shape according to reflection information using shape ID for:
+2025-01-17 18:21:24,958 StorageSvc                                             0     0    INFO xAOD::VertexAuxContainer_v1 [B1F73A82-9B4E-4508-8EB0-EF7D6E05BA57]
+2025-01-17 18:21:24,959 StorageSvc                                             0     0    INFO Building shape according to reflection information using shape ID for:
+2025-01-17 18:21:24,959 StorageSvc                                             0     0    INFO DataVector<xAOD::Vertex_v1> [00B6DBA1-0E0D-4FDA-BFEF-F08EEFFE4BA0]
+2025-01-17 18:21:24,967 StorageSvc                                             0     0    INFO Building shape according to reflection information using shape ID for:
+2025-01-17 18:21:24,967 StorageSvc                                             0     0    INFO DataVector<xAOD::TruthEvent_v1> [6290F297-F529-40EE-9FE5-1C577678306D]
+2025-01-17 18:21:24,968 StorageSvc                                             0     0    INFO Building shape according to reflection information using shape ID for:
+2025-01-17 18:21:24,968 StorageSvc                                             0     0    INFO DataVector<xAOD::TruthVertex_v1> [5FBAE0AB-09F7-4B6C-B066-0A003FC38ECF]
+2025-01-17 18:21:24,969 StorageSvc                                             0     0    INFO Building shape according to reflection information using shape ID for:
+2025-01-17 18:21:24,969 StorageSvc                                             0     0    INFO DataVector<xAOD::TrackParticle_v1> [F7564EE8-3BD2-11E3-A42F-6C3BE51AB9F1]
+2025-01-17 18:21:25,001 ClassIDSvc                                             0     0    INFO getRegistryEntries: read 769 CLIDRegistry entries for module ALL
+2025-01-17 18:21:25,002 AthenaMtesEventLoopMgr                                 0     0    INFO Firing EndProcessing
+2025-01-17 18:21:25,002 /cvmfs/atlas-condb.cern.ch/repo/conditions/...root     0     0    INFO Database being retired...
+2025-01-17 18:21:25,002 Domain[ROOT_All]                                       0     0    INFO ->  Deaccess DbDatabase   READ      [ROOT_All] C634B46D-ECB2-A045-91CC-00A82369D887
+2025-01-17 18:21:25,002 /cvmfs/atlas-condb.cern.ch/repo/conditions/...root     0     0    INFO Database being retired...
+2025-01-17 18:21:25,002 Domain[ROOT_All]                                       0     0    INFO ->  Deaccess DbDatabase   READ      [ROOT_All] A5CF2B06-0F7A-AC48-BDE9-1E702A3021C4
+2025-01-17 18:21:25,002 /cvmfs/atlas-condb.cern.ch/...root__DQ2-1250194490     0     0    INFO Database being retired...
+2025-01-17 18:21:25,002 Domain[ROOT_All]                                       0     0    INFO ->  Deaccess DbDatabase   READ      [ROOT_All] 8E91164C-1E3C-DB11-8CAB-00132046AB63
+2025-01-17 18:21:25,002 Domain[ROOT_All]                                       0     0    INFO >   Deaccess DbDomain     READ      [ROOT_All] 
+2025-01-17 18:21:25,002 OutputStreamSequencerSvc                               0     0 WARNING Reporting not turned on - set ReportingOn to True
+2025-01-17 18:21:25,021 ActsFastPrdAssociationAlg                              1     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:25,021 ActsFastPrdAssociationAlg                              1     1 WARNING Measurement was already stored.
+2025-01-17 18:21:25,023 ActsFastPrdAssociationAlg                              1     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:25,023 ActsFastPrdAssociationAlg                              1     1 WARNING Measurement was already stored.
+2025-01-17 18:21:25,035 ActsFastPrdAssociationAlg                              1     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:25,035 ActsFastPrdAssociationAlg                              1     1 WARNING Measurement was already stored.
+2025-01-17 18:21:25,036 ActsFastPrdAssociationAlg                              1     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:25,036 ActsFastPrdAssociationAlg                              1     1 WARNING Measurement was already stored.
+2025-01-17 18:21:25,043 ActsFastPrdAssociationAlg                              1     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:25,043 ActsFastPrdAssociationAlg                              1     1 WARNING Measurement was already stored.
+2025-01-17 18:21:25,047 ActsFastPrdAssociationAlg                              1     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:25,047 ActsFastPrdAssociationAlg                              1     1 WARNING Measurement was already stored.
+2025-01-17 18:21:25,055 AthenaMtesEventLoopMgr                                 0     0    INFO   ===>>>  done processing event #9231, run #242020 on slot 0,  1 events processed so far  <<<===
+2025-01-17 18:21:25,055 AthenaMtesEventLoopMgr                                 2     0    INFO   ===>>>  start processing event #9300, run #242020 on slot 0,  1 events processed so far  <<<===
+2025-01-17 18:21:25,069 ActsFastPrdAssociationAlg                              1     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:25,069 ActsFastPrdAssociationAlg                              1     1 WARNING Measurement was already stored.
+2025-01-17 18:21:25,904 AthenaMtesEventLoopMgr                                 1     1    INFO Firing EndProcessing
+2025-01-17 18:21:25,904 OutputStreamSequencerSvc                               1     1 WARNING Reporting not turned on - set ReportingOn to True
+2025-01-17 18:21:25,962 AthenaMtesEventLoopMgr                                 1     1    INFO   ===>>>  done processing event #9297, run #242020 on slot 1,  2 events processed so far  <<<===
+2025-01-17 18:21:25,963 AthenaMtesEventLoopMgr                                 3     1    INFO   ===>>>  start processing event #9305, run #242020 on slot 1,  2 events processed so far  <<<===
+2025-01-17 18:21:28,130 ActsFastPrdAssociationAlg                              2     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:28,130 ActsFastPrdAssociationAlg                              2     0 WARNING Measurement was already stored.
+2025-01-17 18:21:28,139 ActsFastPrdAssociationAlg                              2     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:28,139 ActsFastPrdAssociationAlg                              2     0 WARNING Measurement was already stored.
+2025-01-17 18:21:28,722 AthenaMtesEventLoopMgr                                 2     0    INFO Firing EndProcessing
+2025-01-17 18:21:28,722 OutputStreamSequencerSvc                               2     0 WARNING Reporting not turned on - set ReportingOn to True
+2025-01-17 18:21:28,794 AthenaMtesEventLoopMgr                                 2     0    INFO   ===>>>  done processing event #9300, run #242020 on slot 0,  3 events processed so far  <<<===
+2025-01-17 18:21:28,794 AthenaMtesEventLoopMgr                                 4     0    INFO   ===>>>  start processing event #9301, run #242020 on slot 0,  3 events processed so far  <<<===
+2025-01-17 18:21:29,386 ActsFastPrdAssociationAlg                              3     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:29,386 ActsFastPrdAssociationAlg                              3     1 WARNING Measurement was already stored.
+2025-01-17 18:21:29,388 ActsFastPrdAssociationAlg                              3     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:29,388 ActsFastPrdAssociationAlg                              3     1 WARNING Measurement was already stored.
+2025-01-17 18:21:29,388 ActsFastPrdAssociationAlg                              3     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:29,388 ActsFastPrdAssociationAlg                              3     1 WARNING Measurement was already stored.
+2025-01-17 18:21:29,390 ActsFastPrdAssociationAlg                              3     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:29,390 ActsFastPrdAssociationAlg                              3     1 WARNING Measurement was already stored.
+2025-01-17 18:21:29,392 ActsFastPrdAssociationAlg                              3     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:29,392 ActsFastPrdAssociationAlg                              3     1 WARNING Measurement was already stored.
+2025-01-17 18:21:29,928 AthenaMtesEventLoopMgr                                 3     1    INFO Firing EndProcessing
+2025-01-17 18:21:29,928 OutputStreamSequencerSvc                               3     1 WARNING Reporting not turned on - set ReportingOn to True
+2025-01-17 18:21:29,998 AthenaMtesEventLoopMgr                                 3     1    INFO   ===>>>  done processing event #9305, run #242020 on slot 1,  4 events processed so far  <<<===
+2025-01-17 18:21:29,999 AthenaMtesEventLoopMgr                                 5     1    INFO   ===>>>  start processing event #9308, run #242020 on slot 1,  4 events processed so far  <<<===
+2025-01-17 18:21:31,119 ActsFastPrdAssociationAlg                              4     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:31,119 ActsFastPrdAssociationAlg                              4     0 WARNING Measurement was already stored.
+2025-01-17 18:21:31,120 ActsFastPrdAssociationAlg                              4     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:31,120 ActsFastPrdAssociationAlg                              4     0 WARNING Measurement was already stored.
+2025-01-17 18:21:31,121 ActsFastPrdAssociationAlg                              4     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:31,121 ActsFastPrdAssociationAlg                              4     0 WARNING Measurement was already stored.
+2025-01-17 18:21:31,516 AthenaMtesEventLoopMgr                                 4     0    INFO Firing EndProcessing
+2025-01-17 18:21:31,516 OutputStreamSequencerSvc                               4     0 WARNING Reporting not turned on - set ReportingOn to True
+2025-01-17 18:21:31,577 AthenaMtesEventLoopMgr                                 4     0    INFO   ===>>>  done processing event #9301, run #242020 on slot 0,  5 events processed so far  <<<===
+2025-01-17 18:21:31,577 AthenaMtesEventLoopMgr                                 6     0    INFO   ===>>>  start processing event #9307, run #242020 on slot 0,  5 events processed so far  <<<===
+2025-01-17 18:21:33,101 ActsFastPrdAssociationAlg                              5     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:33,101 ActsFastPrdAssociationAlg                              5     1 WARNING Measurement was already stored.
+2025-01-17 18:21:33,103 ActsFastPrdAssociationAlg                              5     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:33,103 ActsFastPrdAssociationAlg                              5     1 WARNING Measurement was already stored.
+2025-01-17 18:21:33,103 ActsFastPrdAssociationAlg                              5     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:33,103 ActsFastPrdAssociationAlg                              5     1 WARNING Measurement was already stored.
+2025-01-17 18:21:33,106 ActsFastPrdAssociationAlg                              5     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:33,106 ActsFastPrdAssociationAlg                              5     1 WARNING Measurement was already stored.
+2025-01-17 18:21:33,548 AthenaMtesEventLoopMgr                                 5     1    INFO Firing EndProcessing
+2025-01-17 18:21:33,548 OutputStreamSequencerSvc                               5     1 WARNING Reporting not turned on - set ReportingOn to True
+2025-01-17 18:21:33,611 AthenaMtesEventLoopMgr                                 5     1    INFO   ===>>>  done processing event #9308, run #242020 on slot 1,  6 events processed so far  <<<===
+2025-01-17 18:21:33,612 AthenaMtesEventLoopMgr                                 7     1    INFO   ===>>>  start processing event #9312, run #242020 on slot 1,  6 events processed so far  <<<===
+2025-01-17 18:21:34,335 ActsFastPrdAssociationAlg                              6     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:34,335 ActsFastPrdAssociationAlg                              6     0 WARNING Measurement was already stored.
+2025-01-17 18:21:34,343 ActsFastPrdAssociationAlg                              6     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:34,343 ActsFastPrdAssociationAlg                              6     0 WARNING Measurement was already stored.
+2025-01-17 18:21:34,345 ActsFastPrdAssociationAlg                              6     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:34,345 ActsFastPrdAssociationAlg                              6     0 WARNING Measurement was already stored.
+2025-01-17 18:21:34,345 ActsFastPrdAssociationAlg                              6     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:34,345 ActsFastPrdAssociationAlg                              6     0 WARNING Measurement was already stored.
+2025-01-17 18:21:34,345 ActsFastPrdAssociationAlg                              6     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:34,345 ActsFastPrdAssociationAlg                              6     0 WARNING Measurement was already stored.
+2025-01-17 18:21:34,939 AthenaMtesEventLoopMgr                                 6     0    INFO Firing EndProcessing
+2025-01-17 18:21:34,939 OutputStreamSequencerSvc                               6     0 WARNING Reporting not turned on - set ReportingOn to True
+2025-01-17 18:21:35,006 AthenaMtesEventLoopMgr                                 6     0    INFO   ===>>>  done processing event #9307, run #242020 on slot 0,  7 events processed so far  <<<===
+2025-01-17 18:21:35,006 AthenaMtesEventLoopMgr                                 8     0    INFO   ===>>>  start processing event #9306, run #242020 on slot 0,  7 events processed so far  <<<===
+2025-01-17 18:21:36,614 ActsFastPrdAssociationAlg                              7     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:36,614 ActsFastPrdAssociationAlg                              7     1 WARNING Measurement was already stored.
+2025-01-17 18:21:36,617 ActsFastPrdAssociationAlg                              7     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:36,617 ActsFastPrdAssociationAlg                              7     1 WARNING Measurement was already stored.
+2025-01-17 18:21:36,620 ActsFastPrdAssociationAlg                              7     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:36,620 ActsFastPrdAssociationAlg                              7     1 WARNING Measurement was already stored.
+2025-01-17 18:21:36,622 ActsFastPrdAssociationAlg                              7     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:36,622 ActsFastPrdAssociationAlg                              7     1 WARNING Measurement was already stored.
+2025-01-17 18:21:37,216 AthenaMtesEventLoopMgr                                 7     1    INFO Firing EndProcessing
+2025-01-17 18:21:37,216 OutputStreamSequencerSvc                               7     1 WARNING Reporting not turned on - set ReportingOn to True
+2025-01-17 18:21:37,284 AthenaMtesEventLoopMgr                                 7     1    INFO   ===>>>  done processing event #9312, run #242020 on slot 1,  8 events processed so far  <<<===
+2025-01-17 18:21:37,284 AthenaMtesEventLoopMgr                                 9     1    INFO   ===>>>  start processing event #9310, run #242020 on slot 1,  8 events processed so far  <<<===
+2025-01-17 18:21:37,284 AthMpEvtLoopMgr.SharedHiveEvtQueueConsumer                        INFO Received from the queue: event num=60 chunk size=10
+2025-01-17 18:21:37,949 ActsFastPrdAssociationAlg                              8     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:37,949 ActsFastPrdAssociationAlg                              8     0 WARNING Measurement was already stored.
+2025-01-17 18:21:38,337 AthenaMtesEventLoopMgr                                 8     0    INFO Firing EndProcessing
+2025-01-17 18:21:38,338 OutputStreamSequencerSvc                               8     0 WARNING Reporting not turned on - set ReportingOn to True
+2025-01-17 18:21:38,400 AthenaMtesEventLoopMgr                                 8     0    INFO   ===>>>  done processing event #9306, run #242020 on slot 0,  9 events processed so far  <<<===
+2025-01-17 18:21:38,401 AthenaMtesEventLoopMgr                                10     0    INFO   ===>>>  start processing event #9209, run #242020 on slot 0,  9 events processed so far  <<<===
+2025-01-17 18:21:40,384 ActsFastPrdAssociationAlg                              9     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:40,384 ActsFastPrdAssociationAlg                              9     1 WARNING Measurement was already stored.
+2025-01-17 18:21:40,385 ActsFastPrdAssociationAlg                              9     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:40,385 ActsFastPrdAssociationAlg                              9     1 WARNING Measurement was already stored.
+2025-01-17 18:21:40,386 ActsFastPrdAssociationAlg                              9     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:40,386 ActsFastPrdAssociationAlg                              9     1 WARNING Measurement was already stored.
+2025-01-17 18:21:40,388 ActsFastPrdAssociationAlg                              9     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:40,388 ActsFastPrdAssociationAlg                              9     1 WARNING Measurement was already stored.
+2025-01-17 18:21:40,393 ActsFastPrdAssociationAlg                              9     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:40,393 ActsFastPrdAssociationAlg                              9     1 WARNING Measurement was already stored.
+2025-01-17 18:21:40,982 ActsFastPrdAssociationAlg                             10     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:40,982 ActsFastPrdAssociationAlg                             10     0 WARNING Measurement was already stored.
+2025-01-17 18:21:40,983 ActsFastPrdAssociationAlg                             10     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:40,983 ActsFastPrdAssociationAlg                             10     0 WARNING Measurement was already stored.
+2025-01-17 18:21:41,003 AthenaMtesEventLoopMgr                                 9     1    INFO Firing EndProcessing
+2025-01-17 18:21:41,003 OutputStreamSequencerSvc                               9     1 WARNING Reporting not turned on - set ReportingOn to True
+2025-01-17 18:21:41,077 AthenaMtesEventLoopMgr                                 9     1    INFO   ===>>>  done processing event #9310, run #242020 on slot 1,  10 events processed so far  <<<===
+2025-01-17 18:21:41,078 AthenaMtesEventLoopMgr                                11     1    INFO   ===>>>  start processing event #9323, run #242020 on slot 1,  10 events processed so far  <<<===
+2025-01-17 18:21:41,838 AthenaMtesEventLoopMgr                                10     0    INFO Firing EndProcessing
+2025-01-17 18:21:41,838 OutputStreamSequencerSvc                              10     0 WARNING Reporting not turned on - set ReportingOn to True
+2025-01-17 18:21:41,903 AthenaMtesEventLoopMgr                                10     0    INFO   ===>>>  done processing event #9209, run #242020 on slot 0,  11 events processed so far  <<<===
+2025-01-17 18:21:41,903 AthenaMtesEventLoopMgr                                12     0    INFO   ===>>>  start processing event #9317, run #242020 on slot 0,  11 events processed so far  <<<===
+2025-01-17 18:21:43,814 ActsFastPrdAssociationAlg                             11     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:43,814 ActsFastPrdAssociationAlg                             11     1 WARNING Measurement was already stored.
+2025-01-17 18:21:43,815 ActsFastPrdAssociationAlg                             11     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:43,815 ActsFastPrdAssociationAlg                             11     1 WARNING Measurement was already stored.
+2025-01-17 18:21:43,822 ActsFastPrdAssociationAlg                             11     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:43,822 ActsFastPrdAssociationAlg                             11     1 WARNING Measurement was already stored.
+2025-01-17 18:21:44,333 AthenaMtesEventLoopMgr                                11     1    INFO Firing EndProcessing
+2025-01-17 18:21:44,334 OutputStreamSequencerSvc                              11     1 WARNING Reporting not turned on - set ReportingOn to True
+2025-01-17 18:21:44,401 AthenaMtesEventLoopMgr                                11     1    INFO   ===>>>  done processing event #9323, run #242020 on slot 1,  12 events processed so far  <<<===
+2025-01-17 18:21:44,402 AthenaMtesEventLoopMgr                                13     1    INFO   ===>>>  start processing event #9319, run #242020 on slot 1,  12 events processed so far  <<<===
+2025-01-17 18:21:45,009 ActsFastPrdAssociationAlg                             12     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:45,009 ActsFastPrdAssociationAlg                             12     0 WARNING Measurement was already stored.
+2025-01-17 18:21:45,013 ActsFastPrdAssociationAlg                             12     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:45,013 ActsFastPrdAssociationAlg                             12     0 WARNING Measurement was already stored.
+2025-01-17 18:21:45,013 ActsFastPrdAssociationAlg                             12     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:45,013 ActsFastPrdAssociationAlg                             12     0 WARNING Measurement was already stored.
+2025-01-17 18:21:45,015 ActsFastPrdAssociationAlg                             12     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:45,015 ActsFastPrdAssociationAlg                             12     0 WARNING Measurement was already stored.
+2025-01-17 18:21:45,019 ActsFastPrdAssociationAlg                             12     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:45,019 ActsFastPrdAssociationAlg                             12     0 WARNING Measurement was already stored.
+2025-01-17 18:21:45,659 AthenaMtesEventLoopMgr                                12     0    INFO Firing EndProcessing
+2025-01-17 18:21:45,659 OutputStreamSequencerSvc                              12     0 WARNING Reporting not turned on - set ReportingOn to True
+2025-01-17 18:21:45,728 AthenaMtesEventLoopMgr                                12     0    INFO   ===>>>  done processing event #9317, run #242020 on slot 0,  13 events processed so far  <<<===
+2025-01-17 18:21:45,729 AthenaMtesEventLoopMgr                                14     0    INFO   ===>>>  start processing event #9324, run #242020 on slot 0,  13 events processed so far  <<<===
+2025-01-17 18:21:47,155 ActsFastPrdAssociationAlg                             13     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:47,155 ActsFastPrdAssociationAlg                             13     1 WARNING Measurement was already stored.
+2025-01-17 18:21:47,602 AthenaMtesEventLoopMgr                                13     1    INFO Firing EndProcessing
+2025-01-17 18:21:47,602 OutputStreamSequencerSvc                              13     1 WARNING Reporting not turned on - set ReportingOn to True
+2025-01-17 18:21:47,668 AthenaMtesEventLoopMgr                                13     1    INFO   ===>>>  done processing event #9319, run #242020 on slot 1,  14 events processed so far  <<<===
+2025-01-17 18:21:47,669 AthenaMtesEventLoopMgr                                15     1    INFO   ===>>>  start processing event #9329, run #242020 on slot 1,  14 events processed so far  <<<===
+2025-01-17 18:21:48,501 ActsFastPrdAssociationAlg                             14     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:48,501 ActsFastPrdAssociationAlg                             14     0 WARNING Measurement was already stored.
+2025-01-17 18:21:48,901 AthenaMtesEventLoopMgr                                14     0    INFO Firing EndProcessing
+2025-01-17 18:21:48,901 OutputStreamSequencerSvc                              14     0 WARNING Reporting not turned on - set ReportingOn to True
+2025-01-17 18:21:48,962 AthenaMtesEventLoopMgr                                14     0    INFO   ===>>>  done processing event #9324, run #242020 on slot 0,  15 events processed so far  <<<===
+2025-01-17 18:21:48,963 AthenaMtesEventLoopMgr                                16     0    INFO   ===>>>  start processing event #9331, run #242020 on slot 0,  15 events processed so far  <<<===
+2025-01-17 18:21:50,674 ActsFastPrdAssociationAlg                             15     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:50,674 ActsFastPrdAssociationAlg                             15     1 WARNING Measurement was already stored.
+2025-01-17 18:21:50,676 ActsFastPrdAssociationAlg                             15     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:50,676 ActsFastPrdAssociationAlg                             15     1 WARNING Measurement was already stored.
+2025-01-17 18:21:50,677 ActsFastPrdAssociationAlg                             15     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:50,677 ActsFastPrdAssociationAlg                             15     1 WARNING Measurement was already stored.
+2025-01-17 18:21:50,681 ActsFastPrdAssociationAlg                             15     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:50,681 ActsFastPrdAssociationAlg                             15     1 WARNING Measurement was already stored.
+2025-01-17 18:21:50,683 ActsFastPrdAssociationAlg                             15     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:50,683 ActsFastPrdAssociationAlg                             15     1 WARNING Measurement was already stored.
+2025-01-17 18:21:51,175 AthenaMtesEventLoopMgr                                15     1    INFO Firing EndProcessing
+2025-01-17 18:21:51,175 OutputStreamSequencerSvc                              15     1 WARNING Reporting not turned on - set ReportingOn to True
+2025-01-17 18:21:51,244 AthenaMtesEventLoopMgr                                15     1    INFO   ===>>>  done processing event #9329, run #242020 on slot 1,  16 events processed so far  <<<===
+2025-01-17 18:21:51,244 AthenaMtesEventLoopMgr                                17     1    INFO   ===>>>  start processing event #9332, run #242020 on slot 1,  16 events processed so far  <<<===
+2025-01-17 18:21:51,294 PerfMonMTSvc                                          17     1    INFO Event [   18] CPU Time: 00h01m00s, Wall Time: 00h00m45s, Vmem: 3.21 GB, Rss: 2.33 GB, Pss: 1.71 GB, Swap: 0.00 KB
+2025-01-17 18:21:51,853 ActsFastPrdAssociationAlg                             16     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:51,853 ActsFastPrdAssociationAlg                             16     0 WARNING Measurement was already stored.
+2025-01-17 18:21:51,854 ActsFastPrdAssociationAlg                             16     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:51,854 ActsFastPrdAssociationAlg                             16     0 WARNING Measurement was already stored.
+2025-01-17 18:21:51,856 ActsFastPrdAssociationAlg                             16     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:51,856 ActsFastPrdAssociationAlg                             16     0 WARNING Measurement was already stored.
+2025-01-17 18:21:52,198 AthenaMtesEventLoopMgr                                16     0    INFO Firing EndProcessing
+2025-01-17 18:21:52,199 OutputStreamSequencerSvc                              16     0 WARNING Reporting not turned on - set ReportingOn to True
+2025-01-17 18:21:52,263 AthenaMtesEventLoopMgr                                16     0    INFO   ===>>>  done processing event #9331, run #242020 on slot 0,  17 events processed so far  <<<===
+2025-01-17 18:21:52,263 AthenaMtesEventLoopMgr                                18     0    INFO   ===>>>  start processing event #9327, run #242020 on slot 0,  17 events processed so far  <<<===
+2025-01-17 18:21:53,458 ActsFastPrdAssociationAlg                             17     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:53,458 ActsFastPrdAssociationAlg                             17     1 WARNING Measurement was already stored.
+2025-01-17 18:21:53,836 AthenaMtesEventLoopMgr                                17     1    INFO Firing EndProcessing
+2025-01-17 18:21:53,836 OutputStreamSequencerSvc                              17     1 WARNING Reporting not turned on - set ReportingOn to True
+2025-01-17 18:21:53,896 AthenaMtesEventLoopMgr                                17     1    INFO   ===>>>  done processing event #9332, run #242020 on slot 1,  18 events processed so far  <<<===
+2025-01-17 18:21:53,897 AthenaMtesEventLoopMgr                                19     1    INFO   ===>>>  start processing event #9330, run #242020 on slot 1,  18 events processed so far  <<<===
+2025-01-17 18:21:53,897 AthMpEvtLoopMgr.SharedHiveEvtQueueConsumer                        INFO Received from the queue: event num=100 chunk size=10
+2025-01-17 18:21:54,804 ActsFastPrdAssociationAlg                             18     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:54,804 ActsFastPrdAssociationAlg                             18     0 WARNING Measurement was already stored.
+2025-01-17 18:21:54,804 ActsFastPrdAssociationAlg                             18     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:54,804 ActsFastPrdAssociationAlg                             18     0 WARNING Measurement was already stored.
+2025-01-17 18:21:54,804 ActsFastPrdAssociationAlg                             18     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:54,804 ActsFastPrdAssociationAlg                             18     0 WARNING Measurement was already stored.
+2025-01-17 18:21:54,805 ActsFastPrdAssociationAlg                             18     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:54,805 ActsFastPrdAssociationAlg                             18     0 WARNING Measurement was already stored.
+2025-01-17 18:21:55,115 AthenaMtesEventLoopMgr                                18     0    INFO Firing EndProcessing
+2025-01-17 18:21:55,115 OutputStreamSequencerSvc                              18     0 WARNING Reporting not turned on - set ReportingOn to True
+2025-01-17 18:21:55,172 AthenaMtesEventLoopMgr                                18     0    INFO   ===>>>  done processing event #9327, run #242020 on slot 0,  19 events processed so far  <<<===
+2025-01-17 18:21:55,173 AthenaMtesEventLoopMgr                                20     0    INFO   ===>>>  start processing event #9369, run #242020 on slot 0,  19 events processed so far  <<<===
+2025-01-17 18:21:56,641 ActsFastPrdAssociationAlg                             19     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:56,641 ActsFastPrdAssociationAlg                             19     1 WARNING Measurement was already stored.
+2025-01-17 18:21:56,643 ActsFastPrdAssociationAlg                             19     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:56,643 ActsFastPrdAssociationAlg                             19     1 WARNING Measurement was already stored.
+2025-01-17 18:21:56,648 ActsFastPrdAssociationAlg                             19     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:56,648 ActsFastPrdAssociationAlg                             19     1 WARNING Measurement was already stored.
+2025-01-17 18:21:56,650 ActsFastPrdAssociationAlg                             19     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:56,650 ActsFastPrdAssociationAlg                             19     1 WARNING Measurement was already stored.
+2025-01-17 18:21:57,129 AthenaMtesEventLoopMgr                                19     1    INFO Firing EndProcessing
+2025-01-17 18:21:57,129 OutputStreamSequencerSvc                              19     1 WARNING Reporting not turned on - set ReportingOn to True
+2025-01-17 18:21:57,190 AthenaMtesEventLoopMgr                                19     1    INFO   ===>>>  done processing event #9330, run #242020 on slot 1,  20 events processed so far  <<<===
+2025-01-17 18:21:57,190 AthenaMtesEventLoopMgr                                21     1    INFO   ===>>>  start processing event #9377, run #242020 on slot 1,  20 events processed so far  <<<===
+2025-01-17 18:21:57,885 ActsFastPrdAssociationAlg                             20     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:57,885 ActsFastPrdAssociationAlg                             20     0 WARNING Measurement was already stored.
+2025-01-17 18:21:57,886 ActsFastPrdAssociationAlg                             20     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:57,886 ActsFastPrdAssociationAlg                             20     0 WARNING Measurement was already stored.
+2025-01-17 18:21:58,418 AthenaMtesEventLoopMgr                                20     0    INFO Firing EndProcessing
+2025-01-17 18:21:58,418 OutputStreamSequencerSvc                              20     0 WARNING Reporting not turned on - set ReportingOn to True
+2025-01-17 18:21:58,485 AthenaMtesEventLoopMgr                                20     0    INFO   ===>>>  done processing event #9369, run #242020 on slot 0,  21 events processed so far  <<<===
+2025-01-17 18:21:58,486 AthenaMtesEventLoopMgr                                22     0    INFO   ===>>>  start processing event #9370, run #242020 on slot 0,  21 events processed so far  <<<===
+2025-01-17 18:21:59,522 ActsFastPrdAssociationAlg                             21     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:59,522 ActsFastPrdAssociationAlg                             21     1 WARNING Measurement was already stored.
+2025-01-17 18:21:59,525 ActsFastPrdAssociationAlg                             21     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:59,525 ActsFastPrdAssociationAlg                             21     1 WARNING Measurement was already stored.
+2025-01-17 18:21:59,526 ActsFastPrdAssociationAlg                             21     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:59,526 ActsFastPrdAssociationAlg                             21     1 WARNING Measurement was already stored.
+2025-01-17 18:21:59,528 ActsFastPrdAssociationAlg                             21     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:59,528 ActsFastPrdAssociationAlg                             21     1 WARNING Measurement was already stored.
+2025-01-17 18:21:59,528 ActsFastPrdAssociationAlg                             21     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:21:59,528 ActsFastPrdAssociationAlg                             21     1 WARNING Measurement was already stored.
+2025-01-17 18:21:59,856 AthenaMtesEventLoopMgr                                21     1    INFO Firing EndProcessing
+2025-01-17 18:21:59,856 OutputStreamSequencerSvc                              21     1 WARNING Reporting not turned on - set ReportingOn to True
+2025-01-17 18:21:59,913 AthenaMtesEventLoopMgr                                21     1    INFO   ===>>>  done processing event #9377, run #242020 on slot 1,  22 events processed so far  <<<===
+2025-01-17 18:21:59,913 AthenaMtesEventLoopMgr                                23     1    INFO   ===>>>  start processing event #9376, run #242020 on slot 1,  22 events processed so far  <<<===
+2025-01-17 18:22:01,012 ActsFastPrdAssociationAlg                             22     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:01,012 ActsFastPrdAssociationAlg                             22     0 WARNING Measurement was already stored.
+2025-01-17 18:22:01,017 ActsFastPrdAssociationAlg                             22     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:01,017 ActsFastPrdAssociationAlg                             22     0 WARNING Measurement was already stored.
+2025-01-17 18:22:01,018 ActsFastPrdAssociationAlg                             22     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:01,018 ActsFastPrdAssociationAlg                             22     0 WARNING Measurement was already stored.
+2025-01-17 18:22:01,019 ActsFastPrdAssociationAlg                             22     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:01,019 ActsFastPrdAssociationAlg                             22     0 WARNING Measurement was already stored.
+2025-01-17 18:22:01,387 AthenaMtesEventLoopMgr                                22     0    INFO Firing EndProcessing
+2025-01-17 18:22:01,387 OutputStreamSequencerSvc                              22     0 WARNING Reporting not turned on - set ReportingOn to True
+2025-01-17 18:22:01,451 AthenaMtesEventLoopMgr                                22     0    INFO   ===>>>  done processing event #9370, run #242020 on slot 0,  23 events processed so far  <<<===
+2025-01-17 18:22:01,452 AthenaMtesEventLoopMgr                                24     0    INFO   ===>>>  start processing event #9375, run #242020 on slot 0,  23 events processed so far  <<<===
+2025-01-17 18:22:02,296 AthenaMtesEventLoopMgr                                23     1    INFO Firing EndProcessing
+2025-01-17 18:22:02,296 OutputStreamSequencerSvc                              23     1 WARNING Reporting not turned on - set ReportingOn to True
+2025-01-17 18:22:02,342 AthenaMtesEventLoopMgr                                23     1    INFO   ===>>>  done processing event #9376, run #242020 on slot 1,  24 events processed so far  <<<===
+2025-01-17 18:22:02,343 AthenaMtesEventLoopMgr                                25     1    INFO   ===>>>  start processing event #9380, run #242020 on slot 1,  24 events processed so far  <<<===
+2025-01-17 18:22:04,667 ActsFastPrdAssociationAlg                             24     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:04,667 ActsFastPrdAssociationAlg                             24     0 WARNING Measurement was already stored.
+2025-01-17 18:22:04,671 ActsFastPrdAssociationAlg                             24     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:04,671 ActsFastPrdAssociationAlg                             24     0 WARNING Measurement was already stored.
+2025-01-17 18:22:04,676 ActsFastPrdAssociationAlg                             24     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:04,676 ActsFastPrdAssociationAlg                             24     0 WARNING Measurement was already stored.
+2025-01-17 18:22:04,895 ActsFastPrdAssociationAlg                             25     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:04,895 ActsFastPrdAssociationAlg                             25     1 WARNING Measurement was already stored.
+2025-01-17 18:22:05,268 AthenaMtesEventLoopMgr                                25     1    INFO Firing EndProcessing
+2025-01-17 18:22:05,268 OutputStreamSequencerSvc                              25     1 WARNING Reporting not turned on - set ReportingOn to True
+2025-01-17 18:22:05,326 AthenaMtesEventLoopMgr                                25     1    INFO   ===>>>  done processing event #9380, run #242020 on slot 1,  25 events processed so far  <<<===
+2025-01-17 18:22:05,327 AthenaMtesEventLoopMgr                                26     1    INFO   ===>>>  start processing event #9381, run #242020 on slot 1,  25 events processed so far  <<<===
+2025-01-17 18:22:05,327 AthenaMtesEventLoopMgr                                24     0    INFO Firing EndProcessing
+2025-01-17 18:22:05,327 OutputStreamSequencerSvc                              24     0 WARNING Reporting not turned on - set ReportingOn to True
+2025-01-17 18:22:05,404 AthenaMtesEventLoopMgr                                24     0    INFO   ===>>>  done processing event #9375, run #242020 on slot 0,  26 events processed so far  <<<===
+2025-01-17 18:22:05,453 AthenaMtesEventLoopMgr                                27     0    INFO   ===>>>  start processing event #9382, run #242020 on slot 0,  26 events processed so far  <<<===
+2025-01-17 18:22:08,390 ActsFastPrdAssociationAlg                             26     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:08,390 ActsFastPrdAssociationAlg                             26     1 WARNING Measurement was already stored.
+2025-01-17 18:22:08,392 ActsFastPrdAssociationAlg                             26     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:08,392 ActsFastPrdAssociationAlg                             26     1 WARNING Measurement was already stored.
+2025-01-17 18:22:08,399 ActsFastPrdAssociationAlg                             26     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:08,399 ActsFastPrdAssociationAlg                             26     1 WARNING Measurement was already stored.
+2025-01-17 18:22:08,881 AthenaMtesEventLoopMgr                                26     1    INFO Firing EndProcessing
+2025-01-17 18:22:08,881 OutputStreamSequencerSvc                              26     1 WARNING Reporting not turned on - set ReportingOn to True
+2025-01-17 18:22:08,944 AthenaMtesEventLoopMgr                                26     1    INFO   ===>>>  done processing event #9381, run #242020 on slot 1,  27 events processed so far  <<<===
+2025-01-17 18:22:08,944 AthenaMtesEventLoopMgr                                28     1    INFO   ===>>>  start processing event #9374, run #242020 on slot 1,  27 events processed so far  <<<===
+2025-01-17 18:22:09,515 ActsFastPrdAssociationAlg                             27     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:09,515 ActsFastPrdAssociationAlg                             27     0 WARNING Measurement was already stored.
+2025-01-17 18:22:09,519 ActsFastPrdAssociationAlg                             27     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:09,519 ActsFastPrdAssociationAlg                             27     0 WARNING Measurement was already stored.
+2025-01-17 18:22:09,520 ActsFastPrdAssociationAlg                             27     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:09,520 ActsFastPrdAssociationAlg                             27     0 WARNING Measurement was already stored.
+2025-01-17 18:22:09,522 ActsFastPrdAssociationAlg                             27     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:09,522 ActsFastPrdAssociationAlg                             27     0 WARNING Measurement was already stored.
+2025-01-17 18:22:10,181 AthenaMtesEventLoopMgr                                27     0    INFO Firing EndProcessing
+2025-01-17 18:22:10,181 OutputStreamSequencerSvc                              27     0 WARNING Reporting not turned on - set ReportingOn to True
+2025-01-17 18:22:10,257 AthenaMtesEventLoopMgr                                27     0    INFO   ===>>>  done processing event #9382, run #242020 on slot 0,  28 events processed so far  <<<===
+2025-01-17 18:22:10,257 AthenaMtesEventLoopMgr                                29     0    INFO   ===>>>  start processing event #9378, run #242020 on slot 0,  28 events processed so far  <<<===
+2025-01-17 18:22:10,257 AthMpEvtLoopMgr.SharedHiveEvtQueueConsumer                        INFO Received from the queue: event num=140 chunk size=10
+2025-01-17 18:22:11,681 ActsFastPrdAssociationAlg                             28     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:11,681 ActsFastPrdAssociationAlg                             28     1 WARNING Measurement was already stored.
+2025-01-17 18:22:11,683 ActsFastPrdAssociationAlg                             28     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:11,683 ActsFastPrdAssociationAlg                             28     1 WARNING Measurement was already stored.
+2025-01-17 18:22:11,688 ActsFastPrdAssociationAlg                             28     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:11,688 ActsFastPrdAssociationAlg                             28     1 WARNING Measurement was already stored.
+2025-01-17 18:22:11,689 ActsFastPrdAssociationAlg                             28     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:11,689 ActsFastPrdAssociationAlg                             28     1 WARNING Measurement was already stored.
+2025-01-17 18:22:11,690 ActsFastPrdAssociationAlg                             28     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:11,690 ActsFastPrdAssociationAlg                             28     1 WARNING Measurement was already stored.
+2025-01-17 18:22:12,086 AthenaMtesEventLoopMgr                                28     1    INFO Firing EndProcessing
+2025-01-17 18:22:12,086 OutputStreamSequencerSvc                              28     1 WARNING Reporting not turned on - set ReportingOn to True
+2025-01-17 18:22:12,150 AthenaMtesEventLoopMgr                                28     1    INFO   ===>>>  done processing event #9374, run #242020 on slot 1,  29 events processed so far  <<<===
+2025-01-17 18:22:12,151 AthenaMtesEventLoopMgr                                30     1    INFO   ===>>>  start processing event #9353, run #242020 on slot 1,  29 events processed so far  <<<===
+2025-01-17 18:22:12,889 ActsFastPrdAssociationAlg                             29     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:12,889 ActsFastPrdAssociationAlg                             29     0 WARNING Measurement was already stored.
+2025-01-17 18:22:12,891 ActsFastPrdAssociationAlg                             29     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:12,891 ActsFastPrdAssociationAlg                             29     0 WARNING Measurement was already stored.
+2025-01-17 18:22:12,891 ActsFastPrdAssociationAlg                             29     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:12,891 ActsFastPrdAssociationAlg                             29     0 WARNING Measurement was already stored.
+2025-01-17 18:22:13,508 AthenaMtesEventLoopMgr                                29     0    INFO Firing EndProcessing
+2025-01-17 18:22:13,508 OutputStreamSequencerSvc                              29     0 WARNING Reporting not turned on - set ReportingOn to True
+2025-01-17 18:22:13,577 AthenaMtesEventLoopMgr                                29     0    INFO   ===>>>  done processing event #9378, run #242020 on slot 0,  30 events processed so far  <<<===
+2025-01-17 18:22:13,577 AthenaMtesEventLoopMgr                                31     0    INFO   ===>>>  start processing event #9352, run #242020 on slot 0,  30 events processed so far  <<<===
+2025-01-17 18:22:14,903 ActsFastPrdAssociationAlg                             30     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:14,903 ActsFastPrdAssociationAlg                             30     1 WARNING Measurement was already stored.
+2025-01-17 18:22:14,906 ActsFastPrdAssociationAlg                             30     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:14,906 ActsFastPrdAssociationAlg                             30     1 WARNING Measurement was already stored.
+2025-01-17 18:22:15,356 AthenaMtesEventLoopMgr                                30     1    INFO Firing EndProcessing
+2025-01-17 18:22:15,356 OutputStreamSequencerSvc                              30     1 WARNING Reporting not turned on - set ReportingOn to True
+2025-01-17 18:22:15,420 AthenaMtesEventLoopMgr                                30     1    INFO   ===>>>  done processing event #9353, run #242020 on slot 1,  31 events processed so far  <<<===
+2025-01-17 18:22:15,421 AthenaMtesEventLoopMgr                                32     1    INFO   ===>>>  start processing event #9358, run #242020 on slot 1,  31 events processed so far  <<<===
+2025-01-17 18:22:16,531 ActsFastPrdAssociationAlg                             31     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:16,531 ActsFastPrdAssociationAlg                             31     0 WARNING Measurement was already stored.
+2025-01-17 18:22:16,989 AthenaMtesEventLoopMgr                                31     0    INFO Firing EndProcessing
+2025-01-17 18:22:16,989 OutputStreamSequencerSvc                              31     0 WARNING Reporting not turned on - set ReportingOn to True
+2025-01-17 18:22:17,054 AthenaMtesEventLoopMgr                                31     0    INFO   ===>>>  done processing event #9352, run #242020 on slot 0,  32 events processed so far  <<<===
+2025-01-17 18:22:17,054 AthenaMtesEventLoopMgr                                33     0    INFO   ===>>>  start processing event #9354, run #242020 on slot 0,  32 events processed so far  <<<===
+2025-01-17 18:22:18,263 ActsFastPrdAssociationAlg                             32     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:18,263 ActsFastPrdAssociationAlg                             32     1 WARNING Measurement was already stored.
+2025-01-17 18:22:18,264 ActsFastPrdAssociationAlg                             32     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:18,264 ActsFastPrdAssociationAlg                             32     1 WARNING Measurement was already stored.
+2025-01-17 18:22:18,692 AthenaMtesEventLoopMgr                                32     1    INFO Firing EndProcessing
+2025-01-17 18:22:18,692 OutputStreamSequencerSvc                              32     1 WARNING Reporting not turned on - set ReportingOn to True
+2025-01-17 18:22:18,757 AthenaMtesEventLoopMgr                                32     1    INFO   ===>>>  done processing event #9358, run #242020 on slot 1,  33 events processed so far  <<<===
+2025-01-17 18:22:18,758 AthenaMtesEventLoopMgr                                34     1    INFO   ===>>>  start processing event #9356, run #242020 on slot 1,  33 events processed so far  <<<===
+2025-01-17 18:22:20,165 ActsFastPrdAssociationAlg                             33     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:20,165 ActsFastPrdAssociationAlg                             33     0 WARNING Measurement was already stored.
+2025-01-17 18:22:20,166 ActsFastPrdAssociationAlg                             33     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:20,166 ActsFastPrdAssociationAlg                             33     0 WARNING Measurement was already stored.
+2025-01-17 18:22:20,168 ActsFastPrdAssociationAlg                             33     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:20,168 ActsFastPrdAssociationAlg                             33     0 WARNING Measurement was already stored.
+2025-01-17 18:22:20,717 AthenaMtesEventLoopMgr                                33     0    INFO Firing EndProcessing
+2025-01-17 18:22:20,717 OutputStreamSequencerSvc                              33     0 WARNING Reporting not turned on - set ReportingOn to True
+2025-01-17 18:22:20,787 AthenaMtesEventLoopMgr                                33     0    INFO   ===>>>  done processing event #9354, run #242020 on slot 0,  34 events processed so far  <<<===
+2025-01-17 18:22:20,787 AthenaMtesEventLoopMgr                                35     0    INFO   ===>>>  start processing event #9355, run #242020 on slot 0,  34 events processed so far  <<<===
+2025-01-17 18:22:21,291 ActsFastPrdAssociationAlg                             34     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:21,292 ActsFastPrdAssociationAlg                             34     1 WARNING Measurement was already stored.
+2025-01-17 18:22:21,293 ActsFastPrdAssociationAlg                             34     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:21,293 ActsFastPrdAssociationAlg                             34     1 WARNING Measurement was already stored.
+2025-01-17 18:22:21,444 AthenaMtesEventLoopMgr                                34     1    INFO Firing EndProcessing
+2025-01-17 18:22:21,444 OutputStreamSequencerSvc                              34     1 WARNING Reporting not turned on - set ReportingOn to True
+2025-01-17 18:22:21,498 AthenaMtesEventLoopMgr                                34     1    INFO   ===>>>  done processing event #9356, run #242020 on slot 1,  35 events processed so far  <<<===
+2025-01-17 18:22:21,498 AthenaMtesEventLoopMgr                                36     1    INFO   ===>>>  start processing event #9360, run #242020 on slot 1,  35 events processed so far  <<<===
+2025-01-17 18:22:21,549 PerfMonMTSvc                                          36     1    INFO Event [   37] CPU Time: 00h02m00s, Wall Time: 00h01m15s, Vmem: 3.24 GB, Rss: 2.37 GB, Pss: 1.74 GB, Swap: 0.00 KB
+2025-01-17 18:22:22,991 ActsFastPrdAssociationAlg                             35     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:22,991 ActsFastPrdAssociationAlg                             35     0 WARNING Measurement was already stored.
+2025-01-17 18:22:22,992 ActsFastPrdAssociationAlg                             35     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:22,992 ActsFastPrdAssociationAlg                             35     0 WARNING Measurement was already stored.
+2025-01-17 18:22:23,361 AthenaMtesEventLoopMgr                                35     0    INFO Firing EndProcessing
+2025-01-17 18:22:23,361 OutputStreamSequencerSvc                              35     0 WARNING Reporting not turned on - set ReportingOn to True
+2025-01-17 18:22:23,429 AthenaMtesEventLoopMgr                                35     0    INFO   ===>>>  done processing event #9355, run #242020 on slot 0,  36 events processed so far  <<<===
+2025-01-17 18:22:23,430 AthenaMtesEventLoopMgr                                37     0    INFO   ===>>>  start processing event #9359, run #242020 on slot 0,  36 events processed so far  <<<===
+2025-01-17 18:22:24,469 ActsFastPrdAssociationAlg                             36     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:24,469 ActsFastPrdAssociationAlg                             36     1 WARNING Measurement was already stored.
+2025-01-17 18:22:24,470 ActsFastPrdAssociationAlg                             36     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:24,470 ActsFastPrdAssociationAlg                             36     1 WARNING Measurement was already stored.
+2025-01-17 18:22:24,470 ActsFastPrdAssociationAlg                             36     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:24,470 ActsFastPrdAssociationAlg                             36     1 WARNING Measurement was already stored.
+2025-01-17 18:22:24,471 ActsFastPrdAssociationAlg                             36     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:24,471 ActsFastPrdAssociationAlg                             36     1 WARNING Measurement was already stored.
+2025-01-17 18:22:24,473 ActsFastPrdAssociationAlg                             36     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:24,473 ActsFastPrdAssociationAlg                             36     1 WARNING Measurement was already stored.
+2025-01-17 18:22:24,478 ActsFastPrdAssociationAlg                             36     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:24,478 ActsFastPrdAssociationAlg                             36     1 WARNING Measurement was already stored.
+2025-01-17 18:22:24,926 AthenaMtesEventLoopMgr                                36     1    INFO Firing EndProcessing
+2025-01-17 18:22:24,926 OutputStreamSequencerSvc                              36     1 WARNING Reporting not turned on - set ReportingOn to True
+2025-01-17 18:22:24,992 AthenaMtesEventLoopMgr                                36     1    INFO   ===>>>  done processing event #9360, run #242020 on slot 1,  37 events processed so far  <<<===
+2025-01-17 18:22:24,993 AthenaMtesEventLoopMgr                                38     1    INFO   ===>>>  start processing event #9357, run #242020 on slot 1,  37 events processed so far  <<<===
+2025-01-17 18:22:25,638 ActsFastPrdAssociationAlg                             37     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:25,638 ActsFastPrdAssociationAlg                             37     0 WARNING Measurement was already stored.
+2025-01-17 18:22:26,071 AthenaMtesEventLoopMgr                                37     0    INFO Firing EndProcessing
+2025-01-17 18:22:26,071 OutputStreamSequencerSvc                              37     0 WARNING Reporting not turned on - set ReportingOn to True
+2025-01-17 18:22:26,124 AthenaMtesEventLoopMgr                                37     0    INFO   ===>>>  done processing event #9359, run #242020 on slot 0,  38 events processed so far  <<<===
+2025-01-17 18:22:26,125 AthenaMtesEventLoopMgr                                39     0    INFO   ===>>>  start processing event #9366, run #242020 on slot 0,  38 events processed so far  <<<===
+2025-01-17 18:22:26,125 AthMpEvtLoopMgr.SharedHiveEvtQueueConsumer                        INFO Received from the queue: event num=190 chunk size=10
+2025-01-17 18:22:28,009 ActsFastPrdAssociationAlg                             38     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:28,009 ActsFastPrdAssociationAlg                             38     1 WARNING Measurement was already stored.
+2025-01-17 18:22:28,010 ActsFastPrdAssociationAlg                             38     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:28,010 ActsFastPrdAssociationAlg                             38     1 WARNING Measurement was already stored.
+2025-01-17 18:22:28,301 ActsFastPrdAssociationAlg                             39     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:28,301 ActsFastPrdAssociationAlg                             39     0 WARNING Measurement was already stored.
+2025-01-17 18:22:28,304 ActsFastPrdAssociationAlg                             39     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:28,304 ActsFastPrdAssociationAlg                             39     0 WARNING Measurement was already stored.
+2025-01-17 18:22:28,488 AthenaMtesEventLoopMgr                                38     1    INFO Firing EndProcessing
+2025-01-17 18:22:28,488 OutputStreamSequencerSvc                              38     1 WARNING Reporting not turned on - set ReportingOn to True
+2025-01-17 18:22:28,555 AthenaMtesEventLoopMgr                                38     1    INFO   ===>>>  done processing event #9357, run #242020 on slot 1,  39 events processed so far  <<<===
+2025-01-17 18:22:28,556 AthenaMtesEventLoopMgr                                40     1    INFO   ===>>>  start processing event #9333, run #242020 on slot 1,  39 events processed so far  <<<===
+2025-01-17 18:22:29,151 AthenaMtesEventLoopMgr                                39     0    INFO Firing EndProcessing
+2025-01-17 18:22:29,151 OutputStreamSequencerSvc                              39     0 WARNING Reporting not turned on - set ReportingOn to True
+2025-01-17 18:22:29,203 AthenaMtesEventLoopMgr                                39     0    INFO   ===>>>  done processing event #9366, run #242020 on slot 0,  40 events processed so far  <<<===
+2025-01-17 18:22:29,204 AthenaMtesEventLoopMgr                                41     0    INFO   ===>>>  start processing event #9335, run #242020 on slot 0,  40 events processed so far  <<<===
+2025-01-17 18:22:31,226 ActsFastPrdAssociationAlg                             41     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:31,226 ActsFastPrdAssociationAlg                             41     0 WARNING Measurement was already stored.
+2025-01-17 18:22:31,229 ActsFastPrdAssociationAlg                             41     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:31,229 ActsFastPrdAssociationAlg                             41     0 WARNING Measurement was already stored.
+2025-01-17 18:22:31,231 ActsFastPrdAssociationAlg                             41     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:31,231 ActsFastPrdAssociationAlg                             41     0 WARNING Measurement was already stored.
+2025-01-17 18:22:31,622 ActsFastPrdAssociationAlg                             40     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:31,622 ActsFastPrdAssociationAlg                             40     1 WARNING Measurement was already stored.
+2025-01-17 18:22:31,626 ActsFastPrdAssociationAlg                             40     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:31,626 ActsFastPrdAssociationAlg                             40     1 WARNING Measurement was already stored.
+2025-01-17 18:22:31,626 ActsFastPrdAssociationAlg                             40     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:31,626 ActsFastPrdAssociationAlg                             40     1 WARNING Measurement was already stored.
+2025-01-17 18:22:31,630 ActsFastPrdAssociationAlg                             40     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:31,630 ActsFastPrdAssociationAlg                             40     1 WARNING Measurement was already stored.
+2025-01-17 18:22:31,653 AthenaMtesEventLoopMgr                                41     0    INFO Firing EndProcessing
+2025-01-17 18:22:31,653 OutputStreamSequencerSvc                              41     0 WARNING Reporting not turned on - set ReportingOn to True
+2025-01-17 18:22:31,706 AthenaMtesEventLoopMgr                                41     0    INFO   ===>>>  done processing event #9335, run #242020 on slot 0,  41 events processed so far  <<<===
+2025-01-17 18:22:31,707 AthenaMtesEventLoopMgr                                42     0    INFO   ===>>>  start processing event #9337, run #242020 on slot 0,  41 events processed so far  <<<===
+2025-01-17 18:22:32,556 AthenaMtesEventLoopMgr                                40     1    INFO Firing EndProcessing
+2025-01-17 18:22:32,556 OutputStreamSequencerSvc                              40     1 WARNING Reporting not turned on - set ReportingOn to True
+2025-01-17 18:22:32,632 AthenaMtesEventLoopMgr                                40     1    INFO   ===>>>  done processing event #9333, run #242020 on slot 1,  42 events processed so far  <<<===
+2025-01-17 18:22:32,633 AthenaMtesEventLoopMgr                                43     1    INFO   ===>>>  start processing event #9326, run #242020 on slot 1,  42 events processed so far  <<<===
+2025-01-17 18:22:34,024 ActsFastPrdAssociationAlg                             42     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:34,024 ActsFastPrdAssociationAlg                             42     0 WARNING Measurement was already stored.
+2025-01-17 18:22:34,027 ActsFastPrdAssociationAlg                             42     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:34,027 ActsFastPrdAssociationAlg                             42     0 WARNING Measurement was already stored.
+2025-01-17 18:22:34,032 ActsFastPrdAssociationAlg                             42     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:34,032 ActsFastPrdAssociationAlg                             42     0 WARNING Measurement was already stored.
+2025-01-17 18:22:34,434 AthenaMtesEventLoopMgr                                42     0    INFO Firing EndProcessing
+2025-01-17 18:22:34,434 OutputStreamSequencerSvc                              42     0 WARNING Reporting not turned on - set ReportingOn to True
+2025-01-17 18:22:34,498 AthenaMtesEventLoopMgr                                42     0    INFO   ===>>>  done processing event #9337, run #242020 on slot 0,  43 events processed so far  <<<===
+2025-01-17 18:22:34,499 AthenaMtesEventLoopMgr                                44     0    INFO   ===>>>  start processing event #9338, run #242020 on slot 0,  43 events processed so far  <<<===
+2025-01-17 18:22:35,624 ActsFastPrdAssociationAlg                             43     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:35,624 ActsFastPrdAssociationAlg                             43     1 WARNING Measurement was already stored.
+2025-01-17 18:22:35,627 ActsFastPrdAssociationAlg                             43     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:35,627 ActsFastPrdAssociationAlg                             43     1 WARNING Measurement was already stored.
+2025-01-17 18:22:35,628 ActsFastPrdAssociationAlg                             43     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:35,628 ActsFastPrdAssociationAlg                             43     1 WARNING Measurement was already stored.
+2025-01-17 18:22:35,630 ActsFastPrdAssociationAlg                             43     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:35,630 ActsFastPrdAssociationAlg                             43     1 WARNING Measurement was already stored.
+2025-01-17 18:22:35,630 ActsFastPrdAssociationAlg                             43     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:35,630 ActsFastPrdAssociationAlg                             43     1 WARNING Measurement was already stored.
+2025-01-17 18:22:35,630 ActsFastPrdAssociationAlg                             43     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:35,630 ActsFastPrdAssociationAlg                             43     1 WARNING Measurement was already stored.
+2025-01-17 18:22:35,630 ActsFastPrdAssociationAlg                             43     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:35,630 ActsFastPrdAssociationAlg                             43     1 WARNING Measurement was already stored.
+2025-01-17 18:22:36,115 AthenaMtesEventLoopMgr                                43     1    INFO Firing EndProcessing
+2025-01-17 18:22:36,115 OutputStreamSequencerSvc                              43     1 WARNING Reporting not turned on - set ReportingOn to True
+2025-01-17 18:22:36,182 AthenaMtesEventLoopMgr                                43     1    INFO   ===>>>  done processing event #9326, run #242020 on slot 1,  44 events processed so far  <<<===
+2025-01-17 18:22:36,183 AthenaMtesEventLoopMgr                                45     1    INFO   ===>>>  start processing event #9340, run #242020 on slot 1,  44 events processed so far  <<<===
+2025-01-17 18:22:37,376 ActsFastPrdAssociationAlg                             44     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:37,376 ActsFastPrdAssociationAlg                             44     0 WARNING Measurement was already stored.
+2025-01-17 18:22:37,377 ActsFastPrdAssociationAlg                             44     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:37,377 ActsFastPrdAssociationAlg                             44     0 WARNING Measurement was already stored.
+2025-01-17 18:22:37,377 ActsFastPrdAssociationAlg                             44     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:37,377 ActsFastPrdAssociationAlg                             44     0 WARNING Measurement was already stored.
+2025-01-17 18:22:37,821 AthenaMtesEventLoopMgr                                44     0    INFO Firing EndProcessing
+2025-01-17 18:22:37,821 OutputStreamSequencerSvc                              44     0 WARNING Reporting not turned on - set ReportingOn to True
+2025-01-17 18:22:37,886 AthenaMtesEventLoopMgr                                44     0    INFO   ===>>>  done processing event #9338, run #242020 on slot 0,  45 events processed so far  <<<===
+2025-01-17 18:22:37,887 AthenaMtesEventLoopMgr                                46     0    INFO   ===>>>  start processing event #9342, run #242020 on slot 0,  45 events processed so far  <<<===
+2025-01-17 18:22:38,939 ActsFastPrdAssociationAlg                             45     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:38,939 ActsFastPrdAssociationAlg                             45     1 WARNING Measurement was already stored.
+2025-01-17 18:22:39,308 AthenaMtesEventLoopMgr                                45     1    INFO Firing EndProcessing
+2025-01-17 18:22:39,308 OutputStreamSequencerSvc                              45     1 WARNING Reporting not turned on - set ReportingOn to True
+2025-01-17 18:22:39,367 AthenaMtesEventLoopMgr                                45     1    INFO   ===>>>  done processing event #9340, run #242020 on slot 1,  46 events processed so far  <<<===
+2025-01-17 18:22:39,367 AthenaMtesEventLoopMgr                                47     1    INFO   ===>>>  start processing event #9339, run #242020 on slot 1,  46 events processed so far  <<<===
+2025-01-17 18:22:40,266 ActsFastPrdAssociationAlg                             46     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:40,266 ActsFastPrdAssociationAlg                             46     0 WARNING Measurement was already stored.
+2025-01-17 18:22:40,267 ActsFastPrdAssociationAlg                             46     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:40,267 ActsFastPrdAssociationAlg                             46     0 WARNING Measurement was already stored.
+2025-01-17 18:22:40,585 AthenaMtesEventLoopMgr                                46     0    INFO Firing EndProcessing
+2025-01-17 18:22:40,585 OutputStreamSequencerSvc                              46     0 WARNING Reporting not turned on - set ReportingOn to True
+2025-01-17 18:22:40,642 AthenaMtesEventLoopMgr                                46     0    INFO   ===>>>  done processing event #9342, run #242020 on slot 0,  47 events processed so far  <<<===
+2025-01-17 18:22:40,643 AthenaMtesEventLoopMgr                                48     0    INFO   ===>>>  start processing event #9341, run #242020 on slot 0,  47 events processed so far  <<<===
+2025-01-17 18:22:43,104 ActsFastPrdAssociationAlg                             47     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:43,104 ActsFastPrdAssociationAlg                             47     1 WARNING Measurement was already stored.
+2025-01-17 18:22:43,104 ActsFastPrdAssociationAlg                             47     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:43,104 ActsFastPrdAssociationAlg                             47     1 WARNING Measurement was already stored.
+2025-01-17 18:22:43,107 ActsFastPrdAssociationAlg                             47     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:43,107 ActsFastPrdAssociationAlg                             47     1 WARNING Measurement was already stored.
+2025-01-17 18:22:43,107 ActsFastPrdAssociationAlg                             47     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:43,107 ActsFastPrdAssociationAlg                             47     1 WARNING Measurement was already stored.
+2025-01-17 18:22:43,111 ActsFastPrdAssociationAlg                             47     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:43,111 ActsFastPrdAssociationAlg                             47     1 WARNING Measurement was already stored.
+2025-01-17 18:22:43,700 ActsFastPrdAssociationAlg                             48     0 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:43,700 ActsFastPrdAssociationAlg                             48     0 WARNING Measurement was already stored.
+2025-01-17 18:22:43,889 AthenaMtesEventLoopMgr                                47     1    INFO Firing EndProcessing
+2025-01-17 18:22:43,889 OutputStreamSequencerSvc                              47     1 WARNING Reporting not turned on - set ReportingOn to True
+2025-01-17 18:22:43,968 AthenaMtesEventLoopMgr                                47     1    INFO   ===>>>  done processing event #9339, run #242020 on slot 1,  48 events processed so far  <<<===
+2025-01-17 18:22:43,969 AthenaMtesEventLoopMgr                                49     1    INFO   ===>>>  start processing event #9336, run #242020 on slot 1,  48 events processed so far  <<<===
+2025-01-17 18:22:44,750 AthenaMtesEventLoopMgr                                48     0    INFO Firing EndProcessing
+2025-01-17 18:22:44,750 OutputStreamSequencerSvc                              48     0 WARNING Reporting not turned on - set ReportingOn to True
+2025-01-17 18:22:44,815 AthenaMtesEventLoopMgr                                48     0    INFO   ===>>>  done processing event #9341, run #242020 on slot 0,  49 events processed so far  <<<===
+2025-01-17 18:22:46,794 ActsFastPrdAssociationAlg                             49     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:46,794 ActsFastPrdAssociationAlg                             49     1 WARNING Measurement was already stored.
+2025-01-17 18:22:46,794 ActsFastPrdAssociationAlg                             49     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:46,794 ActsFastPrdAssociationAlg                             49     1 WARNING Measurement was already stored.
+2025-01-17 18:22:46,795 ActsFastPrdAssociationAlg                             49     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:46,795 ActsFastPrdAssociationAlg                             49     1 WARNING Measurement was already stored.
+2025-01-17 18:22:46,798 ActsFastPrdAssociationAlg                             49     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:46,798 ActsFastPrdAssociationAlg                             49     1 WARNING Measurement was already stored.
+2025-01-17 18:22:46,799 ActsFastPrdAssociationAlg                             49     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:46,799 ActsFastPrdAssociationAlg                             49     1 WARNING Measurement was already stored.
+2025-01-17 18:22:46,805 ActsFastPrdAssociationAlg                             49     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:46,805 ActsFastPrdAssociationAlg                             49     1 WARNING Measurement was already stored.
+2025-01-17 18:22:46,814 ActsFastPrdAssociationAlg                             49     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:46,814 ActsFastPrdAssociationAlg                             49     1 WARNING Measurement was already stored.
+2025-01-17 18:22:46,817 ActsFastPrdAssociationAlg                             49     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:46,817 ActsFastPrdAssociationAlg                             49     1 WARNING Measurement was already stored.
+2025-01-17 18:22:46,827 ActsFastPrdAssociationAlg                             49     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:46,827 ActsFastPrdAssociationAlg                             49     1 WARNING Measurement was already stored.
+2025-01-17 18:22:46,838 ActsFastPrdAssociationAlg                             49     1 WARNING There was a problem when storing the Prd collections
+2025-01-17 18:22:46,838 ActsFastPrdAssociationAlg                             49     1 WARNING Measurement was already stored.
+2025-01-17 18:22:47,445 AthenaMtesEventLoopMgr                                49     1    INFO Firing EndProcessing
+2025-01-17 18:22:47,445 OutputStreamSequencerSvc                              49     1 WARNING Reporting not turned on - set ReportingOn to True
+2025-01-17 18:22:47,527 AthenaMtesEventLoopMgr                                49     1    INFO   ===>>>  done processing event #9336, run #242020 on slot 1,  50 events processed so far  <<<===
+2025-01-17 18:22:47,577 EventSelector                                         49     1    INFO seek: Reached end of Input.
+2025-01-17 18:22:47,653 AthMpEvtLoopMgr.SharedHiveEvtQueueConsumer            49     1    INFO Fin function in the AthenaMP worker PID=786143
+2025-01-17 18:22:47,654 AlgResourcePool                                                   INFO Hit parade of algorithm instance misses:
+ ===============================================================================
+  Misses | Algorithm (# of clones) 
+ ===============================================================================
+      19   AtlasFieldMapCondAlg (0)
+      12   ITkPixelDeadMapCondAlg (0)
+      12   CondInputLoader (1)
+       9   ITkStripAlignCondAlg (1)
+       4   ITkPixelChargeCalibCondAlg (0)
+       3   ITkPixelModuleConfigCondAlg (0)
+       3   ITkPixelDCSCondHVAlg (0)
+       3   ITkPixelDCSCondStateAlg (0)
+       3   ITkStripSiLorentzAngleCondAlg (0)
+       2   HGTD_DetectorElementCondAlg (0)
+       2   BeamSpotCondAlg (0)
+       2   ActsDetAlignmentCondAlgITkPixel (0)
+       1   ITkPixelOfflineCalibCondAlg (0)
+       1   AtlasTrackingGeometryCondAlg (1)
+       1   ITkPixelDCSCondTempAlg (0)
+       1   ITkPixelAlignCondAlg (1)
+       1   ITkPixelDetectorElementStatusCondAlgNoByteStreamErrors (0)
+       1   SGInputLoader (1)
+       1   AtlasFieldCacheCondAlg (0)
+       1   ITkPixelDetectorElementCondAlg (0)
+
+2025-01-17 18:22:47,660 StorageSvc                                                        INFO Building shape according to reflection information using shape ID for:
+2025-01-17 18:22:47,660 StorageSvc                                                        INFO xAOD::FileMetaDataAuxInfo_v1 [BEE2BECF-A936-4078-9FDD-AD703C9ADF9F]
+2025-01-17 18:22:47,661 StorageSvc                                                        INFO Building shape according to reflection information using shape ID for:
+2025-01-17 18:22:47,661 StorageSvc                                                        INFO xAOD::TruthMetaDataAuxContainer_v1 [E2EF5F89-DFFA-4225-823E-29E40130A7B2]
+2025-01-17 18:22:47,661 StorageSvc                                                        INFO Building shape according to reflection information using shape ID for:
+2025-01-17 18:22:47,661 StorageSvc                                                        INFO xAOD::FileMetaData_v1 [C87E3828-4A7A-480A-95DE-0339539F6A0F]
+2025-01-17 18:22:47,662 StorageSvc                                                        INFO Building shape according to reflection information using shape ID for:
+2025-01-17 18:22:47,662 StorageSvc                                                        INFO DataVector<xAOD::TruthMetaData_v1> [754BDA89-C0D9-43BF-B468-32E10C1690FE]
+2025-01-17 18:22:47,663 ClassIDSvc                                                        INFO getRegistryEntries: read 60 CLIDRegistry entries for module ALL
+2025-01-17 18:22:47,663 StreamAOD                                                         INFO Metadata records written: 52
+2025-01-17 18:22:47,663 /cvmfs/atlas-nightlies.cern.ch/repo/data/data-...1                INFO Database being retired...
+2025-01-17 18:22:47,666 Domain[ROOT_All]                                                  INFO ->  Deaccess DbDatabase   READ      [ROOT_All] 00E0B104-85B8-704A-BB96-12924F6ADC2D
+2025-01-17 18:22:47,666 Domain[ROOT_All]                                                  INFO >   Deaccess DbDomain     READ      [ROOT_All] 
+2025-01-17 18:22:47,727 myAOD.pool.root_000                                               INFO Database being retired...
+2025-01-17 18:22:47,742 Domain[ROOT_All]                                                  INFO ->  Deaccess DbDatabase   CREATE    [ROOT_All] 32E9A71C-F7FF-2E4B-93F3-C0847C8A1CB2
+2025-01-17 18:22:47,742 Domain[ROOT_All]                                                  INFO >   Deaccess DbDomain     UPDATE    [ROOT_All] 
+2025-01-17 18:22:47,743 ApplicationMgr                                                    INFO Application Manager Stopped successfully
+2025-01-17 18:22:47,794 SGInputLoader                                                     INFO Finalizing SGInputLoader...
+2025-01-17 18:22:47,794 ActsFastPixelClusterizationAlg                                    INFO Clusterization statistics
+|----------|------------|
+| RDOs     |   36219850 |
+| Clusters |   12356068 |
+|----------|------------|
+
+2025-01-17 18:22:47,794 ActsFastStripClusterizationAlg                                    INFO Clusterization statistics
+|----------|------------|
+| RDOs     |   14489035 |
+| Clusters |   11709706 |
+|----------|------------|
+
+2025-01-17 18:22:47,794 ActsFastPixelSpacePointFormationAlg                               INFO Space Point Formation statistics
+|--------------|------------|
+| Clusters     |   12356068 |
+| Space Points |   12356068 |
+|--------------|------------|
+
+2025-01-17 18:22:47,794 ActsPixelClusterToTruthAssociationAlg                             INFO RDO truth stat Measurements without SimData               35960884
+2025-01-17 18:22:47,794 ActsPixelClusterToTruthAssociationAlg                             INFO RDO truth stat Measurements with SimData                  102871
+2025-01-17 18:22:47,794 ActsPixelClusterToTruthAssociationAlg                             INFO RDO truth stat Deposits without xAOD TruthParticle        0
+2025-01-17 18:22:47,794 ActsPixelClusterToTruthAssociationAlg                             INFO RDO truth stat SimData without deposits above threshold   156095
+2025-01-17 18:22:47,794 ActsPixelClusterToTruthAssociationAlg                             INFO RDO truth stat Associated truth exceeds small vector size 0
+2025-01-17 18:22:47,794 ActsPixelClusterToTruthAssociationAlg                             INFO Deposits HS: 0 PU: 259779 ; without truth particle HS:  0 PU: 0
+2025-01-17 18:22:47,794 ActsStripClusterToTruthAssociationAlg                             INFO RDO truth stat Measurements without SimData               21871451
+2025-01-17 18:22:47,794 ActsStripClusterToTruthAssociationAlg                             INFO RDO truth stat Measurements with SimData                  87540
+2025-01-17 18:22:47,794 ActsStripClusterToTruthAssociationAlg                             INFO RDO truth stat Deposits without xAOD TruthParticle        2185
+2025-01-17 18:22:47,794 ActsStripClusterToTruthAssociationAlg                             INFO RDO truth stat SimData without deposits above threshold   52941
+2025-01-17 18:22:47,794 ActsStripClusterToTruthAssociationAlg                             INFO RDO truth stat Associated truth exceeds small vector size 2
+2025-01-17 18:22:47,794 ActsStripClusterToTruthAssociationAlg                             INFO Deposits HS: 0 PU: 140839 ; without truth particle HS:  0 PU: 2185
+2025-01-17 18:22:47,794 ActsTruthParticleHitCountAlg                                      INFO Number of truth particles with hits : 13970
+2025-01-17 18:22:47,794 ActsTruthParticleHitCountAlg                                      INFO 
+2025-01-17 18:22:47,794 ActsFastPixelSeedingAlg                                           INFO Seed statistics
+|---------------------|------------|
+| Spacepoints         |   12356068 |
+| Seeds               |     562040 |
+| No track parameters |          0 |
+|---------------------|------------|
+
+2025-01-17 18:22:47,794 ActsFastTrackFindingAlg                                           INFO statistics:
+|-----------------------------------|------------|------------|
+|                           All eta | PPP        | ALL        |
+|-----------------------------------|------------|------------|
+| Input seeds                       |     562040 |     562040 |
+| No track parameters               |          0 |          0 |
+| Used   seeds                      |     290837 |     290837 |
+| Cannot find track                 |     190451 |     190451 |
+| Duplicate seeds                   |     271203 |     271203 |
+| CKF tracks                        |     100386 |     100386 |
+| Rejected refined parameters       |          0 |          0 |
+| selected tracks                   |      89774 |      89774 |
+| Stopped tracks reaching max holes |     182853 |     182853 |
+| Seeds with more than one branch   |          0 |          0 |
+| Tracks failing second CKF         |         29 |         29 |
+| Stopped tracks below pT cut       |       7598 |       7598 |
+| Stopped tracks above max eta      |          0 |          0 |
+|-----------------------------------|------------|------------|
+2025-01-17 18:22:47,794 ActsFastTrackFindingAlg                                           INFO Ratios:
+|------------------------------------------|------------|------------|
+|                                          | PPP        | ALL        |
+|------------------------------------------|------------|------------|
+| failed / seeds                           |   0.338857 |   0.338857 |
+| duplication / seeds                      |   0.482533 |   0.482533 |
+| Rejected refined params / seeds          |          0 |          0 |
+| selected / CKF tracks                    |   0.894288 |   0.894288 |
+| selected tracks / used seeds             |   0.308675 |   0.308675 |
+| branched tracks / used seeds             |          0 |          0 |
+| no 2nd CKF / CKF tracks                  | 0.000288885 | 0.000288885 |
+|------------------------------------------|------------|------------|
+| selected / CKF tracks           0.0- 0.5 |   0.918391 |   0.918391 |
+|                                 0.5- 1.0 |   0.901961 |   0.901961 |
+|                                 1.0- 1.5 |   0.870529 |   0.870529 |
+|                                 1.5- 2.0 |   0.786077 |   0.786077 |
+|                                 2.0- 2.5 |   0.926041 |   0.926041 |
+|                                 2.5- 3.0 |   0.879184 |   0.879184 |
+|                                 3.0- 3.5 |   0.909284 |   0.909284 |
+|                                 3.5-+inf |   0.932735 |   0.932735 |
+|------------------------------------------|------------|------------|
+2025-01-17 18:22:47,795 ActsFastPrdAssociationAlg                                         INFO Prd Map statistics
+|-----------------------|------------|
+| N. Tracks             |      73995 |
+| N. Pixel Measurements |     806457 |
+| N. Strip Measurements |     306791 |
+| N. Hgtd Measurements  |          0 |
+|-----------------------|------------|
+
+2025-01-17 18:22:47,795 ActsFastResolvedTracksTrackToTruthAssociationAlg                  INFO -- Statistics:
+               71061  tracks without associated truth particles.
+                2783  tracks with 1 associated truth particle(s).
+                 119  tracks with 2 associated truth particle(s).
+                  32  tracks with more than 3 associated truth particles.
+2025-01-17 18:22:47,795 ActsFastResolvedTracksTrackFindingValidationAlg                   INFO Truth selection cuts: 
+                    2934 total
+  1                 2933 eta
+  2                 2528 min_pt
+  3                 2528 decay_before_300.000000
+  4                 2370 OnlyPrimary
+  5                 2370 charged
+  6                 2370 stable
+
+2025-01-17 18:22:47,795 ActsFastResolvedTracksTrackFindingValidationAlg                   INFO 
+Hit efficiency : contributing hits over all hits of best matching truth particle
+|-----------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|
+| eta  \ pt |    0-1000    | 1000-2500    | 2500-5000    | 5000-10000   | 10000-100000 | 100000-+inf  |  All pt      |
+|-----------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|
+|  0.0- 0.5 |            0 |        0.954 |        0.955 |        0.968 |        0.976 |            0 |        0.959 |
+|  0.5- 1.0 |            0 |        0.944 |        0.945 |        0.983 |        0.978 |            0 |        0.952 |
+|  1.0- 1.5 |            0 |        0.944 |        0.967 |        0.974 |        0.932 |        0.409 |        0.949 |
+|  1.5- 2.0 |            0 |        0.891 |        0.944 |        0.938 |        0.948 |            0 |        0.914 |
+|  2.0- 2.5 |            0 |        0.859 |        0.963 |        0.913 |        0.971 |            0 |        0.899 |
+|  2.5- 3.0 |            0 |        0.944 |        0.974 |        0.984 |            1 |            0 |        0.954 |
+|  3.0- 3.5 |            0 |        0.973 |        0.965 |        0.867 |            1 |            0 |        0.967 |
+|  3.5-+inf |            0 |        0.972 |        0.995 |            1 |            1 |            0 |        0.978 |
+|  All eta  |            0 |        0.934 |        0.957 |        0.959 |        0.964 |        0.409 |        0.944 |
+|-----------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|
+Hit purity : contributing hits of best matching truth particle over all hits on track
+|-----------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|
+| eta  \ pt |    0-1000    | 1000-2500    | 2500-5000    | 5000-10000   | 10000-100000 | 100000-+inf  |  All pt      |
+|-----------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|
+|  0.0- 0.5 |            0 |        0.976 |        0.976 |         0.97 |        0.997 |            0 |        0.978 |
+|  0.5- 1.0 |            0 |        0.985 |        0.969 |        0.998 |            1 |            0 |        0.984 |
+|  1.0- 1.5 |            0 |        0.985 |        0.987 |        0.993 |         0.97 |        0.818 |        0.985 |
+|  1.5- 2.0 |            0 |        0.954 |        0.976 |        0.965 |            1 |            0 |        0.965 |
+|  2.0- 2.5 |            0 |        0.928 |        0.982 |        0.949 |        0.999 |            0 |        0.949 |
+|  2.5- 3.0 |            0 |        0.976 |        0.998 |            1 |            1 |            0 |        0.982 |
+|  3.0- 3.5 |            0 |        0.992 |        0.991 |        0.857 |            1 |            0 |        0.986 |
+|  3.5-+inf |            0 |        0.993 |            1 |            1 |            1 |            0 |        0.994 |
+|  All eta  |            0 |        0.973 |         0.98 |        0.976 |        0.993 |        0.818 |        0.977 |
+|-----------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|
+Match probability : weighted common hit sum of best matching truth particle over total track weighted hit sum
+|-----------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|
+| eta  \ pt |    0-1000    | 1000-2500    | 2500-5000    | 5000-10000   | 10000-100000 | 100000-+inf  |  All pt      |
+|-----------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|
+|  0.0- 0.5 |            0 |        0.989 |        0.985 |        0.978 |        0.999 |            0 |        0.988 |
+|  0.5- 1.0 |            0 |        0.995 |        0.981 |        0.999 |            1 |            0 |        0.993 |
+|  1.0- 1.5 |            0 |        0.997 |        0.996 |        0.997 |        0.974 |          0.9 |        0.994 |
+|  1.5- 2.0 |            0 |        0.976 |        0.985 |         0.98 |            1 |            0 |        0.981 |
+|  2.0- 2.5 |            0 |        0.963 |        0.997 |        0.963 |            1 |            0 |        0.973 |
+|  2.5- 3.0 |            0 |         0.99 |            1 |            1 |            1 |            0 |        0.993 |
+|  3.0- 3.5 |            0 |        0.998 |        0.996 |        0.913 |            1 |            0 |        0.994 |
+|  3.5-+inf |            0 |        0.999 |            1 |            1 |            1 |            0 |        0.999 |
+|  All eta  |            0 |        0.988 |        0.989 |        0.984 |        0.995 |          0.9 |        0.988 |
+|-----------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|
+Reco efficiency : tracks with assoc. truth particle over all selected truth particles with assoc. measurements.
+|-----------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|
+| eta  \ pt |    0-1000    | 1000-2500    | 2500-5000    | 5000-10000   | 10000-100000 | 100000-+inf  |  All pt      |
+|-----------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|
+|  0.0- 0.5 |            0 |        0.848 |        0.894 |         0.88 |         0.93 |            0 |        0.873 |
+|  0.5- 1.0 |            0 |        0.817 |        0.889 |        0.889 |        0.857 |            0 |        0.846 |
+|  1.0- 1.5 |            0 |        0.817 |        0.856 |        0.906 |        0.915 |            1 |        0.844 |
+|  1.5- 2.0 |            0 |         0.77 |        0.899 |        0.864 |        0.878 |            0 |        0.816 |
+|  2.0- 2.5 |            0 |        0.778 |        0.844 |        0.946 |        0.938 |            0 |        0.826 |
+|  2.5- 3.0 |            0 |        0.867 |        0.889 |        0.923 |        0.833 |            0 |        0.874 |
+|  3.0- 3.5 |            0 |        0.876 |        0.781 |        0.857 |            1 |            0 |         0.86 |
+|  3.5-+inf |            0 |        0.836 |        0.882 |            1 |            1 |            0 |        0.854 |
+|  All eta  |            0 |        0.822 |        0.874 |        0.896 |        0.904 |            1 |        0.848 |
+|-----------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|
+|-------------------------------------------------------|--------------|
+| Number of tracks                                      |        73995 |
+| Number of truth particles with hit counts             |        13970 |
+| Associated truth particles without hit counts         |            0 |
+| Tracks without associated truth particle              |        71061 |
+| Tracks without selected, associated truth particle    |          564 |
+| Best truth particle without noise correction mismatch |            0 |
+|-------------------------------------------------------|--------------|
+
+
+2025-01-17 18:22:47,795 ThinGeantTruthAlg                                                 INFO Processed 50 events containing 108356 truth particles and 67211 truth vertices 
+2025-01-17 18:22:47,795 ThinGeantTruthAlg                                                 INFO Removed 27773 Geant truth particles and 9073 corresponding truth vertices 
+2025-01-17 18:22:47,795 CondInputLoader                                                   INFO Finalizing CondInputLoader...
+2025-01-17 18:22:47,795 AvalancheSchedulerSvc                                             INFO Joining Scheduler thread
+2025-01-17 18:22:47,839 DecisionSvc                                                       INFO Finalized successfully.
+2025-01-17 18:22:47,839 AthDictLoaderSvc                                                  INFO in finalize...
+2025-01-17 18:22:47,963 EventDataSvc                                                      INFO Finalizing EventDataSvc
+2025-01-17 18:22:47,971 AthenaPoolCnvSvc                                                  INFO PerfStats ----------------------------------------
+2025-01-17 18:22:47,971 AthenaPoolCnvSvc                                                  INFO PerfStats Timing Measurements for AthenaPoolCnvSvc
+2025-01-17 18:22:47,971 AthenaPoolCnvSvc                                                  INFO PerfStats ----------------------------------------
+2025-01-17 18:22:47,971 AthenaPoolCnvSvc                                                  INFO PerfStats | cObjR_ALL       |            9464 ms |
+2025-01-17 18:22:47,971 AthenaPoolCnvSvc                                                  INFO PerfStats | commitOutput    |             752 ms |
+2025-01-17 18:22:47,971 AthenaPoolCnvSvc                                                  INFO PerfStats | fRep_ALL        |             371 ms |
+2025-01-17 18:22:47,971 AthenaPoolCnvSvc                                                  INFO PerfStats | cObj_ALL        |           10980 ms |
+2025-01-17 18:22:47,971 AthenaPoolCnvSvc                                                  INFO PerfStats | cRepR_ALL       |              39 ms |
+2025-01-17 18:22:47,971 AthenaPoolCnvSvc                                                  INFO PerfStats | cRep_ALL        |              73 ms |
+2025-01-17 18:22:47,971 AthenaPoolCnvSvc                                                  INFO PerfStats ----------------------------------------
+2025-01-17 18:22:47,976 IOVDbFolder                                                       INFO Folder /EXT/DCS/MAGNETS/SENSORDATA (AttrListColl) db-read 1/1 objs/chan/bytes 4/4/20 ((     0.02 ))s
+2025-01-17 18:22:47,976 IOVDbFolder                                                       INFO Folder /GLOBAL/BField/Maps (AttrListColl) db-read 1/1 objs/chan/bytes 3/3/202 ((     0.03 ))s
+2025-01-17 18:22:47,976 IOVDbFolder                                                       INFO Folder /GLOBAL/TrackingGeo/LayerMaterialITK (PoolRef) db-read 1/1 objs/chan/bytes 1/1/227 ((     0.01 ))s
+2025-01-17 18:22:47,976 IOVDbFolder                                                       INFO Folder /ITk/PixelChargeCalib (AttrListColl) db-read 1/1 objs/chan/bytes 1/1/3192879 ((     0.04 ))s
+2025-01-17 18:22:47,976 IOVDbFolder                                                       INFO Folder /Indet/Align (PoolRefColl) db-read 1/1 objs/chan/bytes 43/43/6907 ((     0.01 ))s
+2025-01-17 18:22:47,976 IOVDbFolder                                                       INFO Folder /Indet/Beampos (AttrList) db-read 1/1 objs/chan/bytes 1/1/76 ((     0.01 ))s
+2025-01-17 18:22:47,976 IOVDbFolder                                                       INFO Folder /PIXEL/ITkClusterError (AttrListColl) db-read 1/1 objs/chan/bytes 1/1/635135 ((     0.01 ))s
+2025-01-17 18:22:47,976 IOVDbFolder                                                       INFO Folder /TagInfo (AttrListColl) db-read 0/1 objs/chan/bytes 1/0/0 ((     0.00 ))s
+2025-01-17 18:22:47,976 IOVDbSvc                                                          INFO  bytes in ((      0.14 ))s
+2025-01-17 18:22:47,976 IOVDbSvc                                                          INFO Connection sqlite://;schema=mycool.db;dbname=OFLP200 : nConnect: 0 nFolders: 0 ReadTime: ((     0.00 ))s
+2025-01-17 18:22:47,976 IOVDbSvc                                                          INFO Connection COOLOFL_INDET/OFLP200 : nConnect: 2 nFolders: 3 ReadTime: ((     0.06 ))s
+2025-01-17 18:22:47,976 IOVDbSvc                                                          INFO Connection COOLOFL_PIXEL/OFLP200 : nConnect: 2 nFolders: 1 ReadTime: ((     0.01 ))s
+2025-01-17 18:22:47,976 IOVDbSvc                                                          INFO Connection COOLOFL_GLOBAL/OFLP200 : nConnect: 2 nFolders: 2 ReadTime: ((     0.04 ))s
+2025-01-17 18:22:47,976 IOVDbSvc                                                          INFO Connection COOLOFL_DCS/OFLP200 : nConnect: 2 nFolders: 1 ReadTime: ((     0.02 ))s
+2025-01-17 18:22:47,976 ToolSvc                                                           INFO Removing all tools created by ToolSvc
+2025-01-17 18:22:47,976 AtlasTrackingGe...HGTD_TrackingGeometryBuilderCond                INFO finalize() successful
+2025-01-17 18:22:47,976 AtlasTrackingGeom...ITkTrackingGeometryBuilderCond                INFO finalize() successful
+2025-01-17 18:22:47,990 PerfMonMTSvc                                                      INFO Finalizing PerfMonMTSvc
+2025-01-17 18:22:47,990 IdDictDetDescrCnv                                                 INFO in finalize
+2025-01-17 18:22:47,992 *****Chrono*****                                                  INFO ****************************************************************************************************
+2025-01-17 18:22:47,992 *****Chrono*****                                                  INFO WARNING: MT job; statistics are unreliable
+2025-01-17 18:22:47,992 *****Chrono*****                                                  INFO  The Final CPU consumption ( Chrono ) Table (ordered)
+2025-01-17 18:22:47,992 *****Chrono*****                                                  INFO ****************************************************************************************************
+2025-01-17 18:22:47,992 ChronoStatSvc                                                     INFO Time User   : Tot=  160  [s]  #=  1
+2025-01-17 18:22:47,992 *****Chrono*****                                                  INFO ****************************************************************************************************
+2025-01-17 18:22:47,992 ChronoStatSvc.finalize()                                          INFO  Service finalized successfully 
+2025-01-17 18:22:47,993 FPEAuditor                                                        INFO FPE summary for this job
+2025-01-17 18:22:47,993 FPEAuditor                                                        INFO  FPE OVERFLOWs  : 0
+2025-01-17 18:22:47,993 FPEAuditor                                                        INFO  FPE INVALIDs   : 0
+2025-01-17 18:22:47,993 FPEAuditor                                                        INFO  FPE DIVBYZEROs : 0
+2025-01-17 18:22:48,042 PerfMonMTSvc                                                      INFO =======================================================================================
+2025-01-17 18:22:48,042 PerfMonMTSvc                                                      INFO                                  PerfMonMTSvc Report                                   
+2025-01-17 18:22:48,042 PerfMonMTSvc                                                      INFO =======================================================================================
+2025-01-17 18:22:48,042 PerfMonMTSvc                                                      INFO *** Full set of information can also be found in: perfmonmt_RAWtoALL.json
+2025-01-17 18:22:48,042 PerfMonMTSvc                                                      INFO *** In order to make plots using the results run the following commands:
+2025-01-17 18:22:48,042 PerfMonMTSvc                                                      INFO *** $ perfmonmt-plotter.py -i perfmonmt_RAWtoALL.json
+2025-01-17 18:22:48,042 PerfMonMTSvc                                                      INFO *** In order to print tables using the results run the following commands:
+2025-01-17 18:22:48,042 PerfMonMTSvc                                                      INFO *** $ perfmonmt-printer.py -i perfmonmt_RAWtoALL.json
+2025-01-17 18:22:48,042 PerfMonMTSvc                                                      INFO =======================================================================================
+2025-01-17 18:22:48,042 PerfMonMTSvc                                                      INFO                                 Event Level Monitoring                                 
+2025-01-17 18:22:48,042 PerfMonMTSvc                                                      INFO         (Only the first 10 and the last measurements are explicitly printed)
+2025-01-17 18:22:48,042 PerfMonMTSvc                                                      INFO =======================================================================================
+2025-01-17 18:22:48,042 PerfMonMTSvc                                                      INFO Event            CPU [s]      Wall [s]     Vmem [kB]    Rss [kB]     Pss [kB]     Swap [kB]   
+2025-01-17 18:22:48,042 PerfMonMTSvc                                                      INFO ---------------------------------------------------------------------------------------
+2025-01-17 18:22:48,042 PerfMonMTSvc                                                      INFO 1                        0.24        14.73      2150676      1053004       260128            0
+2025-01-17 18:22:48,042 PerfMonMTSvc                                                      INFO 18                      60.77        45.65      3365916      2446432      1790902            0
+2025-01-17 18:22:48,042 PerfMonMTSvc                                                      INFO 37                     120.91        75.91      3399116      2481580      1826536            0
+2025-01-17 18:22:48,042 PerfMonMTSvc                                                      INFO =======================================================================================
+2025-01-17 18:22:48,042 PerfMonMTSvc                                                      INFO                                 Snapshots Summary                                      
+2025-01-17 18:22:48,042 PerfMonMTSvc                                                      INFO =======================================================================================
+2025-01-17 18:22:48,042 PerfMonMTSvc                                                      INFO Step          dCPU [s]     dWall [s]    <CPU>   dVmem [kB]  dRss [kB]   dPss [kB]   dSwap [kB] 
+2025-01-17 18:22:48,042 PerfMonMTSvc                                                      INFO ---------------------------------------------------------------------------------------
+2025-01-17 18:22:48,042 PerfMonMTSvc                                                      INFO Configure     4.18         6.42         0.65    1197548     802148      573060      0          
+2025-01-17 18:22:48,042 PerfMonMTSvc                                                      INFO Initialize    6.42         6.75         0.95    930528      795320      795178      0          
+2025-01-17 18:22:48,042 PerfMonMTSvc                                                      INFO FirstEvent    0.00         0.00         -nan    0           0           0           0          
+2025-01-17 18:22:48,042 PerfMonMTSvc                                                      INFO Execute       169.94       1737134567.53 0.00    3499148     2576216     2151403     0          
+2025-01-17 18:22:48,042 PerfMonMTSvc                                                      INFO Finalize      0.21         0.25         0.84    -68         8044        65586       0          
+2025-01-17 18:22:48,042 PerfMonMTSvc                                                      INFO ***************************************************************************************
+2025-01-17 18:22:48,042 PerfMonMTSvc                                                      INFO Number of events processed:         50
+2025-01-17 18:22:48,042 PerfMonMTSvc                                                      INFO CPU usage per event [ms]:           3399
+2025-01-17 18:22:48,042 PerfMonMTSvc                                                      INFO Events per second:                  0.000
+2025-01-17 18:22:48,042 PerfMonMTSvc                                                      INFO CPU utilization efficiency [%]:     0
+2025-01-17 18:22:48,042 PerfMonMTSvc                                                      INFO ***************************************************************************************
+2025-01-17 18:22:48,042 PerfMonMTSvc                                                      INFO Max Vmem:                           3.24 GB
+2025-01-17 18:22:48,042 PerfMonMTSvc                                                      INFO Max Rss:                            2.37 GB
+2025-01-17 18:22:48,042 PerfMonMTSvc                                                      INFO Max Pss:                            1.74 GB
+2025-01-17 18:22:48,042 PerfMonMTSvc                                                      INFO Max Swap:                           0.00 KB
+2025-01-17 18:22:48,042 PerfMonMTSvc                                                      INFO ***************************************************************************************
+2025-01-17 18:22:48,042 PerfMonMTSvc                                                      INFO Leak estimate per event Vmem:       0.00 KB
+2025-01-17 18:22:48,042 PerfMonMTSvc                                                      INFO Leak estimate per event Pss:        0.00 KB
+2025-01-17 18:22:48,042 PerfMonMTSvc                                                      INFO   >> Estimated using the last 1 measurements from the Event Level Monitoring
+2025-01-17 18:22:48,042 PerfMonMTSvc                                                      INFO   >> Events prior to the first 25 are omitted...
+2025-01-17 18:22:48,042 PerfMonMTSvc                                                      INFO =======================================================================================
+2025-01-17 18:22:48,042 PerfMonMTSvc                                                      INFO                                   System Information                                   
+2025-01-17 18:22:48,042 PerfMonMTSvc                                                      INFO =======================================================================================
+2025-01-17 18:22:48,056 PerfMonMTSvc                                                      INFO CPU Model:                          AMD EPYC 7413 24-Core Processor 512 KB
+2025-01-17 18:22:48,057 PerfMonMTSvc                                                      INFO Number of Available Cores:          48
+2025-01-17 18:22:48,057 PerfMonMTSvc                                                      INFO Total Memory:                       125.14 GB
+2025-01-17 18:22:48,057 PerfMonMTSvc                                                      INFO =======================================================================================
+2025-01-17 18:22:48,057 PerfMonMTSvc                                                      INFO                                Environment Information                                 
+2025-01-17 18:22:48,057 PerfMonMTSvc                                                      INFO =======================================================================================
+2025-01-17 18:22:48,057 PerfMonMTSvc                                                      INFO Malloc Library:                     libtcmalloc_minimal.so
+2025-01-17 18:22:48,057 PerfMonMTSvc                                                      INFO Math Library:                       libimf.so
+2025-01-17 18:22:48,057 PerfMonMTSvc                                                      INFO =======================================================================================
+2025-01-17 18:22:48,183 ApplicationMgr                                                    INFO Application Manager Finalized successfully
