@@ -16,7 +16,7 @@ p.add_argument("--athena-mp", action=argparse.BooleanOptionalAction, default=Tru
 p.add_argument("--events", "-n", type=int, default=10)
 p.add_argument("--output", "-o", type=Path, default=None)
 p.add_argument("--dry-run", "-s", action="store_true")
-p.add_argument("--clustering", choices=["digital", "analog"], default="analog")
+p.add_argument("--clustering", choices=["digital", "analog"], default="digital")
 
 args = p.parse_args()
 
@@ -45,7 +45,8 @@ assert not run_dir.exists(), "Output dir exists already"
 if not args.dry_run:
     run_dir.mkdir()
 
-DATADIR=Path(os.environ["DATADIR"])
+#DATADIR=Path(os.environ["DATADIR"])
+DATADIR=Path("/mnt/ssd1/pibutti/data/ttbar_PU200/mc21_14TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.recon.RDO.e8481_s4149_r14700")
 # Path("/scratch/large/pagessin/power/mc21_14TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.recon.RDO.e8514_s4345_r15583/")
 
 all_files = list(sorted([p for p in DATADIR.iterdir() if p.is_file()]))
@@ -82,7 +83,9 @@ def make_cmd(events: int, skip: int | None) -> list[str]:
 
     preExecs = [
         "flags.Tracking.doTruth=False", 
-        "flags.Reco.PostProcessing.GeantTruthThinning=False"
+        "flags.Reco.PostProcessing.GeantTruthThinning=False",
+        "flags.Output.doGEN_AOD2xAOD=False",
+        "flags.Tracking.doVertexFinding=False"
     ]
 
     if args.clustering == "digital":

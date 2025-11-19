@@ -33,7 +33,7 @@ def prepareJobScript(outfolder,nthreads,args):
 
         
         preInclude = "--preInclude 'InDetConfig.ConfigurationHelpers.OnlyTrackingPreInclude' \\\n"
-        preExec    = "--preExec 'all:ConfigFlags.Tracking.doITkFastTracking=True' \\\n"
+        preExec    = "--preExec 'all:ConfigFlags.Tracking.doITkFastTracking=True; flags.Tracking.doTruth=False; flags.Output.doGEN_AOD2xAOD=False; flags.Reco.PostProcessing.GeantTruthThinning=False; flags.Tracking.doVertexFinding=False' \\\n"
         multiproc  = ""
 
         if args.nproc > 1:
@@ -41,7 +41,7 @@ def prepareJobScript(outfolder,nthreads,args):
 
         #For ACTS
         if not legacy:
-            preInclude = "--preInclude 'InDetConfig.ConfigurationHelpers.OnlyTrackingPreInclude,ActsConfig.ActsCIFlags.actsFastWorkflowFlags' \\\n"
+            preInclude = "--preInclude 'InDetConfig.ConfigurationHelpers.OnlyTrackingPreInclude,ActsConfig.ActsCIFlags.actsWorkflowFlags' \\\n"
             preExec=""
 
         noOutput = False
@@ -52,8 +52,6 @@ def prepareJobScript(outfolder,nthreads,args):
         f.write("Reco_tf.py \\\n"
                 + "--maxEvents  "+str(nevents)+" \\\n"
                 + "--autoConfiguration 'everything' \\\n"
-                + "--conditionsTag 'all:OFLCOND-MC21-SDR-RUN4-02' \\\n"
-                + "--geometryVersion 'all:ATLAS-P2-RUN4-03-00-00' \\\n"
                 + "--postInclude 'all:PyJobTransforms.UseFrontier' \\\n"
                 + preInclude
                 + "--steering 'doRAWtoALL' \\\n"
@@ -67,6 +65,8 @@ def prepareJobScript(outfolder,nthreads,args):
                 +"--multithreaded \n\n\n")
 
         
+#                + "--conditionsTag 'all:OFLCOND-MC21-SDR-RUN4-02' \\\n"
+#                + "--geometryVersion 'all:ATLAS-P2-RUN4-03-00-00' \\\n"
         
         f.write("cd -")
 
@@ -116,7 +116,7 @@ def runJob(jobfile,threads, args):
 
     nosmt=args.nosmt
     subprocess.run(['chmod','u+x',jobfile])
-    threads_str = make_thread_list(args.nproc, threads, not nosmt)
+    #threads_str = make_thread_list(args.nproc, threads, not nosmt)
     
     
     #command=['taskset','-c',threads_str,jobfile]
@@ -145,7 +145,7 @@ def main():
 
     parser.add_argument("-e", '--maxevents', type=int, required=False, default=100, help="Max number of events per thread")
 
-    parser.add_argument("-o", '--outputpath', type=str, required=False, default="./thread_timing/", help="output path")
+    parser.add_argument("-o", '--outputpath', type=str, required=False, default="./thread_timing_nov_2025/", help="output path")
 
     parser.add_argument("-r", "--runs",type=int, required=False, default=1,help="Number of runs for each data point")
 
